@@ -222,7 +222,7 @@ div.toc ul.toc li ul.toc li ul.toc li a {
               <ul>
                 <li><a href="#gl_a11">A.1.1. （オーサリングツールのユーザーインターフェースに対して）ウェブベースの機能にアクセスできることを確認する</a></li>
 
-                <li><a href="#gl_a12">A.1.2. (For the authoring tool user interface) Ensure that non-web-based functionality is accessible</a></li>
+                <li><a href="#gl_a12">A.1.2. （オーサリングツールのユーザーインターフェースに対して）非ウェブベースの機能にアクセスできることを確認する</a></li>
                 </ul>
             </li>
             <li><a href="#principle_a2">A.2. 編集ビューは知覚可能にする</a>
@@ -429,19 +429,19 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 
       <!-- techs-only -->
 	</div> <!-- sc-level -->
-	<h3 class="guideline"><a name="gl_a12" id="gl_a12"> </a> Guideline A.1.2: (For the authoring tool user interface) Ensure that non-web-based functionality is accessible.
+	<h3 class="guideline"><a name="gl_a12" id="gl_a12"> </a> ガイドライン A.1.2: （オーサリングツールのユーザーインターフェースに対して）非ウェブベースの機能にアクセスできることを確認する。
 <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a12">Implementing A.1.2</a>]</span>
 
 </h3>
 
-    <p class="rationale">Rationale: When <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tools</a> (or parts of authoring tools) are <a class="termdef" href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)">non-web-based</a>, following existing <a href="#def-Platform" title="definition: platform" class="termdef">platform</a> accessibility guidelines and implementing communication with <a class="termdef" href="#def-Accessibility-Platform-Service" title="definition: accessibility platform architecture">platform accessibility services</a> facilitates access by all <a href="#def-Author" title="definition: authors" class="termdef">authors</a>, including those using <a class="termdef" href="#def-Assistive-Technology" title="definition: assistive technology">assistive technologies</a>.</p>
+    <p class="rationale">根拠: <a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>（またはオーサリングツールの一部）が<a class="termdef" href="#def-Non-Web-Based" title="定義: オーサリングツールのユーザーインターフェース（非ウェブベース）">非ウェブベース</a>の場合、既存の<a href="#def-Platform" title="定義: プラットフォーム" class="termdef">プラットフォーム</a>のアクセシビリティガイドラインに従い、また<a class="termdef" href="#def-Accessibility-Platform-Service" title="定義: アクセシビリティプラットフォームアーキテクチャ">プラットフォームアクセシビリティサービス</a>との通信を実装することにより、<a class="termdef" href="#def-Assistive-Technology" title="定義: 支援技術">支援技術</a>を使用する人を含む、すべての<a href="#def-Author" title="定義: 著者" class="termdef">著者</a>によるアクセスが容易になる。</p>
 
     <div class="sc-level">
 
-      <h4 class="sc-title"><a id="sc_a121" name="sc_a121"></a>A.1.2.1 Accessibility Guidelines: </h4>
-      <p class="sc-title">If the <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> contains <a class="termdef" href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)">non-web-based user interfaces</a>, then those non-web-based user interfaces follow user interface accessibility guidelines for the <a class="termdef" href="#def-Platform" title="definition: platform">platform</a>. <span class="level">(<strong>Level A</strong>)</span></p>
+      <h4 class="sc-title"><a id="sc_a121" name="sc_a121"></a>A.1.2.1 アクセシビリティガイドライン: </h4>
+      <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>に<a class="termdef" href="#def-Non-Web-Based" title="定義: オーサリングツールのユーザーインターフェース（非ウェブベース）">非ウェブベースのユーザーインターフェース</a>が含まれている場合、その非ウェブベースのユーザーインターフェースは使用している<a class="termdef" href="#def-Platform" title="定義: プラットフォーム">プラットフォーム</a>のユーザーインターフェースアクセシビリティガイドラインに従う。<span class="level">（<strong>レベルA</strong>）</span></p>
 	  <ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note: </em>The (optional) <a href="#conf-explanation-results">explanation of conformance claim results</a> should record the user interface accessibility guidelines that were followed.</li>
+    <li class="sc-note"><em class="note-handle">注: </em>（任意の）<a href="#conf-explanation-results">適合表明の結果の説明</a>には、ユーザーインターフェースアクセシビリティガイドラインに従ったことを記録するべきである。</li>
 	</ul>
 
 	   <div class="gl-only">
@@ -451,10 +451,10 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 
        <!-- techs-only -->
 
-      <h4 class="sc-title"><a id="sc_a122" name="sc_a122"></a>A.1.2.2 Platform Accessibility Services: </h4>
-      <p class="sc-title">If the <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> contains <a class="termdef" href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)">non-web-based user interfaces</a>, then those non-web-based user interfaces expose accessibility information through  <a class="termdef" href="#def-Accessibility-Platform-Service" title="definition: accessibility platform architecture">platform accessibility services</a>. <span class="level">(<strong>Level A</strong>)</span></p>
+      <h4 class="sc-title"><a id="sc_a122" name="sc_a122"></a>A.1.2.2 プラットフォームアクセシビリティサービス: </h4>
+      <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>に<a class="termdef" href="#def-Non-Web-Based" title="定義: オーサリングツールのユーザーインターフェース（非ウェブベース）">非ウェブベースのユーザーインターフェース</a>が含まれている場合、その非ウェブベースのユーザーインターフェースは使用している<a class="termdef" href="#def-Accessibility-Platform-Service" title="定義: アクセシビリティプラットフォームアーキテクチャ">プラットフォームアクセシビリティサービス</a>を通じてアクセシビリティ情報を公開する。<span class="level">（<strong>レベルA</strong>）</span></p>
          <ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note: </em><em class="note-handle"></em>The (optional) <a href="#conf-explanation-results">explanation of conformance claim results</a> should record the platform accessibility service(s) that were implemented.</li>
+    <li class="sc-note"><em class="note-handle">注: </em><em class="note-handle"></em>任意の<a href="#conf-explanation-results">適合表明の結果の説明</a>には、実装されたプラットフォームアクセシビリティサービスを記録するべきである。</li>
       </ul>
 	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a122">Implementing A.1.2.2</a></div>
