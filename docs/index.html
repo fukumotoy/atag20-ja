@@ -227,7 +227,7 @@ div.toc ul.toc li ul.toc li ul.toc li a {
             </li>
             <li><a href="#principle_a2">A.2. 編集ビューは知覚可能にする</a>
               <ul>
-                <li><a href="#gl_a21">A.2.1. (For the authoring tool user interface) Make alternative content available to authors</a></li>
+                <li><a href="#gl_a21">A.2.1. （オーサリングツールのユーザーインターフェースに対して）著者に対して代替コンテンツを利用可能にする</a></li>
                 <li><a href="#gl_a22">A.2.2. (For the authoring tool user interface) Ensure that editing-view presentation can be programmatically determined</a></li>
               </ul>
             </li>
@@ -465,16 +465,16 @@ div.toc ul.toc li ul.toc li ul.toc li a {
     </div>  <!-- sc-level -->
     <h2 class="principle"><a name="principle_a2" id="principle_a2"></a>原則 A.2: 編集ビューは知覚可能にする</h2>
 
-    <h3 class="guideline"><a name="gl_a21" id="gl_a21"> </a> Guideline A.2.1: (For the authoring tool user interface) Make alternative content available to authors.
+    <h3 class="guideline"><a name="gl_a21" id="gl_a21"> </a> ガイドライン A.2.1: （オーサリングツールのユーザーインターフェースに対して）著者に対して代替コンテンツを利用可能にする。
 
 <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a21">Implementing A.2.1</a>] </span>
 </h3>
 
-    <p class="rationale">Rationale: Some <a class="termdef" href="#def-Author" title="definition: authors">authors</a> require access to <a href="#def-Alternative-Content" title="definition: alternative content" class="termdef">alternative content</a> in order to interact with the <a class="termdef" href="#def-Web-Content" title="definition: web content">web content</a> that they are editing. </p>
+    <p class="rationale">根拠: 一部の<a class="termdef" href="#def-Author" title="定義: 著者">著者</a>は、編集中の<a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a>とのやりとりのために<a href="#def-Alternative-Content" title="定義: 代替コンテンツ" class="termdef">代替コンテンツ</a>にアクセスする必要がある。</p>
 
     <div class="sc-level">
-	  <h4 class="sc-title"><a id="sc_a211" name="sc_a211"></a>A.2.1.1 Text Alternatives for Rendered Non-Text Content: </h4>
-	  <p class="sc-title"> If an <a class="termdef" href="#def-Editing-View" title="definition: editing view">editing-view</a> <a class="termdef" href="#def-Content-Renderings" title="definition: content rendering">renders</a> <a class="termdef" href="#def-Non-Text-Objects" title="definition: non-text objects">non-text content</a>, then any <a href="#def-Associated-Alternative-Content" title="definition: alternative content" class="termdef">programmatically associated</a> <a class="termdef" href="#def-Text-Alternatives" title="text alternatives for non-text content">text alternatives for the non-text content</a> can be <a class="termdef" href="#def-Programmatically-Determined" title="definition: programmatically determined">programmatically determined</a>. <span class="level">(<strong>Level A</strong>)</span></p>
+	  <h4 class="sc-title"><a id="sc_a211" name="sc_a211"></a>A.2.1.1 レンダリングされた非テキストコンテンツの代替テキスト: </h4>
+	  <p class="sc-title"><a class="termdef" href="#def-Editing-View" title="定義: 編集ビュー">編集ビュー</a>が<a class="termdef" href="#def-Non-Text-Objects" title="定義: 非テキストコンテンツ">非テキストコンテンツ</a>を<a class="termdef" href="#def-Content-Renderings" title="定義: コンテンツレンダリング">レンダリング</a>する場合、<a href="#def-Associated-Alternative-Content" title="定義: 代替コンテンツ" class="termdef">プログラムによって関連づけられた</a><a class="termdef" href="#def-Text-Alternatives" title="非テキストコンテンツの代替テキスト">非テキストコンテンツの代替テキスト</a>は<a class="termdef" href="#def-Programmatically-Determined" title="定義: プログラムによる解釈">プログラムによる解釈</a>することができる。<span class="level">（<strong>レベルA</strong>）</span></p>
 	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a211">Implementing A.2.1.1</a></div>
 	   </div>
@@ -483,10 +483,10 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 	   <!-- techs-only -->
 
 
-	  <h4 class="sc-title"><a id="sc_a212" name="sc_a212"></a>A.2.1.2 Alternatives for Rendered Time-Based Media: </h4><p class="sc-title"> If an <a class="termdef" href="#def-Editing-View" title="definition: editing view">editing-view</a> <a class="termdef" href="#def-Content-Renderings" title="definition: content rendering">renders</a> time-based media, then at least one of the following is true: <span class="level">(<strong>Level A</strong>)</span></p>
+	  <h4 class="sc-title"><a id="sc_a212" name="sc_a212"></a>A.2.1.2 レンダリングされた時間依存メディアの代替コンテンツ: </h4><p class="sc-title"><a class="termdef" href="#def-Editing-View" title="定義: 編集ビュー">編集ビュー</a>が時間依存メディアを<a class="termdef" href="#def-Content-Renderings" title="定義: コンテンツレンダリング">レンダリング</a>する場合、少なくとも次のいずれかを満たす。<span class="level">（<strong>レベルA</strong>）</span></p>
 	  <ul class="sc-bullets">
-      <li class="sc-bullet"><strong class="handle">(a) Option to Render:</strong> The <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides the <a href="#def-Option" title="definition: option" class="termdef">option</a> to render alternatives for the time-based media; or</li>
-	  <li class="sc-bullet"><strong class="handle">(b) User Agent Option:</strong> <a class="termdef" href="#def-Author" title="definition: authors">Authors</a> have the option to <a class="termdef" href="#def-Preview" title="definition: preview">preview</a> the time-based media in a <a class="termdef" href="#def-User-Agent" title="definition: user agent">user agent</a> that is able to render the alternatives.</li>
+      <li class="sc-bullet"><strong class="handle">(a) レンダリングのオプション:</strong> <a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>は時間依存メディアの代替コンテンツをレンラリングする<a href="#def-Option" title="定義: オプション" class="termdef">オプション</a>を提供する。または、</li>
+	  <li class="sc-bullet"><strong class="handle">(b) ユーザーエージェントのオプション:</strong> <a class="termdef" href="#def-Author" title="定義: 著者">著者</a>は<a class="termdef" href="#def-User-Agent" title="定義: ユーザーエージェント">ユーザーエージェント</a>のオプションによって、時間依存メディアの代替コンテンツを<a class="termdef" href="#def-Preview" title="定義: プレビュー">プレビュー</a>することができる。</li>
 	  </ul>
 
 	   <div class="gl-only">
