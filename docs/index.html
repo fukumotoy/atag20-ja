@@ -257,7 +257,7 @@ div.toc ul.toc li ul.toc li ul.toc li a {
             <li><a href="#principle_b1">B.1. 完全自動プロセスはアクセシブルなコンテンツを生成する</a>
               <ul>
 
-                <li><a href="#gl_b11">B.1.1. Ensure that automatically-specified content is accessible</a></li>
+                <li><a href="#gl_b11">B.1.1. 自動的に指定されたコンテンツがアクセシブルであることを確認する</a></li>
 
                 <li><a href="#gl_b12">B.1.2. Ensure that accessibility information is preserved</a></li>
               </ul>
@@ -906,15 +906,15 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 
 <h2 class="principle"><a id="principle_b1" name="principle_b1"></a>原則 B.1: 完全自動プロセスはアクセシブルなコンテンツを生成する</h2>
 
-<h3 class="guideline"><a name="gl_b11" id="gl_b11"> </a> Guideline B.1.1: Ensure that automatically-specified content is accessible. <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b11">Implementing B.1.1</a>] </span> </h3>
+<h3 class="guideline"><a name="gl_b11" id="gl_b11"> </a> ガイドライン B.1.1: 自動的に指定されたコンテンツがアクセシブルであることを確認する <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b11">Implementing B.1.1</a>] </span> </h3>
 
-<p class="rationale">Rationale: If <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tools</a> <span class="sc"><a href="#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">automatically</a></span> produce <span class="sc"><a class="termdef" href="#def-Web-Content" title="definition: web content">web content</a></span> that includes <a href="#def-Web-Content-Accessibility-Problem" title="definition: web content accessibility problems"  class="termdef">accessibility problems (WCAG)</a>, then this will impose additional <a href="#def-Repairing" title="definition: repairing" class="termdef">repair</a> tasks on <a href="#def-Author" title="definition: authors" class="termdef">authors</a>.</p>
+<p class="rationale">根拠: <a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>が<a href="#def-Web-Content-Accessibility-Problem" title="定義: ウェブコンテンツのアクセシビリティ問題"  class="termdef">アクセシビリティ問題 (WCAG)</a>を含む<span class="sc"><a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a></span>を<span class="sc"><a href="#def-Content-Auto-Gen" title="定義: 自動生成されるコンテンツ" class="termdef">自動的に</a></span>生成する場合、<a href="#def-Author" title="定義: 著者" class="termdef">著者</a>に追加の<a href="#def-Repairing" title="定義: 修正" class="termdef">修正</a>作業を強いることになる。</p>
 <div class="sc-level">
 
-  <h4 class="sc-title"><a id="sc_b111" name="sc_b111"> </a>B.1.1.1  Content Auto-Generation After Authoring Sessions (WCAG): </h4>
-  <p class="sc-title">The <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> does not <a href="#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">automatically generate</a> <a class="termdef" href="#def-Web-Content" title="definition: web content">web content</a> after the <a href="#def-End-Auth-Session" title="definition: end of an authoring session" class="termdef">end of an authoring session,</a> or, <a href="#def-Author" title="definition: authors" class="termdef">authors</a> can specify that the content be <span class="rationale"><a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible Web content">accessible web content (WCAG)</a></span>. <span class="level">(<strong>Level A</strong> to meet WCAG 2.0 Level A success criteria; <strong>Level AA</strong> to meet WCAG 2.0 Level A and AA success criteria; <strong>Level AAA</strong> to meet all WCAG 2.0 success criteria)</span></p>
+  <h4 class="sc-title"><a id="sc_b111" name="sc_b111"> </a>B.1.1.1 オーサリングセッション後に自動生成されるコンテンツ(WCAG): </h4>
+  <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>は<a href="#def-End-Auth-Session" title="定義: オーサリングセッションの終了" class="termdef">オーサリングセッションの終了</a>後に<a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a>を<a href="#def-Content-Auto-Gen" title="定義: 自動生成されたコンテンツ" class="termdef">自動生成</a>しない、または<a href="#def-Author" title="定義: 著者" class="termdef">著者</a>がコンテンツに<span class="rationale"><a class="termdef" href="#def-Accessible-Web-Content" title="定義: アクセシブルなウェブコンテンツ">アクセシブルなウェブコンテンツ (WCAG)</a></span>を指定することができる。<span class="level">（<strong>レベルA</strong>はWCAG 2.0のレベルAの達成基準; <strong>レベルAA</strong>はWCAG 2.0のレベルAとAAの達成基準; <strong>レベルAAA</strong>はWCAG 2.0のすべての達成基準を満たす）</span></p>
 <ul class="sc-notes">
-  <li class="sc-note"><em class="note-handle">Note:</em> This success criterion applies only to automatic processes specified by the <a class="termdef" href="#def-Developer" title="definition: authoring tool developers">authoring tool developer</a>. It does not apply when <a class="termdef" href="#def-Author-Actions-Prevent" title="definition: author actions prevent generation of accessible web content">author actions prevent generation of accessible web content (WCAG)</a>.</li></ul>
+  <li class="sc-note"><em class="note-handle">注:</em> この達成基準は、<a class="termdef" href="#def-Developer" title="定義: オーサリングツールの開発者">オーサリングツールの開発者</a>が指定した自動プロセスのみに適用される。<a class="termdef" href="#def-Author-Actions-Prevent" title="定義: アクセシブルなウェブコンテンツの生成を妨げる著者のアクション">アクセシブルなウェブコンテンツ(WCAG)の生成を妨げる著者のアクション</a>の場合は適用されない。</li></ul>
 	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b111">Implementing B.1.1.1</a></div>
 	   </div>
@@ -922,17 +922,17 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 
    <!-- techs-only -->
 
-  <h4 class="sc-title"><a id="sc_b112" name="sc_b112"> </a>B.1.1.2 Content Auto-Generation During Authoring Sessions (WCAG):</h4>
-   If the <span class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a></span> provides the functionality for <span class="sc-title"><a href="#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">automatically generating</a></span> <span class="sc-title"><a class="termdef" href="#def-Web-Content" title="definition: web content">web content</a></span> during an <a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">authoring session</a>, then at least one of the following is true: <span class="level">(<strong>Level A</strong> to meet WCAG 2.0 Level A success criteria; <strong>Level AA</strong> to meet WCAG 2.0 Level A and AA success criteria; <strong>Level AAA</strong> to meet all WCAG 2.0 success criteria)</span>
+  <h4 class="sc-title"><a id="sc_b112" name="sc_b112"> </a>B.1.1.2 オーサリングセッション中に自動生成されるコンテンツ(WCAG):</h4>
+   <span class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a></span>が<a href="#def-Authoring-Session" title="定義: オーサリングセッション" class="termdef">オーサリングセッション</a>中に<span class="sc-title"><a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a></span>を<span class="sc-title"><a href="#def-Content-Auto-Gen" title="定義: 自動生成されたコンテンツ" class="termdef">自動的に生成</a></span>する機能を提供する場合、次のいずれかを少なくともひとつ満たす。<span class="level">（<strong>レベルA</strong>はWCAG 2.0のレベルAの達成基準; <strong>レベルAA</strong>はWCAG 2.0のレベルAとAAの達成基準; <strong>レベルAAA</strong>はWCAG 2.0のすべての達成基準を満たす）</span>
      <ul class="sc-bullets">
-       <li class="sc-bullet"><strong class="handle">(a) Accessible:</strong> The content is <span class="rationale"><a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible Web content">accessible web content (WCAG) </a></span> without author input; or </li>
-       <li class="sc-bullet"><strong class="handle">(b) Prompting:</strong> During the automatic generation process, <span class="sc-title"><a href="#def-Author" title="definition: authors" class="termdef">authors</a></span> are <a href="#def-Prompt" title="definition: prompt" class="termdef">prompted</a> for any required <a class="termdef" href="#def-Accessibility-Information" title="definition: accessibility information">accessibility information (WCAG)</a>; or </li>
-       <li class="sc-bullet"><strong class="handle">(c) Automatic Checking:</strong> After the automatic generation process, accessibility <a href="#def-Checking" title="definition: checking" class="termdef">checking</a> is automatically performed; or </li>
-       <li class="sc-bullet"><strong class="handle">(d) Checking Suggested:</strong> After the automatic generation process, the authoring tool prompts authors to perform accessibility checking. </li>
+       <li class="sc-bullet"><strong class="handle">(a) アクセシブル:</strong> コンテンツは、著者の入力なしで<span class="rationale"><a class="termdef" href="#def-Accessible-Web-Content" title="定義: アクセシブルなウェブコンテンツ">アクセシブルなウェブコンテンツ(WCAG)</a></span>になる。または、</li>
+       <li class="sc-bullet"><strong class="handle">(b) 要求:</strong> 自動生成のプロセス中に、<span class="sc-title"><a href="#def-Author" title="定義: 著者" class="termdef">著者</a></span>はいくつかの必要な<a class="termdef" href="#def-Accessibility-Information" title="定義: アクセシビリティ情報">アクセシビリティ情報(WCAG)</a><a href="#def-Prompt" title="定義: 要求" class="termdef">要求</a>される。または、</li>
+       <li class="sc-bullet"><strong class="handle">(c) 自動チェック:</strong> 自動生成のプロセス後、アクセシビリティの<a href="#def-Checking" title="定義: チェック" class="termdef">チェック</a>が自動的に実行される。または、</li>
+       <li class="sc-bullet"><strong class="handle">(d) チェックの提案:</strong> 自動生成のプロセス後、オーサリングツールは著者にアクセシビリティチェックを実行するように要求する。</li>
      </ul>
    <ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note 1:</em> Automatic generation includes automatically selecting <a href="#def-Template" title="definition: template" class="termdef">templates</a> for authors.</li>
-	<li class="sc-note"><em class="note-handle">Note 2:</em> This success criterion applies only to automatic processes specified by the <a class="termdef" href="#def-Developer" title="definition: authoring tool developers">authoring tool developer</a>. It does not apply when <a class="termdef" href="#def-Author-Actions-Prevent" title="definition: author actions prevent generation of accessible web content">author actions prevent generation of accessible web content (WCAG)</a>.</li>
+    <li class="sc-note"><em class="note-handle">注1:</em> 自動生成には著者による<a href="#def-Template" title="定義: テンプレート" class="termdef">テンプレート</a>の選択も含まれる。</li>
+	<li class="sc-note"><em class="note-handle">注2:</em> この達成基準は、<a class="termdef" href="#def-Developer" title="定義: オーサリングツールの開発者">オーサリングツールの開発者</a>が指定した自動プロセスのみに適用される。<a class="termdef" href="#def-Author-Actions-Prevent" title="定義: アクセシブルなウェブコンテンツの生成を妨げる著者のアクション">アクセシブルなウェブコンテンツ(WCAG)の生成を妨げる著者のアクション</a>の場合は適用されない。</li>
 	</ul>
 	<div class="gl-only"><div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b112">Implementing B.1.1.2</a></div></div>
 
