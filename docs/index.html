@@ -233,7 +233,7 @@ div.toc ul.toc li ul.toc li ul.toc li a {
             </li>
             <li><a href="#principle_a3">A.3. 編集ビューは操作可能にする</a>
               <ul>
-                <li><a href="#gl_a31">A.3.1. (For the authoring tool user interface) Provide keyboard access to authoring features</a></li>
+                <li><a href="#gl_a31">A.3.1. （オーサリングツールのユーザーインターフェースに対して）オーサリング機能へのキーボードアクセスを提供する</a></li>
                 <li><a href="#gl_a32">A.3.2. (For the authoring tool user interface) Provide authors with enough time</a></li>
                 <li><a href="#gl_a33">A.3.3. (For the authoring tool user interface) Help authors avoid flashing that could cause seizures</a></li>
                 <li><a href="#gl_a34">A.3.4. (For the authoring tool user interface) Enhance navigation and editing via content structure</a></li>
@@ -533,18 +533,17 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 
 <h2 class="principle"><a name="principle_a3" id="principle_a3"> </a>原則 A.3: 編集ビューは操作可能にする</h2>
 
-    <h3 class="guideline"><a name="gl_a31" id="gl_a31"> </a> Guideline A.3.1: (For the authoring tool user interface) Provide keyboard access to authoring features. <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a31">Implementing A.3.1</a>] </span></h3>
+    <h3 class="guideline"><a name="gl_a31" id="gl_a31"> </a> ガイドライン A.3.1: （オーサリングツールのユーザーインターフェースに対して）オーサリング機能へのキーボードアクセスを提供する。<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a31">Implementing A.3.1</a>] </span></h3>
 
-    <p class="rationale">Rationale: Some <a class="termdef" href="#def-Author" title="definition: authors">authors</a> with
-    limited mobility or visual disabilities do not use a mouse and instead require keyboard interface access to all of the functionality of the <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a>.</p>
+    <p class="rationale">根拠: 可動に制限がある、または視覚障害を持つ一部の<a class="termdef" href="#def-Author" title="定義: 著者">著者</a>には、マウスを使用せず代わりにキーボードインターフェースで<a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>のすべての機能に対するアクセスを必要としている。</p>
 
 
 	<div class="sc-level">
-	  <h4 class="sc-title"><a id="sc_a311" name="sc_a311"></a>A.3.1.1 Keyboard  Access (Minimum): </h4><p class="sc-title">  All functionality of the <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> is operable through a <a class="termdef" href="#def-Keyboard-Interface" title="definition: keyboard interface">keyboard interface</a> without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. <span class="level">(<strong>Level A</strong>)</span></p>
+	  <h4 class="sc-title"><a id="sc_a311" name="sc_a311"></a>A.3.1.1 キーボードアクセス（最低限レベル）: </h4><p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>のすべての機能は、個々のキーストロークに特定のタイミングを要することなく、<a class="termdef" href="#def-Keyboard-Interface" title="定義: キーボードインターフェース">キーボードインターフェース</a>を通じて操作可能である。ただし、その根本的な機能が利用者の動作による始点から終点まで続く一連の軌跡に依存して実現されている場合は除く。<span class="level">（<strong>レベルA</strong>）</span></p>
 <ul class="sc-notes">
-    <li class="sc-notes"><em class="note-handle">Note 1:</em> Keyboard interfaces are programmatic services provided by many <a class="termdef" href="#def-Platform" title="definition: platform">platforms</a> that allow operation in a device independent manner. This success criterion does not imply the presence of a hardware keyboard.</li>
-        <li class="sc-note"><em class="note-handle">Note 2:</em> The path exception relates to the underlying function, not the input technique. For example, if using handwriting to enter text, the input technique (handwriting) requires path-dependent input, but the underlying function (text input) does not. The path exception encompasses other input variables that are continuously sampled from pointing devices, including pressure, speed, and angle.</li>
-    <li class="sc-note"><em class="note-handle">Note 3:</em> This success criterion does not forbid and should not discourage other input methods (e.g. mouse, touch) in addition to keyboard operation.</li></ul>
+    <li class="sc-notes"><em class="note-handle">注1:</em> キーボードインターフェースは、デバイスに依存しない操作が可能な多くの<a class="termdef" href="#def-Platform" title="定義: プラットフォーム">プラットフォーム</a>で提供されるプログラム型のサービスである。この達成基準はハードウェアキーボードの存在を意味するものではない。</li>
+        <li class="sc-note"><em class="note-handle">注2:</em> 軌跡の例外は、根本的な機能に関するものであり、入力手法に関するものではない。例えば手書き入力でテキストを入力する場合、入力手法（手書き）には軌跡に依存する入力が必要だが、根本的な機能（テキスト入力）には必要ない。軌跡の例外にはポインティングデバイスから連続的にサンプリングされる他の入力変数（圧力、速度、角度など）が含まれる。</li>
+    <li class="sc-note"><em class="note-handle">注3:</em> この達成基準は、キーボード操作に加えて、その他の入力手段（マウスやタッチなど）を提供することを禁ずるものでも妨げるものでもない。</li></ul>
 		<div class="gl-only">
 	     <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a311">Implementing A.3.1.1</a></div>
 	   </div>
@@ -552,8 +551,8 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 
 
 
-      <h4 class="sc-title"><a id="sc_a312" name="sc_a312"></a>A.3.1.2 No Keyboard Traps: </h4>
-      <p class="sc-title"> If keyboard focus can be moved to a <a class="termdef" href="#def-UI-Component" title="definition: user interface component">component</a> using a <a class="termdef" href="#def-Keyboard-Interface" title="definition: keyboard interface">keyboard interface</a>, then focus can be moved away from that component using only a keyboard interface. If it requires more than unmodified arrow or tab keys or other standard exit methods, <span class="sc-bullet"><a class="termdef" href="#def-Author" title="definition: authors">authors</a></span> are advised of the method for moving focus away. <span class="level">(<strong>Level A</strong>)</span></p>
+      <h4 class="sc-title"><a id="sc_a312" name="sc_a312"></a>A.3.1.2 キーボードトラップなし: </h4>
+      <p class="sc-title"><a class="termdef" href="#def-Keyboard-Interface" title="定義: キーボードインターフェース">キーボードインターフェース</a>を用いてキーボードフォーカスを<a class="termdef" href="#def-UI-Component" title="定義: ユーザーインターフェースコンポーネント">コンポーネント</a>に移動できる場合、キーボードインタフェースだけを用いてそのコンポーネントからフォーカスを移動することができる。さらに、修飾キーを伴わない矢印キー、 Tab キー、またはフォーカスを外すその他の標準的な方法でフォーカスを外せない場合は、フォーカスを外す方法が<span class="sc-bullet"><a class="termdef" href="#def-Author" title="定義: 著者">著者</a></span>に提供される。<span class="level">（<strong>レベルA</strong>）</span></p>
       <div class="gl-only">
         <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a312">Implementing A.3.1.2</a></div>
 	   </div>
