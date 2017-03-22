@@ -259,7 +259,7 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 
                 <li><a href="#gl_b11">B.1.1. 自動的に指定されたコンテンツがアクセシブルであることを確認する</a></li>
 
-                <li><a href="#gl_b12">B.1.2. Ensure that accessibility information is preserved</a></li>
+                <li><a href="#gl_b12">B.1.2. アクセシビリティ情報が保持されていることを確認する</a></li>
               </ul>
             </li>
             <li><a href="#principle_b2">B.2. 著者はアクセシブルなコンテンツを生成する際にサポートされる</a>
@@ -942,21 +942,21 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 <!-- sc-level -->
 
 
-<h3 class="guideline"><a id="gl_b12" name="gl_b12"> </a> Guideline B.1.2: Ensure that accessibility information is preserved. <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b12">Implementing B.1.2</a>] </span> </h3>
+<h3 class="guideline"><a id="gl_b12" name="gl_b12"> </a> ガイドライン B.1.2: アクセシビリティ情報が保持されていることを確認する。 <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b12">Implementing B.1.2</a>] </span> </h3>
 
-<p class="rationale">Rationale: <a class="termdef" href="#def-Accessibility-Information" title="definition: accessibility information">Accessibility information (WCAG)</a> is critical to maintaining comparable levels of <a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible Web content">web content accessibility (WCAG)</a> between the input and output of <a class="termdef" href="#def-Transformation" title="definition: transformation">web content transformations</a>.</p>
+<p class="rationale">根拠: <a class="termdef" href="#def-Accessibility-Information" title="定義: アクセシビリティ情報">アクセシビリティ情報(WCAG)</a>は、<a class="termdef" href="#def-Transformation" title="定義: 変換">ウェブコンテンツの変換</a>による入力と出力の間で同等レベルの<a class="termdef" href="#def-Accessible-Web-Content" title="定義: アクセシブルなウェブコンテンツ">ウェブコンテンツアクセシビリティ (WCAG)</a>を維持するために重要である。</p>
 <div class="sc-level">
 
-  <h4 class="sc-title"><a id="sc_b121" name="sc_b121"> </a>B.1.2.1 Restructuring and Recoding Transformations (WCAG): </h4>
-  <p class="sc-title"> If the <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides <a class="termdef" href="#def-Restructuring-Transformation" title="definition: restructuring transformations">restructuring transformations</a> or <a class="termdef" href="#def-Recoding-Transformation" title="definition: recoding transformations">re-coding transformations</a>, and if equivalent mechanisms exist in the web content technology of the output, then at least one of the following is true:  <span class="level">(<strong>Level A</strong> to meet WCAG 2.0 Level A success criteria; <strong>Level AA</strong> to meet WCAG 2.0 Level A and AA success criteria; <strong>Level AAA</strong> to meet all WCAG 2.0 success criteria)</span></p>
+  <h4 class="sc-title"><a id="sc_b121" name="sc_b121"> </a>B.1.2.1 再構築と再コード化の変換 (WCAG): </h4>
+  <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>が<a class="termdef" href="#def-Restructuring-Transformation" title="定義: 再構築の変換">再構築の変換</a>、または<a class="termdef" href="#def-Recoding-Transformation" title="定義: 再コード化の変換">再コード化の変換</a>を提供し、出力のウェブコンテンツの技術と同等なメカニズムが存在する場合、次のいずれかを少なくともひとつ満たす。<span class="level">（<strong>レベルA</strong>はWCAG 2.0のレベルAの達成基準; <strong>レベルAA</strong>はWCAG 2.0のレベルAとAAの達成基準; <strong>レベルAAA</strong>はWCAG 2.0のすべての達成基準を満たす）</span></p>
 <ul class="sc-bullets">
-	  <li class="sc-bullet"><strong class="handle">(a) Preserve:</strong> <a class="termdef" href="#def-Accessibility-Information" title="definition: accessibility information">Accessibility information (WCAG)</a> is preserved in the output; or </li>
-	  <li class="sc-bullet"><strong class="handle">(b) Warning:</strong> Authors have the <span class="sc-title"><a class="termdef" href="#def-Default-Option" title="definition: default option" >default option</a></span> to be warned that accessibility information (WCAG) may be lost (e.g. when saving a vector graphic into a raster image format); or </li>
-	  <li class="sc-bullet"><strong class="handle">(c) Automatic Checking:</strong> After the transformation, accessibility <a href="#def-Checking" title="definition: checking" class="termdef">checking</a> is automatically performed; or </li>
-	  <li class="sc-bullet"><strong class="handle">(d) Checking Suggested:</strong> After the transformation, the authoring tool <a href="#def-Prompt" title="definition: prompt" class="termdef">prompts</a> authors to perform accessibility checking. </li></ul>
+	  <li class="sc-bullet"><strong class="handle">(a) 保存:</strong> <a class="termdef" href="#def-Accessibility-Information" title="定義: アクセシビリティ情報">アクセシビリティ情報(WCAG)</a>は出力に保存される。または、</li>
+	  <li class="sc-bullet"><strong class="handle">(b) 警告:</strong> アクセシビリティ情報（WCAG）が失われる可能性があることを警告する<span class="sc-title"><a class="termdef" href="#def-Default-Option" title="定義: デフォルトのオプション" >デフォルトのオプション</a></span>がある（例えば、ベクターグラフィックをラスタイメージフォーマットに保存する場合など）、または</li>
+	  <li class="sc-bullet"><strong class="handle">(c) 自動チェック:</strong> 変換後、アクセシビリティ<a href="#def-Checking" title="定義: チェック" class="termdef">チェック</a>が自動的に実行される、または</li>
+	  <li class="sc-bullet"><strong class="handle">(d) チェックの提案:</strong> オーサリングツールは著者にアクセシビリティチェックを実行するように<a href="#def-Prompt" title="定義: 要求" class="termdef">要求</a>する。</li></ul>
    <ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note 1:</em> For <a class="termdef" href="#def-Text-Alternatives" title="text alternatives for non-text content">text alternatives for  non-text content</a>, see <a href="#sc_b124">Success Criterion B.1.2.4</a>.</li>
-    <li class="sc-note"><em class="note-handle">Note 2:</em> This success criteria only applies when the output technology is <a href="#conf-techs-produced">&quot;included&quot;</a> for conformance.</li>
+    <li class="sc-note"><em class="note-handle">注1:</em> <a class="termdef" href="#def-Text-Alternatives" title="非テキストコンテンツの代替テキスト">非テキストコンテンツの代替テキスト</a>の場合は、<a href="#sc_b124">達成基準B.1.2.4</a>を参照。</li>
+    <li class="sc-note"><em class="note-handle">注2:</em> この達成基準は、出力技術が適合に<a href="#conf-techs-produced">「含まれている」</a>場合にのみ適用される。</li>
    </ul>
 
 	  	   <div class="gl-only">
@@ -966,8 +966,8 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 
 
 
-  <h4 class="sc-title"><a id="sc_b122" name="sc_b122"> </a>B.1.2.2 Copy-Paste Inside Authoring Tool (WCAG):</h4>
-  <p class="sc-title"> If the <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> supports copy and paste of <a class="termdef" href="#def-Structured-Web-Content" title="definition: structured content">structured content</a>, then any <a class="termdef" href="#def-Accessibility-Information" title="definition: accessibility information">accessibility information (WCAG)</a> in the copied content is preserved when the authoring tool is both the source and destination of the copy-paste and the source and destination use the same <a href="#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">web content technology</a>. <span class="level">(<strong>Level A</strong> to meet WCAG 2.0 Level A success criteria; <strong>Level AA</strong> to meet WCAG 2.0 Level A and AA success criteria; <strong>Level AAA</strong> to meet all WCAG 2.0 success criteria)</span></p>
+  <h4 class="sc-title"><a id="sc_b122" name="sc_b122"> </a>B.1.2.2 オーサリングツール内のコピーペースト (WCAG):</h4>
+  <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>が<a class="termdef" href="#def-Structured-Web-Content" title="定義: 構造化されたコンテンツ">構造化されたコンテンツ</a>のコピー＆ペーストをサポートしている場合、オーサリングツールは、ソースとコピーの貼り付け先、およびソースと結果が同等の<a href="#def-Web-Content-Technology" title="定義: 技術（ウェブコンテンツ）" class="termdef">ウェブコンテンツ技術</a>を使用している際に、コピーされたコンテンツの<a class="termdef" href="#def-Accessibility-Information" title="定義: アクセシビリティ情報">アクセシビリティ情報(WCAG)</a>はすべて保持される。<span class="level">（<strong>レベルA</strong>はWCAG 2.0のレベルAの達成基準; <strong>レベルAA</strong>はWCAG 2.0のレベルAとAAの達成基準; <strong>レベルAAA</strong>はWCAG 2.0のすべての達成基準を満たす）</span></p>
   <div class="gl-only">
         <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b122">Implementing B.1.2.2</a></div>
       </div>
@@ -979,8 +979,8 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 </div>
 <!-- sc-level -->
 <div class="sc-level">
-  <h4 class="sc-title"><a id="sc_b123" name="sc_b123"> </a>B.1.2.3 Optimizations Preserve Accessibility: </h4>
-  <p class="sc-title"> If the <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides <a href="#def-Optimizing-Transformation" class="termdef" title="definition: authoring tool" >optimizing web content transformations</a>, then any <a class="termdef" href="#def-Accessibility-Information" title="definition: accessibility information">accessibility information (WCAG)</a> in the input is preserved in the output. <span class="level">(<strong>Level A</strong>)</span>.</p>
+  <h4 class="sc-title"><a id="sc_b123" name="sc_b123"> </a>B.1.2.3 アクセシビリティを保持する最適化: </h4>
+  <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>が<a href="#def-Optimizing-Transformation" class="termdef" title="定義: ウェブコンテンツの最適化の変換">ウェブコンテンツの最適化の変換</a>を提供する場合、出力には入力した<a class="termdef" href="#def-Accessibility-Information" title="定義: アクセシビリティ情報">アクセシビリティ情報(WCAG)</a>を保持する。<span class="level">（<strong>レベルA</strong>）</span></p>
 	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b123">Implementing B.1.2.3</a></div>
 	   </div>
@@ -988,9 +988,9 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 
 
 
-  <h4 class="sc-title"><a id="sc_b124" name="sc_b124"> </a>B.1.2.4 Text Alternatives for Non-Text Content are Preserved: </h4><p class="sc-title"> If the <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides <a class="termdef" href="#def-Transformation" title="definition: transformation">web content transformations</a> that preserve <a class="termdef" href="#def-Non-Text-Objects" title="definition: non-text content">non-text content</a> in the output, then any <a class="termdef" href="#def-Text-Alternatives" title="text alternatives for non-text content">text alternatives for that non-text content</a> are also preserved, if equivalent mechanisms exist in the <a href="#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">web content technology</a> of the output. <span class="level">(<strong>Level A</strong>)</span>.</p>
+  <h4 class="sc-title"><a id="sc_b124" name="sc_b124"> </a>B.1.2.4 非テキストコンテンツの代替テキストの保持: </h4><p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>が出力時に<a class="termdef" href="#def-Non-Text-Objects" title="定義: 非テキストコンテンツ">非テキストコンテンツ</a>を保持する<a class="termdef" href="#def-Transformation" title="定義: 変換">ウェブコンテンツの変換</a>を提供する場合、出力の<a href="#def-Web-Content-Technology" title="定義: 技術（ウェブコンテンツ）" class="termdef">ウェブコンテンツ技術</a>に同等のメカニズムが存在するならば、その<a class="termdef" href="#def-Text-Alternatives" title="非テキストコンテンツの代替テキスト">非テキストコンテンツの代替テキスト</a>も保持される。<span class="level">（<strong>レベルA</strong>）</span></p>
   <ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note:</em> This success criterion only applies when the output technology is <a href="#conf-techs-produced">&quot;included&quot;</a> for conformance.</li>
+    <li class="sc-note"><em class="note-handle">注:</em> この達成基準は、出力技術が適合に<a href="#conf-techs-produced">「含まれている」</a>場合にのみ適用される。</li>
   </ul>
 	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b124">Implementing B.1.2.4</a></div>
