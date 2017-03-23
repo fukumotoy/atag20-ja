@@ -274,7 +274,7 @@ div.toc ul.toc li ul.toc li ul.toc li a {
             </li>
             <li><a href="#principle_b3">B.3. 著者は既存コンテンツのアクセシビリティの改善をする際にサポートされる</a>
               <ul>
-                <li><a href="#gl_b31">B.3.1. Assist authors in checking for accessibility problems</a></li>
+                <li><a href="#gl_b31">B.3.1. アクセシビリティの問題のためのチェック時に著者を支援する</a></li>
 
                 <li><a href="#gl_b32">B.3.2. Assist authors in repairing accessibility problems</a></li>
               </ul>
@@ -1188,15 +1188,15 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 
   <h2 class="principle"><a id="principle_b3" name="principle_b3"> </a>原則 B.3: 著者は既存コンテンツのアクセシビリティの改善をする際にサポートされる</h2>
 
-    <h3 class="guideline"><a id="gl_b31" name="gl_b31"> </a> Guideline B.3.1: Assist authors in checking for accessibility problems. <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b31">Implementing B.3.1</a>]</span> </h3>
-    <p class="rationale">Rationale: When <a href="#def-Checking" title="definition: checking" class="termdef">accessibility checking</a> is an integrated function of the <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a>, it helps make <a class="termdef" href="#def-Author" title="definition: author">authors</a> aware of <a href="#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problems (WCAG)</a> during the authoring process, so they can be immediately addressed.</p>
+    <h3 class="guideline"><a id="gl_b31" name="gl_b31"> </a> ガイドライン B.3.1: アクセシビリティの問題のためのチェック時に著者を支援する。<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b31">Implementing B.3.1</a>]</span> </h3>
+    <p class="rationale">根拠: <a href="#def-Checking" title="定義: チェック" class="termdef">アクセシビリティのチェック</a>が<a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>の統合された機能である場合、オーサリングプロセス中に<a href="#def-Web-Content-Accessibility-Problem" title="定義: ウェブコンテンツのアクセシビリティ問題" class="termdef">ウェブコンテンツのアクセシビリティ問題(WCAG)</a>を<a class="termdef" href="#def-Author" title="定義: 著者">著者</a>に気付かせるのに役立ち、すぐに対処することができる。</p>
 
 <div class="sc-level">
-  <h4 class="sc-title"><a id="sc_b311" name="sc_b311"> </a>B.3.1.1 Checking Assistance (WCAG): </h4>
-  <p class="sc-title"> If the <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides <a class="termdef" href="#def-Author" title="definition: authors">authors</a> with the ability to add or modify <a class="termdef" href="#def-Web-Content" title="definition: web content">web content</a> in such a way that a <a href="#conf-rel-wcag">WCAG 2.0</a> success criterion can be violated, then   accessibility <a href="#def-Checking" title="definition: checking" class="termdef">checking</a> for that success criterion is provided (e.g. an HTML authoring tool that inserts images should check for alternative text; a <a href="#def-Video" title="definition: video" class="termdef">video</a> authoring tool with the ability to edit text tracks should check for captions). <span class="level">(<strong>Level A</strong> to meet WCAG 2.0 Level A success criteria; <strong>Level AA</strong> to meet WCAG 2.0 Level A and AA success criteria; <strong>Level AAA</strong> to meet all WCAG 2.0 success criteria)</span></p>
+  <h4 class="sc-title"><a id="sc_b311" name="sc_b311"> </a>B.3.1.1 チェックの補助(WCAG): </h4>
+  <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>が<a href="#conf-rel-wcag">WCAG 2.0</a>の達成基準に違反する可能性がある方法で<a class="termdef" href="#def-Author" title="定義: 著者">著者</a>に<a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a>を追加、または編集する機能を提供する場合、その達成基準に対するアクセシビリティの<a href="#def-Checking" title="定義: チェック" class="termdef">チェック</a>を提供する（例えば、画像を挿入するHTMLのオーサリングツールは代替テキストをチェックすべきであり、テキストトラックを編集可能な<a href="#def-Video" title="定義: 映像" class="termdef">映像</a>のオーサリングツールはキャプションをチェックするべきである）。<span class="level">（<strong>レベルA</strong>はWCAG 2.0のレベルAの達成基準; <strong>レベルAA</strong>はWCAG 2.0のレベルAとAAの達成基準; <strong>レベルAAA</strong>はWCAG 2.0のすべての達成基準を満たす）</span></p>
 
    <ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note:</em> <a class="termdef" href="#def-Automated-Checking" title="definition: automated checking">Automated </a> and <a class="termdef" href="#def-Semi-Automated-Checking" title="definition: semi-automated checking">semi-automated checking</a> is possible (and encouraged) for many types of <a href="#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problems (WCAG)</a>. However, <a href="#def-Manual-Checking" title="definition: manual checking" class="termdef">manual checking</a> is the minimum requirement to meet this success criterion. In manual checking,  the authoring tool provides <a class="termdef" href="#def-Author" title="definition: author">authors</a> with instructions for detecting problems, which authors  carry out by themselves. For more  information on checking, see <a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#checking-types">Implementing ATAG 2.0 - Appendix B: Levels of Checking Automation</a>.</li></ul>
+    <li class="sc-note"><em class="note-handle">注:</em> <a class="termdef" href="#def-Automated-Checking" title="定義: 自動チェック">自動</a>及び<a class="termdef" href="#def-Semi-Automated-Checking" title="定義: 半自動チェック">半自動チェック</a>は多くの種類の<a href="#def-Web-Content-Accessibility-Problem" title="定義: ウェブコンテンツのアクセシビリティ問題" class="termdef">ウェブコンテンツのアクセシビリティ問題(WCAG)</a>が起こりうる（また促す）。しかし、この達成基準を満たすための最小要件は<a href="#def-Manual-Checking" title="定義: 手動チェック" class="termdef">手動チェック</a>である。手動チェックでは、オーサリングツールは<a class="termdef" href="#def-Author" title="定義: 著者">著者</a>に問題を検出するための指示を与え、著者自身が実行する。チェックの詳細については、<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#checking-types">Implementing ATAG 2.0 - Appendix B: Levels of Checking Automation</a>を参照</li></ul>
 
 		<div class="gl-only">
 	     <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b311">Implementing B.3.1.1</a></div>
@@ -1207,19 +1207,19 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 
   <div class="sc-level">
 
-  <h4 class="sc-title"><a id="sc_b312" name="sc_b312"> </a>B.3.1.2 Help Authors Decide: </h4>
-  <p class="sc-title"> If the <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides <a href="#def-Checking" title="definition: checking" class="termdef">accessibility checking</a> that relies on <a class="termdef" href="#def-Author" title="definition: authors">authors</a> to decide whether potential web content accessibility problems (WCAG) are correctly identified (i.e. <a href="#def-Manual-Checking" title="definition: manual checking" class="termdef">manual checking</a> and <a href="#def-Semi-Automated-Checking" title="definition: semi-automated checking" class="termdef">semi-automated checking</a>), then the accessibility checking process provides instructions that describe how to decide.  <span class="level">(<strong>Level A</strong>)</span></p>
+  <h4 class="sc-title"><a id="sc_b312" name="sc_b312"> </a>B.3.1.2 著者の決定を支援: </h4>
+  <p class="sc-title">潜在的なウェブアクセシビリティの問題(WCAG)を正しく認識されているかどうかを<a class="termdef" href="#def-Author" title="定義: 著者">著者</a>の判断に頼る<a href="#def-Checking" title="定義: チェック" class="termdef">アクセシビリティのチェック</a>を<a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>が提供している場合（例えば、<a href="#def-Manual-Checking" title="定義: 手動チェック" class="termdef">手動チェック</a>や<a href="#def-Semi-Automated-Checking" title="定義: 半自動チェック" class="termdef">半自動チェック</a>など）、アクセシビリティチェックのプロセスは判断するための説明を提供する。<span class="level">（<strong>レベルA</strong>）</span></p>
 
 		<div class="gl-only">
 	     <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b312">Implementing B.3.1.2</a></div>
 	   </div>
 
 
-  <h4 class="sc-title"><a id="sc_b313" name="sc_b313"> </a>B.3.1.3 Help Authors Locate: </h4>
-  <p class="sc-title"> If the  <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides <a href="#def-Checking" title="definition: checking" class="termdef">checks</a> that require <a class="termdef" href="#def-Author" title="definition: author">authors</a> to decide whether a potential <a href="#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problem (WCAG)</a> is correctly identified (i.e. <a href="#def-Manual-Checking" title="definition: manual checking" class="termdef">manual checking</a> and <a href="#def-Semi-Automated-Checking" title="definition: semi-automated checking" class="termdef">semi-automated checking</a>), then the relevant content is identified to the authors. <span class="level">(<strong>Level A</strong>)</span></p>
+  <h4 class="sc-title"><a id="sc_b313" name="sc_b313"> </a>B.3.1.3 著者の特定を支援: </h4>
+  <p class="sc-title">潜在的な<a href="#def-Web-Content-Accessibility-Problem" title="定義: ウェブコンテンツのアクセシビリティの問題" class="termdef">ウェブコンテンツのアクセシビリティの問題(WCAG)</a>を正しく認識されているかどうかを<a class="termdef" href="#def-Author" title="定義: 著者">著者</a>の判断が必要な<a href="#def-Checking" title="定義: チェック" class="termdef">チェック</a>を<a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>が提供している場合（例えば、<a href="#def-Manual-Checking" title="定義: 手動チェック" class="termdef">手動チェック</a>や<a href="#def-Semi-Automated-Checking" title="定義: 半自動チェック" class="termdef">半自動チェック</a>）、関連コンテンツは著者に特定される。<span class="level">（<strong>レベルA</strong>）</span></p>
 
    <ul class="sc-notes">
-<li class="sc-note"><em class="note-handle">Note:</em> Depending on the nature of the <a class="termdef" href="#def-Editing-View" title="definition: editing view">editing-view</a> and the scope of the potential web content accessibility problem (WCAG), identification might involve highlighting elements or renderings of elements, displaying line numbers, or providing instructions.</li></ul>
+<li class="sc-note"><em class="note-handle">注:</em> <a class="termdef" href="#def-Editing-View" title="定義: 編集ビュー">編集ビュー</a>の性質と潜在的なウェブコンテンツのアクセシビリティの問題(WCAG)の規模に応じて、特定には要素やレンダリングされた要素のハイライト、行番号の表示、または指示の提供が含まれる。</li></ul>
 
 		<div class="gl-only">
 	     <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b313">Implementing B.3.1.3</a></div>
