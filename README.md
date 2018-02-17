@@ -1,6 +1,11 @@
 # Authoring Tool Accessibility Guidelines (ATAG) 2.0 日本語訳
-このリポジトリは[2015年9月24日に発行されたAuthoring Tool Accessibility Guidelines (ATAG) 2.0](http://www.w3.org/TR/2015/REC-ATAG20-20150924/)の日本語訳を管理しているものになります。日本語訳は参考情報であって、公式な文書ではありません。また、翻訳に誤りがありえます。
+このリポジトリは、[ウェブアクセシビリティ基盤委員会 (WAIC) 翻訳ワーキンググループ (WG4)](http://waic.jp/committee/wg4/) が管理する、[2015年9月24日に発行されたAuthoring Tool Accessibility Guidelines (ATAG) 2.0](http://www.w3.org/TR/2015/REC-ATAG20-20150924/)の日本語訳を管理しているものになります。日本語訳は参考情報であって、公式な文書ではありません。また、翻訳に誤りがありえます。
 
+GitHub Pages により、翻訳成果物は
+
+- https://waic.github.io/atag20-ja/
+
+から閲覧可能です。
 ## Contribution
 誤字脱字、誤訳、日本語になっていない、訳者の知識不足による不備、翻訳の提案などについては[Contribution Guidelines](https://github.com/fukumotoy/atag20-ja/blob/master/CONTRIBUTING.md)を参照してください。
 
