@@ -1419,64 +1419,54 @@ div.toc ul.toc li ul.toc li ul.toc li a {
   <h5><a name="conf-partial-component" id="conf-partial-component"></a>ATAG 2.0 部分適合 - プロセスコンポーネント（レベルA、AA、またはAAA）</h5>
   <p>This conformance option <em>may</em> be selected when an <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> would require additional tools or components<strong> </strong>in order to conform as a complete authoring system. This  option may be used for components with very limited functionality (e.g. a  plug-in) up to nearly complete systems (e.g. a markup editor that only lacks  accessibility checking functionality). </p>
   <p>The level of conformance (A, AA, or AAA) is determined as above except that, for any &quot;no&quot; answers, the tool must not prevent the success criteria from being met by another authoring process component as part of a complete authoring system.</p>
-  <p> <em>Note 1:</em>  Authoring tools would not be able to meet partial conformance if they prevent additional authoring process components from meeting the failed success criteria (e.g. for security reasons).<br />
-    <em>Note 2:</em> The <a href="#part_a_applic_notes">Part A Conformance Applicability Notes</a> and <a href="#part_b_applic_notes">Part B Conformance Applicability Notes</a> must be applied. </p>
+  <p> <em>注記 1:</em> 追加のオーサリングプロセスコンポーネントが (例えば、セキュリティ上の理由のため) 失敗した達成基準を満たさないように防ぐ場合、オーサリングツールは部分適合を満たすことができないだろう。<br />
+    <em>注記 2:</em> <a href="#part_a_applic_notes">パート A の適合適用性に関する注記</a>及び<a href="#part_b_applic_notes">パート B の適合適用性に関する注記</a>が適用されなければならない。 </p>
   <h5><a name="conf-partial-platform-limits" id="conf-partial-platform-limits"></a>ATAG 2.0 部分適合 - プラットフォームの制限（レベルA、AA、またはAAA）</h5>
-  <p>This conformance option may be selected when an  <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> is unable to meet one or more success criteria because of intrinsic limitations of the <a class="termdef" href="#def-Platform" title="definition: platform">platform</a> (e.g. lacking a <a class="termdef" href="#def-Accessibility-Platform-Service" title="definition: accessibility platform architecture">platform accessibility service</a>). The (optional) explanation of conformance claim results should explain what platform features are missing. </p>
+  <p><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">オーサリングツール</a>が (例えば、<a class="termdef" href="#def-Accessibility-Platform-Service" title="definition: accessibility platform architecture">プラットフォームのアクセシビリティサービス</a>を欠いているなど) <a class="termdef" href="#def-Platform" title="definition: platform">プラットフォーム</a>固有の制限のために一つ以上の達成基準を満たすことができない場合、この適合オプションが選択されてもよい。(オプションの) 適合表明結果の説明は、どのプラットフォームの機能が欠けているかを説明することが望ましい。 </p>
 
   <h4><a name="conf-techs-produced" id="conf-techs-produced"> </a>ウェブコンテンツ技術の制作:</h4>
-  <p><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">Authoring tools</a> conform to ATAG 2.0 with respect to the production of specific <a class="termdef" href="#def-Web-Content-Technology" title="definition: technology (Web content)">web content technologies</a> (e.g.  Level A Conformance with respect to the production of XHTML 1.0).</p>
+  <p><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">オーサリングツール</a>は、特定の<a class="termdef" href="#def-Web-Content-Technology" title="definition: technology (Web content)">ウェブコンテンツ技術</a>の制作物に関して ATAG 2.0 に適合する (例えば、XHTML 1.0 の制作物に関して、レベル A 適合)。</p>
 
-  <p>If an   authoring tool is capable of producing multiple web content technologies, then the conformance may include only a subset of these  technologies as long as the subset includes both any technologies that the <a class="termdef" href="#def-Developer" title="definition: authoring tool developers">developer</a> sets for <a href="#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">automatically-generated content</a> or that the developer sets as the default for  <a class="termdef" href="#def-Content-Author-Gen" title="definition: author generated content">author-generated content</a>. The subset may include &quot;interim&quot; formats that are not intended for <a href="#def-Publishing" title="definition: publishing" class="termdef">publishing</a> to <a href="#def-End-Users" title="definition: end user" class="termdef">end users</a>, though this is not required.  </p>
+  <p>オーサリングツールが複数のウェブコンテンツ技術を制作する能力がある場合、<a class="termdef" href="#def-Developer" title="definition: authoring tool developers">開発者</a>が<a href="#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">自動的に生成されたコンテンツ</a>を設定する、又は開発者が<a class="termdef" href="#def-Content-Author-Gen" title="definition: author generated content">コンテンツ制作者生成コンテンツ</a>のデフォルトとして設定する、両方の任意の技術を含む限り、適合は複数のウェブコンテンツ技術のサブセットのみを含んでもよい。これは必須ではないものの、<a href="#def-End-Users" title="definition: end user" class="termdef">エンドユーザ</a>に<a href="#def-Publishing" title="definition: publishing" class="termdef">公開する</a>ことを意図しない「中間」形式を含んでもよい。  </p>
   <h4><a name="conf-live-publishing" id="conf-live-publishing"></a>ライブパブリッシングオーサリングツール: </h4>
-  <p>ATAG 2.0 may be applied to authoring  tools with workflows that involve live authoring of web content (e.g. some  collaborative tools). Due to the challenges inherent in real-time publishing, conformance  to <a href="#part_b">Part B</a> of ATAG 2.0 for these authoring tools may involve some combination of  support before (e.g. support in preparing accessible slides), during (e.g. live captioning as  WCAG 2.0 requires at Level AA) and after the live <span class="sc"><a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">authoring session</a></span> (e.g. the  ability to add a transcript to the archive of a presentation that was initially  published in real-time). For more information, see <a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#realtime-production">Implementing ATAG 2.0 -  Appendix E: Authoring Tools for Live Web Content</a>.</p>
+  <p>ATAG 2.0 は、ウェブコンテンツのライブオーサリング (例えば、いくつかのコラボレーションツール) を伴うワークフローをオーサリングツールに適用してもよい。 リアルタイム発行に固有の問題のため、これらのオーサリングツールの ATAG 2.0 <a href="#part_b">パート B</a> への適合は、ライブ<span class="sc"><a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">オーサリングセッション</a></span>の前 (例えば、アクセシブルなスライドの準備におけるサポート)、間 (例えば、WCAG 2.0 がレベル AA で要求されるライブキャプション)、及び後 (例えば、リアルタイムで最初に公開されたプレゼンテーションのアーカイブにトランスクリプトを追加する機能など) のいくつかの組み合わせを伴ってもよい。詳細については、<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#realtime-production">ATAG 2.0 を実装する - 附録 E: ライブウェブコンテンツのためのオーサリングツール</a>を参照のこと。</p>
 
   <h3><a name="conf-claim" id="conf-claim"> </a>適合表明（任意）</h3>
-  <p><em>Note:</em> As with any software application, authoring tools can be collections of components.  A conformance claim can only be made by a responsible  entity. Any other attempted &quot;claims&quot; are, in fact, reviews.</p>
+  <p><em>注記:</em> 任意のソフトウェアアプリケーションと同様に、オーサリングツールは、コンポーネントの集まりとすることができる。適合表明は、責任エンティティによってのみ行うことができる。その他の計画された「表明」は、実際には、レビューである。</p>
 
 <h4><a name="conf-claim-req-components" id="conf-claim-req-components"> </a>適合表明の必須項目</h4>
   <ol>
-    <li><strong>Date</strong> of the claim.</li>
-    <li><strong>ATAG 2.0 </strong> <strong>version </strong>and<strong> URI</strong></li>
-    <li><a href="#conf-levels"><strong>Conformance level</strong></a> satisfied.</li>
-    <li><strong>Authoring tool information:</strong> The name of the <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> and sufficient additional information to specify the version (e.g. vendor   name, version number (or version range), required patches or updates, <a class="termdef" href="#def-Human-Language" title="definition: human language">human language</a> of the user interface or <a class="termdef" href="#def-Documentation" title="definition: documentation">documentation</a>).
+    <li>表明<strong>日</strong></li>
+    <li><strong>ATAG 2.0 </strong>の<strong>バージョン</strong>及び <strong>URI</strong></li>
+    <li>満足する<a href="#conf-levels"><strong>適合レベル</strong></a>。</li>
+    <li><strong>オーサリングツール情報:</strong> <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">オーサリングツール</a>の名前及びバージョンを指定するのに十分な追加情報 (例えば、ベンダ名、バージョン番号 (又はバージョンの範囲)、必要なパッチ又は更新、ユーザインタフェース又は<a class="termdef" href="#def-Documentation" title="definition: documentation">文書</a>の<a class="termdef" href="#def-Human-Language" title="definition: human language">自然言語</a>)。
       <ul>
-        <li><em>Note:</em> If the authoring tool is a collection
-          of software applications (e.g. a <a href="#def-Markup" title="definition: markup" class="termdef">markup</a> editor, an image editor,
-          and a validation tool), then information must be provided separately
-          for each application, although the conformance claim will treat them
-          as a whole.</li>
+        <li><em>注記:</em> オーサリングツールが、ソフトウェアアプリケーション (例えば、<a href="#def-Markup" title="definition: markup" class="termdef">マークアップ</a>エディタ、画像エディタ、検証ツールなど) の集合である場合、適合表明は全体としてアプリケーションを処理するが、情報は、アプリケーションごとに個別に設けなければならない。</li>
 
       </ul>
     </li>
-    <li><strong>Platform(s):</strong> The <a class="termdef" href="#def-Platform" title="definition: platform">platform(s)</a> upon
-            which the authoring tool operates:
+    <li><strong>プラットフォーム:</strong> オーサリングツールが影響する<a class="termdef" href="#def-Platform" title="definition: platform">プラットフォーム</a>
       <ul>
-        <li><a name="conf-user-agents" id="conf-user-agents"></a>For <strong><a href="#def-User-Agent" title="definition: user agent" class="termdef">user agent</a> platform(s)</strong> (used
-            to evaluate <a class="termdef" href="#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)">web-based authoring tool user interfaces</a>): provide the name and version information of the user
-            agent(s).</li>
+        <li><a name="conf-user-agents" id="conf-user-agents"></a>(<a class="termdef" href="#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)">ウェブベースのオーサリングツール</a>のユーザインタフェースを評価するために使用される) <strong><a href="#def-User-Agent" title="definition: user agent" class="termdef">ユーザエージェント</a>プラットフォーム</strong>の場合: ユーザエージェントの名前及びバージョン情報を提供する。</li>
 
-        <li> <a name="conf-not-user-agents" id="conf-not-user-agents"></a>For <strong>platforms that are not <a href="#def-User-Agent" title="definition: user agent" class="termdef">user agents</a></strong> (used
-            to evaluate <a class="termdef" href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)">non-web-based authoring tool user interfaces</a>): provide the name and version information of the platform(s) (e.g. desktop operating system, mobile operating system, cross-OS environment) and the  name and version of the <a href="#def-Accessibility-Platform-Service" title="definition: platform accessibility architectur" class="termdef">platform accessibility service(s)</a> employed.</li>
+        <li> <a name="conf-not-user-agents" id="conf-not-user-agents"></a>(<a class="termdef" href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)">非ウェブベースのオーサリングツールのユーザインタフェース</a>を評価するために使用される) <strong><a href="#def-User-Agent" title="definition: user agent" class="termdef">ユーザエージェント</a>ではないプラットフォーム</strong>の場合: プラットフォーム (例えばデスクトップオペレーティングシステム、モバイルオペレーティングシステム、クロス OS 環境) の名前及びバージョン情報並びに採用された<a href="#def-Accessibility-Platform-Service" title="definition: platform accessibility architectur" class="termdef">プラットフォームアクセシビリティサービス</a>の名前及びバージョンを提供する。</li>
       </ul>
     </li>
-    <li>A list of the <strong>web content technologies produced by the authoring tool that are included in the claim</strong>. If there are any <a class="termdef" href="#def-Web-Content-Technology" title="definition: technology (Web content)">web content technologies</a> <a href="#conf-techs-produced">produced</a> by the authoring tool that are not included in the conformance claim, these must be listed separately. If the authoring tool produces any web content technologies by default, then these must be included.</li>
-    <li><strong> Results for each of the success criteria:</strong> Yes, No, <a href="#conf-applic">Not Applicable</a></li>
+    <li><strong>表明に含まれているオーサリングツールによって生成されたウェブコンテンツ技術</strong>のリスト。適合表明に含まれていないオーサリングツールによって<a href="#conf-techs-produced">生成される</a>任意の<a class="termdef" href="#def-Web-Content-Technology" title="definition: technology (Web content)">ウェブコンテンツ技術</a>が存在する場合、個別に列挙されなければならない。オーサリングツールがデフォルトで任意のウェブコンテンツ技術を生成する場合、これは含まれていなければならない。</li>
+    <li><strong>各達成基準の結果:</strong> はい、いいえ、<a href="#conf-applic">該当なし</a></li>
 
   </ol>
   <h4><a name="conf-claim-optional-components" id="conf-claim-optional-components"> </a>適合表明の任意の項目</h4>
-  <p>In addition to 適合表明の必須項目 above, consider providing additional information to assist authors. Recommended additional information includes:</p>
+  <p>上記の適合表明の必須項目に加えて、コンテンツ制作者を支援するために追加情報を提供することを検討する。追加する情報として推奨するものを以下に挙げる:</p>
   <ol>
-    <li><a name="conf-explanation-results" id="conf-explanation-results"></a> An <strong>explanation of the success criteria results</strong> (Yes, No). (strongly recommended)</li>
-    <li>Information about how the web content technologies produced can be used to create <a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible Web content">accessible
-    web content</a> (e.g. links to technology-specific WCAG 2.0 techniques).</li>
-    <li>Information about any additional steps taken that go beyond the success criteria to enhance accessibility.</li>
-    <li>A machine-readable metadata version of the conformance claim. </li>
-    <li>A  description of the authoring tool that identifies the types of editing-views that it includes.</li>
+    <li><a name="conf-explanation-results" id="conf-explanation-results"></a> <strong>達成基準の結果の説明</strong> (はい、いいえ)。(強く推奨する)</li>
+    <li>生成されたウェブコンテンツ技術がどのように<a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible Web content">アクセシブルなウェブコンテンツ</a> (例えば、技術特有の WCAG 2.0 達成方法へのリンク) を生成するために使用できるかについての情報。</li>
+    <li>アクセシビリティを向上させるために達成基準を超えて追加で施した措置に関する情報。</li>
+    <li>適合表明の機械的に読み取れるメタデータ版。 </li>
+    <li>オーサリングツールの編集ビューの種類を特定するオーサリングツールの説明。</li>
   </ol>
   <h3><a name="conf-disclaimer" id="conf-disclaimer"> </a>免責事項</h3>
-  <p>Neither W3C, WAI, nor AUWG take  any responsibility for any aspect or result of any ATAG 2.0 <a href="#conf-claim">conformance
-  claim</a> that has not been published under the authority of the W3C, WAI, or AUWG. </p>
+  <p>W3C、WAI、AUAG のいずれのも、W3C、WAI 又は AUWG の下で公開されない任意の ATAG 2.0 <a href="#conf-claim">適合表明</a>の解釈又は結果について一切の責任を負わない。 </p>
 
 </div>
 <!-- sect-conformance -->
