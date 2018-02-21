@@ -1371,54 +1371,57 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 <div id="sect-conformance">
   <h2><a id="Conformance" name="Conformance"> </a>適合</h2>
   <div class="gl-only">
-  <p>This section is <a class="termdef" href="#def-Normative" title="definition: normative">normative</a>.</p>
+  <p>この節は<a class="termdef" href="#def-Normative" title="定義: 規定">規定</a>である。</p>
   </div>
 
     <!-- techs-only -->
 
-  <p>Conformance means that the <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> satisfies the <a href="#conf-applic">applicable</a> success criteria defined in the
-  <a href="#guidelines">guidelines</a> section.
-  This conformance section describes conformance and lists the conformance requirements.</p>
+  <p>適合とは、<a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>がこの<a href="#guidelines">ガイドライン</a>の節で定義された<a href="#conf-applic">適用可能な</a>達成基準を満たしていることを意味する。 
+  この適合の節では、適合を説明し適合要件を示す。</p>
 <h3><a name="conf-req" id="conf-req"></a>適合要件</h3>
 <h4><a name="conf-sc-satisfaction" id="conf-sc-satisfaction"></a>達成基準を満たす</h4>
-  <p>The first step in determining ATAG 2.0 conformance is to  assess whether the Success Criteria have been satisfied. The potential answers  are:</p>
+  <p>ATAG 2.0の適合を決定する最初の段階は、達成基準が満たされたかどうかを評価することである。考えうる答えは以下のとおり:</p>
   <ul>
-    <li><strong><a name="conf-applic" id="conf-applic"></a>Not  Applicable: </strong>The  ATAG 2.0 <a href="#def-Authoring-Tool">definition of authoring tool</a> is inclusive and, as such, it covers  software with a wide range of capabilities and contexts of operation. In order  to take into account authoring tools with limited feature sets (e.g. a photo  editor, a CSS editor, a status update field in a social networking  application), many of the ATAG 2.0 success criteria are conditional, applying  only to authoring tools with the given features(s). If a conformance claim is  made, an explanation of why the success criterion is not applicable is <strong>required</strong>.</li>
-    <li><strong>Yes:</strong> In the case of some success criteria, this will include a <a href="#conf-levels">Level</a> (A, AA, or AAA)  with reference to WCAG 2.0. If a <a href="#conf-claim">conformance claim</a> is made, an explanation is <strong>optional</strong>, yet strongly recommended.</li>
-    <li><strong>No:</strong> If  a conformance claim is made, an explanation is <strong>optional</strong>, yet strongly recommended.</li>
+    <li><strong><a name="conf-applic" id="conf-applic"></a>適用せず（Not Applicable）：</strong>ATAG 2.0の<a href="#def-Authoring-Tool">オーサリングツール定義</a>は包括的であり、ソフトウェアには幅広い機能と操作のコンテキストが含まれている。機能セットの限られているオーサリングツール（例えば、フォトエディタ、CSSエディタ、ソーシャルネットワーキングアプリケーションのステータス更新フィールド）を考慮するため、ATAG 2.0の達成基準の多くは条件付きであり、規定された特性のオーサリングツールのみに適用される。適合宣言がなされた場合、なぜ達成基準が適用されないのかについての説明が<strong>必要である</strong>。</li>
+    <li><strong>適合（Yes）：</strong>いくつかの達成基準において、WCAG 2.0を参照しての<a href="#conf-levels">レベル</a>（A、AA、またはAAA）が含まれる。<a href="#conf-claim">適合宣言</a>がなされた場合、説明は<strong>任意である</strong>が、強く推奨される。</li>
+    <li><strong>適合せず（No）：</strong>適合宣言がなされた場合、説明は<strong>任意である</strong>が、強く推奨される。</li>
   </ul>
   <h4><a id="conf-rel-wcag" name="conf-rel-wcag"> </a>ウェブコンテンツアクセシビリティガイドライン（WCAG）2.0との関係</h4>
-  <p>At the time of publishing, WCAG 2.0 <cite>[<a href="#ref-WCAG20">WCAG20</a>]</cite> is the current W3C Recommendation regarding web content accessibility. For this reason, ATAG 2.0 refers to WCAG 2.0 when setting requirements for (1) the accessibility of <a class="termdef" href="#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)">web-based authoring tool user interfaces</a> (in <a href="#part_a">Part A</a>) and (2) how <a href="#def-Author" title="definition: authors" class="termdef">authors</a> should be enabled, supported, and guided toward producing web content that is more accessible to <a href="#def-End-Users" title="definition: end user" class="termdef">end users</a> with disabilities (in <a href="#part_b"> Part B</a>). </p>
-  <p>In particular, ATAG 2.0 refers to WCAG 2.0 within its definition of the term &quot;<a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible web content">accessible content</a>&quot; (and related terms, such as &quot;<a href="#def-Accessible-Template" title="definition: accessible templates" class="termdef">accessible template</a>&quot;). The definition of &quot;accessible content&quot; is content that would conform to WCAG 2.0, at either Level A, AA, or AAA, under the assumption that any web content technologies that are relied upon to satisfy the WCAG 2.0 success criteria are accessibility supported. The phrase &quot;at either Level A, AA, or AAA&quot; takes into account that the definition of &quot;accessible content&quot; can differ depending on the context of use (e.g. in a Level A success criterion of ATAG 2.0 versus in a Level AAA success criterion). The definition also includes two notes:</p>
+  <p>公開時点で、Webコンテンツアクセシビリティに関する現在のW3C勧告はWCAG 2.0 <cite>[<a href="#ref-WCAG20">WCAG20</a>]</cite>である。このためATAG 2.0は、以下の要件を設定するときWCAG 2.0を参照する。(1)(<a href="#part_a">パートA</a>で)<a class="termdef" href="#def-Web-Based-UI" title="定義: オーサリングツールのユーザインタフェース（ウェブベース）">ウェブベースのオーサリングツールのユーザインタフェース</a>のアクセシビリティ および(2)(<a href="#part_b">パートB</a>で)障害を持つ<a href="#def-End-Users" title="定義: エンドユーザー" class="termdef">エンドユーザー</a>に対してウェブコンテンツをよりアクセシブルする機能を、<a href="#def-Author" title="定義: 著者" class="termdef">著者</a>がどのように有効にし、サポートし、ガイドするか</p>
+  <p>特に、ATAG 2.0は用語 &quot;<a class="termdef" href="#def-Accessible-Web-Content" title="定義: アクセシブルなコンテンツ">アクセシブルなコンテンツ</a>&quot; （および関連用語 &quot;<a href="#def-Accessible-Template" title="定義: アクセシブルなテンプレート" class="termdef">アクセシブルなテンプレート</a>&quot;）の定義の中でWCAG 2.0を参照する。
+ &quot;アクセシブルなコンテンツ&quot; の定義は、WCAG 2.0にレベルA、AA、またはAAAのいずれかで適合するコンテンツであり、WCAG 2.0の達成基準を満たすために必要な任意のWebコンテンツ技術がアクセシビリティサポートであることを前提としている。
+ &quot;レベルA、AA、またはAAAのいずれかで&quot; という語句は。使用の状況に応じて &quot;アクセシブルなコンテンツ&quot; の定義に差がありうる（、例えばATAG 2.0のレベルAの達成基準に対応するのがレベルAAAの達成基準である）ことを考慮している。
+ また定義には、2つの注釈が含まれている: </p>
   <ul>
-    <li>The first is &quot;If accessibility support for the relied upon technologies is lacking, then the content will not conform to WCAG 2.0 and one or more groups of end-users with disabilities will likely experience difficulty accessing the content.&quot;</li>
-    <li>The second is &quot;Conformance to WCAG 2.0, even at the highest level (i.e. Level AAA), still may not make content 'accessible to individuals with all types, degrees, or combinations of disability'.&quot; In order to highlight success criteria or defined terms in ATAG 2.0 that depend on WCAG 2.0, they are marked with the parenthetical: &quot;(WCAG)&quot;.</li>
+    <li>一つ目は、 &quot;技術に対するアクセシビリティーサポートが欠けている場合、コンテンツはWCAG2.0に適合しておらず、障害当事者の利用者の１つ以上のグループはコンテンツにアクセスするのが困難であろう&quot; 。</li>
+    <li>二つ目は、 &quot;WCAG 2.0への適合は、たとえそれが最高レベル（つまりレベルAAA)であっても、 '障害のすべてのタイプ、程度、またはこれらの組み合わせの人々がアクセス可能'なコンテンツを作成しないことがありうる&quot; 。 
+達成基準やATAG2.0においてWCAG 2.0に基づき定義された用語は強調されるよう、挿入句 &quot;（WCAG）&quot;でマークされている。
+</li>
+
   </ul>
   <h5><a id="conf-note" name="conf-note"></a>「技術のアクセシビリティサポーテッドな使用方法」についての注記:</h5>
-  <p>Part of conformance to WCAG 2.0 is the requirement that &quot;only accessibility-supported ways of using technologies are relied upon to satisfy the WCAG 2.0 success criteria. Any information or functionality that is provided in a way that is not accessibility supported is also available in a way that is <em>accessibility supported</em>.&quot; In broad terms, WCAG 2.0 considers a <a href="#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">web content technology</a> to be &quot;accessibility supported&quot; when (1) the way that the web content technology is used is supported by users' <a class="termdef" href="#def-Assistive-Technology" title="definition: assistive technology">assistive
-      technology</a> and (2) the web content technology has accessibility-supported <a class="termdef" href="#def-User-Agent" title="definition: user agent">user
-      agents</a> that are available to end users. </p>
-  <p>This concept is not easily extended to <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tools</a> because many authoring tools can be installed and used in a variety of environments with differing availabilities for assistive
-      technologies and user
-    agents (e.g. private intranets versus public websites, monolingual sites versus multilingual sites). Therefore: </p>
+  <p> &quot;WCAG 2.0の達成基準を満たすために、アクセシビリティサポーティッドな方法のみに依存する。アクセスサポーティッドでない方法で提供される任意の情報や機能は、アクセスサポーティッドな方法でも利用可能である。&quot; という要件は、WCAG 2.0への適合の一部である。広義には以下の場合、WCAG 2.0はウェブコンテンツ技術を<em>アクセシビリティサポーティッド<em>であるとみなす。（1）<a href="#def-Web-Content-Technology" title="定義: 技術（ウェブコンテンツ）" class="termdef">ウェブコンテンツ技術</a>が使用される方法が、ユーザの<a class="termdef" href="#def-Assistive-Technology" title="定義: 支援技術">支援技術</a>によりサポートされており、かつ（2）ウェブコンテンツ技術が、エンドユーザーが利用できるアクセシビリティサポーティッドな<a class="termdef" href="#def-User-Agent" title="定義: ユーザエージェント">ユーザエージェント</a>を有する場合。</p>
+  <p>多くの<a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>は、支援技術とユーザーエージェントのための異なる能力に応じたさまざまな環境にインストールされ使用される（例えば、プライベートなイントラネットや公共のウェブサイト、単一言語サイトや多言語サイト）ので、この概念をオーサリングツールに拡張するのは容易でない。したがって：</p>
   <blockquote>
-    <p><strong>ATAG 2.0 does not include the accessibility-supported requirement. As a result, ATAG 2.0 success criteria do not refer to WCAG 2.0 &quot;conformance&quot;, and instead refer to &quot;meeting WCAG 2.0 success criteria&quot;.</strong></p>
+    <p><strong>ATAG 2.0は、アクセシビリティサポーティッド要件を含んでいない。その結果、ATAG 2.0の達成基準はWCAG 2.0&quot;適合&quot;を参照しておらず、代わりに&quot;WCAG 2.0達成基準への適合&quot;を参照している。</strong></p>
   </blockquote>
-  <p>Once an authoring tool has been installed and put into use, it would be possible to assess the WCAG 2.0 conformance of the <a class="termdef" href="#def-Web-Content" title="definition: web content">web content</a> that the  authoring tool produces, including whether the WCAG 2.0 accessibility-supported  requirement is met. However, this WCAG 2.0 conformance assessment would  be completely independent of the authoring tool's conformance with ATAG 2.0.</p>
+  <p>ひとたびオーサリングツールがインストールされ使用されると、WCAG 2.0アクセシビリティサポーティッド要件が満たされているかどうかを含め、オーサリングツールが制作する<a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a>のWCAG 2.0適合評価が可能であろう。しかし、このWCAG 2.0適合評価は、オーサリングツールのATAG 2.0適合とは完全に独立しているだろう。</p>
   <h4><a name="conf-levels" id="conf-levels"> </a>適合オプションとレベル</h4>
-  <p>There are two types of conformance, each with three levels:</p>
+  <p>適合には2つの種類があり、それぞれに3つのレベルがある:</p>
   <h5><a name="conf-atag-conf" id="conf-atag-conf"> </a>ATAG 2.0 適合（レベルA、AA、またはAAA）</h5>
-  <p>This conformance option <em>may</em> be selected when an <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> can be used to produce <a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible web content">accessible web content (WCAG)</a> without additional tools or components.  The level of conformance is determined as follows:</p>
+  <p><a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>が、<a class="termdef" href="#def-Accessible-Web-Content" title="定義: アクセシブルなウェブコンテンツ">アクセシブルなウェブコンテンツ（WCAG）</a>を生成するために追加のツールやコンポーネントなしで使用できたときは、この適合オプションが選択<em>されてもよい</em>。次のように適合レベルが決定される:</p>
   <ul>
-    <li><strong>Level A:</strong> The authoring tool satisfies all of the <a href="#conf-applic">applicable</a> Level A success criteria.</li>
-    <li><strong>Level AA:</strong> The authoring tool satisfies all of the applicable Level A and Level AA success  criteria.</li>
-    <li><strong>Level  AAA:</strong> The authoring tool satisfies all of the applicable success criteria.</li>
+    <li><strong>レベルA：</strong>オーサリングツールは、<a href="#conf-applic">適用可能な</a>レベルAの達成基準すべてを満たしている。</li>
+    <li><strong>レベルAA：</strong>オーサリングツールは、適用可能なレベルAおよびレベルAAの達成基準すべてを満たしている。</li>
+    <li><strong>レベルAAA：</strong>オーサリングツールは、適用可能な達成基準すべてを満たしている。
+</li>
   </ul>
-  <p><em>Note 1:</em> The <a href="#part_a_applic_notes">Part A Conformance Applicability Notes</a> and <a href="#part_b_applic_notes">Part B Conformance Applicability Notes</a> must be applied. <br />
-    <em>Note 2:</em> If the minimum conformance  level (Level A) has not been achieved (i.e. at least one applicable Level A success  criterion has not been met), it is still beneficial to publish a statement  specifying which success criteria were met.</p>
+  <p><em>注記 1:</em> <a href="#part_a_applic_notes">パート A の適合適用性に関する注記</a>及び<a href="#part_b_applic_notes">パート B の適合適用性に関する注記</a>が適用されなければならない。<br />
+    <em>注記 2:</em> 最小適合レベル（レベルA）が達成されていない（すなわち、少なくとも一つのレベルAの達成基準が満たされていない）場合、満たされるべき達成基準を指定した宣言を公開することが有益である。
+</p>
   <h5><a name="conf-partial-component" id="conf-partial-component"></a>ATAG 2.0 部分適合 - プロセスコンポーネント（レベルA、AA、またはAAA）</h5>
-  <p>This conformance option <em>may</em> be selected when an <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> would require additional tools or components<strong> </strong>in order to conform as a complete authoring system. This  option may be used for components with very limited functionality (e.g. a  plug-in) up to nearly complete systems (e.g. a markup editor that only lacks  accessibility checking functionality). </p>
-  <p>The level of conformance (A, AA, or AAA) is determined as above except that, for any &quot;no&quot; answers, the tool must not prevent the success criteria from being met by another authoring process component as part of a complete authoring system.</p>
+  <p>完全なオーサリングシステムとして適合するために<a class="termdef" href="#def-Authoring-Tool" title="定義: オーサリングツール">オーサリングツール</a>が追加のツールやコンポーネント<strong> </strong>を必要とする場合、この適合オプションを選択<em>してもよい</em>。このオプションは、ほぼ完全なシステム（例えば、アクセシビリティチェック機能のみを欠いているマークアップエディタ）への非常に限られた機能（例えば、プラグイン）に使用されうる。</p>
+  <p>適合レベル（A、AA、またはAAA）は上記のように決定される。ただし、任意の&quot;適合せず(NO)&quot;の回答により、完全なオーサリングシステムの一部である別のオーサリングプロセスコンポーネントが達成基準を満たすのをツールが妨げてはならない。</p>
   <p> <em>Note 1:</em>  Authoring tools would not be able to meet partial conformance if they prevent additional authoring process components from meeting the failed success criteria (e.g. for security reasons).<br />
     <em>Note 2:</em> The <a href="#part_a_applic_notes">Part A Conformance Applicability Notes</a> and <a href="#part_b_applic_notes">Part B Conformance Applicability Notes</a> must be applied. </p>
   <h5><a name="conf-partial-platform-limits" id="conf-partial-platform-limits"></a>ATAG 2.0 部分適合 - プラットフォームの制限（レベルA、AA、またはAAA）</h5>
