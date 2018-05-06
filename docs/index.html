@@ -1781,21 +1781,15 @@ Examples include:
         </li>
       </ul>
     </dd>
-    <dt><dfn><a id="def-Prominence" name="def-Prominence"></a>prominence</dfn></dt>
-    <dd>A heuristic measure of how likely <a href="#def-Author" title="definition: authors" class="termdef">authors</a> are to notice a <a class="termdef" href="#def-UI-Component" title="definition: user interface component">user interface component</a> in a user interface that
-      they are operating. Prominence is affected by numerous factors,
-      including: the number of navigation steps required, the reading order
-      position, visual properties (e.g. size, spacing, color), and even the
-      modality of use (e.g. mouse vs. keyboard use).
+    <dt><dfn><a id="def-Prominence" name="def-Prominence"></a>目立つ度合い (prominence)</dfn></dt>
+    <dd><a href="#def-Author" title="definition: authors" class="termdef">コンテンツ制作者</a>がユーザーインターフェースの操作中に、ある<a class="termdef" href="#def-UI-Component" title="definition: user interface component">ユーザーインターフェースコンポーネント</a>に気づく可能性がどの程度あるかという発見的な尺度。目立つ度合いは様々な要因によって影響を受ける: 例えば、必要なナビゲーションステップの数、読み上げ順序の位置、視覚的特性 (大きさ、間隔、色)、さらに使用方法（マウスまたキーボード）など。
       <ul>
-        <li><dfn><a name="def-At-Least-As-Prominent" id="def-At-Least-As-Prominent"></a>at least as
-          prominent:</dfn> For ATAG 2.0, a <a class="termdef" href="#def-UI-Component" title="definition: user interface component">user interface component</a> A is considered to be &quot;at least as prominent&quot; as another component B when, from a default state, component A becomes displayed (and enabled) with the same number or less &quot;opening&quot; actions than are required for component B to become displayed (and enabled).<br />
-
-          <em>Note 1:</em> When a container is open, all of the enabled components in the container (e.g. items in a list, items in a menu, buttons in a toolbar, all components in a dialog box) are considered to be displayed (and therefore are at least as prominent as each other), even if the container must be scrolled for them to become visible. This takes into account that different screen sizes and <a href="#def-Author" title="definition: authors" class="termdef">author</a> settings will affect which components are visible at a given time.<br />
-          <em> Note 2:</em> &quot;Opening actions&quot; are actions made by authors on components within the user interface that result in new components becoming displayed or enabled. For example:	(a)    keyboard shortcut to a top-level menu item to display a sub-menu, (b) keyboard selection on a button to display a dialog box,   (c) mouse click on a checkbox to enable previously disabled sub-items, etc. Actions that do not cause new components to become actionable (e.g. moving focus, scrolling a list), are not counted as &quot;opening actions&quot;.<br />
-
-          <em> Note 3:</em> Keyboard shortcuts to components in closed containers are not counted as &quot;opening actions&quot; because the components have no prominence when they are not displayed. The same is true when authors must use &quot;search&quot; to reveal components in closed containers.<br />
-        <em> Note 4:</em> The &quot;default state&quot; is the state of the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> at the beginning of an authoring session as set by the developer. The default state of many document authoring tools is an <a href="#def-Editing-View" title="definition: editing views" class="termdef">editing-view</a>. </li>
+        <li><dfn><a name="def-At-Least-As-Prominent" id="def-At-Least-As-Prominent"></a>少なくとも目立つ:</dfn> ATAG 2.0では次の場合に、<a class="termdef" href="#def-UI-Component" title="definition: user interface component">ユーザーインターフェースコンポーネント</a>Aが他のコンポーネントBよりも「少なくとも目立つ」と考える。既定の状態からコンポーネントAがコンポーネントBが表示（かつ有効）となる場合よりも同じかより少ない「オープニングアクション (Opening actions)」とともに表示（かつ有効）となった場合。<br />
+        <em> 注 1:</em> コンテナが開いている場合は、コンテナ内の有効なコンポーネント (リスト内のアイテム、メニュー内のアイテム、ツールバーのボタン、ダイアログボックス内のすべてのコンポーネント) はすべて表示されているとみなされる(したがって「少なくとも目立つ」)。コンテナーをスクロールして表示可能にしなければならない場合も同様で、これは様々なスクリーンの大きさと<a href="#def-Author" title="definition: authors" class="termdef">コンテンツ制作者</a>の設定が一定期間表示されるコンポーネントに影響することを考慮している。<br />
+        <em> 注 2:</em> 「オープニングアクション(Opening actions)」は、新しいコンポーネントを表示、又は有効とするためのコンテンツ制作者がユーザーインターフェースの中のコンポーネントに対して起こすアクションである。
+        例 : (a) サブメニューを表示するためのトップレベルメニューアイテムのキーボードショートカット、(b) ダイアログボックスを表示するためのボタンをキーボードで選択する、(c) 無効だったサブアイテムを有効にするためにチェックボックスをマウスでクリックするなど。新しいコンポーネントをアクション可能にしないアクション (フォーカスを移動する、リストをスクロールする)、は「オープニングアクション (opening actions)」としてカウントしない。<br />
+        <em> 注 3:</em> Keyboard shortcuts to components in closed containers are not counted as &quot;opening actions&quot; because the components have no prominence when they are not displayed. The same is true when authors must use &quot;search&quot; to reveal components in closed containers.<br />
+        <em> 注 4:</em> The &quot;default state&quot; is the state of the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> at the beginning of an authoring session as set by the developer. The default state of many document authoring tools is an <a href="#def-Editing-View" title="definition: editing views" class="termdef">editing-view</a>. </li>
       </ul>
     </dd>
     <dt><a id="def-Prompt" name="def-Prompt"><dfn>prompt</dfn></a></dt>
