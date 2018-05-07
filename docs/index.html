@@ -1646,12 +1646,11 @@ Examples include:
 
     <dt><dfn><a name="def-Content-Generation" id="def-Content-Generation"></a>コンテンツ生成（コンテンツオーサリング、コンテンツ編集） (content generation (content authoring, content editing))</dfn></dt>
     <dd>
-      <a class="termdef" href="#def-End-Users" title="定義: エンドユーザー">エンドユーザー</a>の<a href="#def-User-Agent" title="定義: ユーザーエージェント" class="termdef">ユーザーエージェント</a>でレンダリング、再生または実行される実際の<a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a>を指定すること。
-      特定のシステムでどのようにコンテンツが生成されるかの詳細は多岐にわたるが、生成されたコンテンツの責任は以下のいずれかの組み合わせとなる。
+      <a class="termdef" href="#def-End-Users" title="定義: エンドユーザー">エンドユーザー</a>の<a href="#def-User-Agent" title="定義: ユーザーエージェント" class="termdef">ユーザーエージェント</a>でレンダリング、再生または実行される実際の<a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a>を指定すること。特定のシステムでどのようにコンテンツが生成されるかの詳細は多岐にわたるが、生成されたコンテンツの責任は以下のいずれかの組み合わせとなる。
       <ul>
         <li><dfn><a name="def-Content-Author-Gen" id="def-Content-Author-Gen"></a>コンテンツ制作者が生成するコンテンツ:</dfn> <a class="termdef" href="#def-Author" title="定義: コンテンツ制作者">コンテンツ制作者</a>がすべての責任を負う<a href="#def-Web-Content" title="定義: ウェブコンテンツ" class="termdef">ウェブコンテンツ</a>。コンテンツ制作者は特定のレベルまでしか責任を負わなくてもよい。 (例えば、コンテンツ制作者がテキストラベルの入力を頼まれた際、コンテンツ制作者はラベルのテキストに責任を負うが、ラベルがどのようにマークアップされるかに責任を負わない。またソース<a href="#def-Editing-View" title="定義: 編集ビュー" class="termdef">編集ビュー</a>で<a href="#def-Markup" title="定義: マークアップ" class="termdef">マークアップ</a>を依頼した際、コンテンツ制作者はUNICODEがテキストのエンコードに使用されているという事実については責任を負わない)。</li>
-        <li><dfn><a name="def-Content-Auto-Gen" id="def-Content-Auto-Gen"></a>自動生成コンテンツ:</dfn> <a href="#def-Developer" title="定義: 開発者" class="termdef">開発者</a>がプログラミングした機能がすべての責任の負うウェブコンテンツ (例えば、コンテンツ制作者が新しい文書の開始を要求した際に出力するマークアップや、マークアップエラーの自動修正など)。</li>
-        <li><dfn>サードパーティによって生成されるコンテンツ:</dfn> サードパーティの著者が責任を負うウェブコンテンツ (例えばコミュニティが共有している<a href="#def-Template" title="定義: テンプレート" class="termdef">テンプレート</a>など)。</li>
+        <li><dfn><a name="def-Content-Auto-Gen" id="def-Content-Auto-Gen"></a>自動生成コンテンツ:</dfn> <a href="#def-Developer" title="定義: 開発者" class="termdef">開発者</a>がプログラミングした機能がすべての責任を負うウェブコンテンツ (例えば、コンテンツ制作者が新しい文書の開始を要求した際に出力するマークアップや、マークアップエラーの自動修正など)。</li>
+        <li><dfn>サードパーティによって生成されるコンテンツ:</dfn> サードパーティのコンテンツ制作者が責任を負うウェブコンテンツ (例えばコミュニティが共有している<a href="#def-Template" title="定義: テンプレート" class="termdef">テンプレート</a>など)。</li>
       </ul>
     </dd>
 
@@ -1659,29 +1658,28 @@ Examples include:
     <dd>
       <a class="termdef" href="#def-Content-Being-Edited" title="定義: 編集中のウェブコンテンツ">編集中のウェブコンテンツ</a>をレンダリング、再生もしくは実行する<a href="#def-Authoring-Tool" title="定義: コンテンツ制作ツール" class="termdef">コンテンツ制作ツール</a>の<a href="#def-Authoring-Tool-Interface" title="定義: ユーザーインターフェース" class="termdef">ユーザーインターフェース</a>機能。ATAG 2.0は幾つかのタイプのレンダリングされているコンテンツを認識する:
       <ul>
-        <li><dfn><a name="def-WYSIWYG" id="def-WYSIWYG"></a>標準レンダリング (または「WYSIWYG」):</dfn> コンテンツが、<a href="#def-User-Agent" title="定義: ユーザーエージェント" class="termdef">ユーザーエージェント</a>が同じコンテンツを初期設定のままレンダリングする方法と似た方法でレンダリングされる場合。「WYSIWYG」は、「What-you-see-is-what-you-get（見えているものが得るもの）」を意味する一般的な言葉だが、ユーザーエージェントとエンドユーザーの設定の違いによって、<a href="#def-End-Users" title="定義: エンドユーザー" class="termdef">エンドユーザー</a>の体験は典型的なものにはならないことを意味する。また、</li>
-
-        <li><dfn><a name="def-Unconventional-Renderings" id="def-Unconventional-Renderings"></a>標準でないレンダリング:</dfn> コンテンツがユーザーエージェントの標準的なレンダリングとは違う形でレンダリングされる場合。 (例えば、オーディオファイルをグラフィカルな波形としてレンダリングする場合) または、</li>
+        <li><dfn><a name="def-WYSIWYG" id="def-WYSIWYG"></a>標準レンダリング (又は「WYSIWYG」):</dfn> コンテンツが、<a href="#def-User-Agent" title="定義: ユーザーエージェント" class="termdef">ユーザーエージェント</a>が同じコンテンツを初期設定のままレンダリングする方法と似た方法でレンダリングされる場合。「WYSIWYG」は、「What-you-see-is-what-you-get（見えているものが得るもの）」を意味する一般的な言葉だが、ユーザーエージェントとエンドユーザーの設定の違いによって、<a href="#def-End-Users" title="定義: エンドユーザー" class="termdef">エンドユーザー</a>の体験は典型的なものにはならないことを意味する。また、</li>
+        <li><dfn><a name="def-Unconventional-Renderings" id="def-Unconventional-Renderings"></a>標準でないレンダリング:</dfn> コンテンツがユーザーエージェントの標準的なレンダリングとは違う形でレンダリングされる場合。 (例えば、オーディオファイルをグラフィカルな波形としてレンダリングする場合) 又は、</li>
         <li><a name="def-Partial-Rendering" id="def-Partial-Rendering"></a><dfn>部分的なレンダリング:</dfn> コンテンツの一部をレンダリング、再生、もしくは実行するが他はしない場合
-        (例えばフレーム毎で編集できる<a href="#def-Video" title="定義: ビデオ" class="termdef">ビデオ</a>エディターはグラフィックをレンダリングするがビデオのタイミングはレンダリングしないなど)。</li>
+        (例えばフレーム毎に編集できる<a href="#def-Video" title="定義: ビデオ" class="termdef">ビデオ</a>エディターはグラフィックをレンダリングするがビデオのタイミングはレンダリングしないなど)。</li>
       </ul></dd>
 
     <dt><a id="def-Transformation" name="def-Transformation"><dfn>コンテンツ変換 (content transformations)</dfn></a></dt>
-    <dd>ある<a href="#def-Web-Content-Technology" title="定義: ウェブコンテンツの技術" class="termdef">ウェブコンテンツの技術</a>、または非ウェブコンテンツの技術 (例えばワードプロセッサーのフォーマットなど) を入力して最適化、再構成または再コードされたコンテンツを生成するプロセス:
+    <dd>ある<a href="#def-Web-Content-Technology" title="定義: ウェブコンテンツの技術" class="termdef">ウェブコンテンツの技術</a>、又は非ウェブコンテンツの技術 (例えばワードプロセッサーのフォーマットなど) を入力して最適化、再構成又は再コードされたコンテンツを生成するプロセス:
       <ul>
-        <li><a id="def-Optimizing-Transformation" name="def-Optimizing-Transformation"><dfn>最適化としてのコンテンツ変換:</dfn></a>コンテンツ技術が変更されず、かつ採用しているコンテンツ技術の構造も同じままに変換すること。変更によって情報が失われることはないことが期待される (例えば空白の削除や、インラインスタイルを外部スタイルシートに変換するなど)。</li>
-        <li><a id="def-Restructuring-Transformation" name="def-Restructuring-Transformation"><dfn>再構成としてのコンテンツ変換:</dfn></a> コンテンツ技術は同じままだが、コンテンツをマークアップするために使用される技術の構造が変わる変換 (例えば、テーブルを線形にしたり、文書をページに分割したりなど）。</li>
-        <li><a id="def-Recoding-Transformation" name="def-Recoding-Transformation"><dfn>再コードとしてのコンテンツ変換:</dfn></a> コンテンツのエンコードに使用されるコンテンツ技術が変わる変換 (例えば HTMLをXHTMLに変換したり、ワードプロセッサーのフォーマットをHTMLに変換したりなど)。</li>
+        <li><a id="def-Optimizing-Transformation" name="def-Optimizing-Transformation"><dfn>コンテンツ変換 (最適化):</dfn></a> コンテンツ技術が変更されず、かつ採用しているコンテンツ技術の構造も同じままに変換すること。変更によって情報が失われることはないことが期待される (例えば空白の削除や、インラインスタイルを外部スタイルシートに変換するなど)。</li>
+        <li><a id="def-Restructuring-Transformation" name="def-Restructuring-Transformation"><dfn>コンテンツ変換 (再構成):</dfn></a> コンテンツ技術は同じままだが、コンテンツをマークアップするために使用される技術の構造が変わる変換 (例えば、テーブルを線形にしたり、文書をページに分割したりなど）。</li>
+        <li><a id="def-Recoding-Transformation" name="def-Recoding-Transformation"><dfn>コンテンツ変換 (再コード):</dfn></a> コンテンツのエンコードに使用されるコンテンツ技術が変わる変換 (例えば HTMLをXHTMLに変換したり、ワードプロセッサーのフォーマットをHTMLに変換したりなど)。</li>
       </ul>
-      <em>注:</em> プラットフォームのクリップボードへコピーしたり、そこから貼り付けたりするクリップボードの操作はコンテンツ変換とはみなさない。</dd>
+      <em> 注:</em> プラットフォームのクリップボードへコピーしたり、そこから貼り付けたりするクリップボードの操作はコンテンツ変換とはみなさない。</dd>
 
     <dt><a id="def-Control-Settings" name="def-Control-Settings"><dfn>制御設定 (control settings)</dfn></a></dt>
     <dd><a class="termdef" href="#def-Author" title="定義: コンテンツ制作者">コンテンツ制作者</a>が、どのようにして<a href="#def-Authoring-Tool" title="定義: オーサリングツール" class="termdef">オーサリングツール</a>を操作するかの設定。例えばキーボードやマウスの操作など。</dd>
 
     <dt><a id="def-Developer" name="def-Developer"><dfn>開発者 (developer)</dfn></a></dt>
-    <dd><a href="#def-Authoring-Tool" title="定義: オーサリングツール" class="termdef">オーサリングツール</a>のプログラミングを担当する団体または個人。<a title="定義: 適合表明" href="#conf-claim" class="termdef">適合表明</a>の表明者によって含まれた追加のソフトウェアコンポーネントのプログラマーも含まれる。オーサリングツールの開発は、<a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>が<a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a>を<a href="#def-Publishing" title="定義: 公開" class="termdef">公開</a>するためにオーサリングツールを使用できるようになる前に完了していることがある。しかし、他のケース (例えば <a class="termdef" href="#def-Web-Based-UI" title="定義: web-based オーサリングツール">web-based オーサリングツール</a>等の場合)では、<a href="#def-End-Users" title="定義: エンドユーザー" class="termdef">エンドユーザー</a>がコンテンツを修正するように、開発者はコンテンツが公開された後でもオーサリングツールを修正してもよい。</dd>
+    <dd><a href="#def-Authoring-Tool" title="定義: オーサリングツール" class="termdef">オーサリングツール</a>のプログラミングを担当する団体又は個人。<a title="定義: 適合表明" href="#conf-claim" class="termdef">適合表明</a>の表明者によって含まれた追加のソフトウェアコンポーネントのプログラマーも含まれる。オーサリングツールの開発は、<a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>が<a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a>を<a href="#def-Publishing" title="定義: 公開" class="termdef">公開</a>するためにオーサリングツールを使用できるようになる前に完了していることがある。しかし、他のケース (例えば<a class="termdef" href="#def-Web-Based-UI" title="定義: ウェブベースのオーサリングツール">ウェブベースのオーサリングツール</a>等の場合)では、<a href="#def-End-Users" title="定義: エンドユーザー" class="termdef">エンドユーザー</a>がコンテンツを修正するように、開発者はコンテンツが公開された後でもオーサリングツールを修正してもよい。</dd>
 
-    <dt><a id="def-Direct-Accessibility" name="def-Direct-Accessibility"><dfn>直接アクセシビリティ機能(direct accessibility features)</dfn></a> </dt>
+    <dt><a id="def-Direct-Accessibility" name="def-Direct-Accessibility"><dfn>直接アクセシビリティ機能 (direct accessibility features)</dfn></a> </dt>
     <dd>障害を持った<a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>のために<a href="#def-Authoring-Tool" title="定義: オーサリングツール" class="termdef">オーサリングツール</a>が提供する機能 (例えば、キーボードナビゲーション、ズーム機能、テキスト読み上げなど)。 追加、又は特殊な機能が外部の<a href="#def-Assistive-Technology" title="定義: 支援技術" class="termdef">支援技術</a>によって提供されてもよい。</dd>
 
     <dt><a id="def-Display-Settings" name="def-Display-Settings"><dfn>ディスプレイ設定 (display settings)</dfn></a></dt>
@@ -1693,13 +1691,13 @@ Examples include:
       </ul>
     </dd>
     <dt><a id="def-Documentation" name="def-Documentation"></a><dfn>ドキュメンテーション (documentation)</dfn></dt>
-    <dd><a href="#def-Authoring-Tool" title="定義: オーサリングツール" class="termdef">オーサリングツール</a>の使用を支援するための情報。この情報は、電子的または他の方法で提供されてもよい。また、この情報にはヘルプ、マニュアル、インストール手順、サンプル<a class="termdef" href="#def-Workflow" title="定義: ワークフロー">ワークフロー</a>、<a href="#def-Tutorial" title="定義: チュートリアル" class="termdef">チュートリアル</a>などが含まれる。</dd>
+    <dd><a href="#def-Authoring-Tool" title="定義: オーサリングツール" class="termdef">オーサリングツール</a>の使用を支援するための情報。この情報は、電子的又は他の方法で提供されてもよい。また、この情報にはヘルプ、マニュアル、インストール手順、サンプル<a class="termdef" href="#def-Workflow" title="定義: ワークフロー">ワークフロー</a>、<a href="#def-Tutorial" title="定義: チュートリアル" class="termdef">チュートリアル</a>などが含まれる。</dd>
 
     <dt><a id="def-Document-Object" name="def-Document-Object"></a><dfn>ドキュメントオブジェクト (document object)</dfn></dt>
-    <dd><a href="#def-Non-Web-Based" title="定義: 非Webベースのオーサリングツール" class="termdef">非Webベースのオーサリングツール</a>または、<a href="#def-User-Agent" title="定義: ユーザーエージェント" class="termdef">ユーザーエージェント</a>による<a class="termdef" title="定義: ソース" href="#def-Instruction-Level">ソース</a>内のデータの内部表現。ドキュメントオブジェクトは<a href="#def-Assistive-Technology" title="定義: 支援技術" class="termdef">支援技術</a>とのやりとりを可能にする<a href="#def-Accessibility-Platform-Service" title="定義: プラットフォームのアクセシビリティサービス" class="termdef">プラットフォームのアクセシビリティサービス</a>の一部を形成する。 <a href="#def-Web-Based-UI" title="定義: Webベースのオーサリングツール" class="termdef">Webベースのオーサリングツール</a>は<a class="termdef" href="#def-User-Agent" title="定義: ユーザーエージェント">ユーザーエージェント</a>が管理するドキュメントオブジェクトを利用してもよい。</dd>
+    <dd><a href="#def-Non-Web-Based" title="定義: 非Webベースのオーサリングツール" class="termdef">非Webベースのオーサリングツール</a>又は<a href="#def-User-Agent" title="定義: ユーザーエージェント" class="termdef">ユーザーエージェント</a>による<a class="termdef" title="定義: ソース" href="#def-Instruction-Level">ソース</a>内のデータの内部表現。ドキュメントオブジェクトは<a href="#def-Assistive-Technology" title="定義: 支援技術" class="termdef">支援技術</a>とのやりとりを可能にする<a href="#def-Accessibility-Platform-Service" title="定義: プラットフォームのアクセシビリティサービス" class="termdef">プラットフォームのアクセシビリティサービス</a>の一部を形成する。 <a href="#def-Web-Based-UI" title="定義: Webベースのオーサリングツール" class="termdef">Webベースのオーサリングツール</a>は<a class="termdef" href="#def-User-Agent" title="定義: ユーザーエージェント">ユーザーエージェント</a>が管理するドキュメントオブジェクトを利用してもよい。</dd>
 
     <dt><a id="def-Element" name="def-Element"><dfn>要素 (element)</dfn></a></dt>
-    <dd><a href="#def-Markup" title="定義: マークアップ" class="termdef">マークアップ</a>タグとその内容のペア、または&quot;空タグ&quot;
+    <dd><a href="#def-Markup" title="定義: マークアップ" class="termdef">マークアップ</a>タグとその内容のペア、又は「空タグ」
     (閉じタグや内容を必要としないタグ)。 </dd>
     <dt><a name="def-End-Users" id="def-End-Users"></a><dfn>エンドユーザー (end user)</dfn></dt>
     <dd>制作された<a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a>と接する人。この中には<a href="#def-Assistive-Technology" title="定義: 支援技術" class="termdef">支援技術</a>を利用する人々も含まれる。</dd>
@@ -1711,10 +1709,10 @@ Examples include:
     <dt><dfn><a name="def-Keyboard-Interface" id="def-Keyboard-Interface"></a>キーボードインタフェース (keyboard interface)</dfn>
       <!-- [adapted from WCAG 2.0] -->
     </dt>
-    <dd>キーボードインタフェースは多くのプラットフォームで提供されるデバイスに依存しない方法で操作を可能にするプログラム型のサービスです。キーボードインタフェースは特定のデバイスがハードウェアキーボードを持っていなくてもキーストローク入力を可能にする。 (例えば、タッチスクリーンで制御するデバイスはスクリーン上のキーボードも接続された外部のキーボードにも対応するオペレーティングシステムに組み込まれたキーボードインターフェースを持てる。<br />
-    <em>注:</em> マウスキーのようなキーボードで操作するマウスエミュレーターはキーボードインターフェースからの操作とはみなさない。なぜならこれらのエミュレーターはキーボードインターフェースではなくポインティングデバイスインターフェースを利用するからである。</dd>
+    <dd>キーボードインタフェースは多くのプラットフォームで提供されるデバイスに依存しない方法で操作を可能にするプログラム型のサービスである。キーボードインタフェースは特定のデバイスがハードウェアキーボードを持っていなくてもキーストローク入力を可能にする。 (例えば、タッチスクリーンで制御するデバイスはスクリーン上のキーボードも接続された外部のキーボードにも対応するオペレーティングシステムに組み込まれたキーボードインターフェースを持てる。)<br />
+    <em> 注:</em> マウスキーのようなキーボードで操作するマウスエミュレーターはキーボードインターフェースからの操作とはみなさない。なぜならこれらのエミュレーターはキーボードインターフェースではなくポインティングデバイスインターフェースを利用するからである。</dd>
     <dt><dfn><a name="def-Keyboard-Trap" id="def-Keyboard-Trap"></a>キーボードトラップ (keyboard trap)</dfn></dt>
-    <dd><a class="termdef" href="#def-Keyboard-Interface" title="定義: キーボードインターフェース">キーボードインターフェース</a>が<a class="termdef" href="#def-UI-Component" title="定義: ユーザーインターフェースコンポーネント">ユーザーインターフェースコンポーネント</a>、またはコンポーネントのグループにフォーカスを移動することができるが、そこからフォーカスを移動することができないユーザーインターフェースの状態。</dd>
+    <dd><a class="termdef" href="#def-Keyboard-Interface" title="定義: キーボードインターフェース">キーボードインターフェース</a>が<a class="termdef" href="#def-UI-Component" title="定義: ユーザーインターフェースコンポーネント">ユーザーインターフェースコンポーネント</a>、又はコンポーネントのグループにフォーカスを移動することができるが、そこからフォーカスを移動することができないユーザーインターフェースの状態。</dd>
 
     <dt><dfn><a id="def-Label" name="def-Label"></a>ラベル (label)</dfn> <!-- [adapted from WCAG 2.0] --></dt>
     <dd>テキスト、又はテキストによる代替を伴う<a class="termdef" href="#def-UI-Component" title="定義: コンポーネント">コンポーネント</a>で、コンポーネントを識別するために利用者に提示されているもの。<a href="#def-Name" title="定義: 名前 (name)" class="termdef">名前 (name)</a> は隠されていて<a href="#def-Assistive-Technology" title="定義: 支援技術" class="termdef">支援技術</a>に対してだけ明らかにされる場合がある一方で、ラベルはすべての利用者に提示される。多くの場合 (すべてではないが)、名前 (name) とラベルは同じである。</dd>
@@ -1743,9 +1741,9 @@ Examples include:
     </ul></dd>
 
     <dt><dfn><a name="def-Platform" id="def-Platform"></a>プラットフォーム (platform)</dfn></dt>
-    <dd><a href="#def-Authoring-Tool" title="定義: オーサリングツールが" class="termdef">オーサリングツールが</a>動作するソフトウェアの環境。プラットフォームは低レベルのソフトウェアプラットフォーム、又はハードウェア上で一貫した動作環境を提供する。<a href="#def-Web-Based-UI" title="定義: ウェブベースのオーサリングユーザーインターフェース" class="termdef">ウェブベースのオーサリングユーザーインターフェース</a>の場合、最も関連するプラットフォームは<a href="#def-User-Agent" title="定義: ユーザーエージェント" class="termdef">ユーザーエージェント</a> (ブラウザなど)となる。<a href="#def-Non-Web-Based" title="定義: 非ウェブベースのユーザーインターフェース" class="termdef">非ウェブベースのユーザーインターフェース</a>の場合、デスクトップのオペレーティングシステム (GNOME desktop on Linux、Mac OS、Windowsなど)、モバイルオペレーティングシステム (Android、BlackBerry、iOS、Windows Phoneなど)、又は OSをまたいだ環境 (Javaなど)などが含まれるが、これらに限らない。<br />
-      <em> 注 1:</em> 多くのプラットフォームはプラットフォーム上で動作するアプリケーションと支援技術の間を<a class="termdef" href="#def-Accessibility-Platform-Service" title="定義: プラットフォームアクセシビリティサービス">プラットフォームアクセシビリティサービス</a>を介して仲介します。<br />
-    <em> 注 2:</em> <a href="#def-Developer" title="定義: 開発者" class="termdef">開発者</a>のためのアクセシビリティに関するガイドラインは多くのプラットフォームで存在します。</dd>
+    <dd><a href="#def-Authoring-Tool" title="定義: オーサリングツールが" class="termdef">オーサリングツールが</a>動作するソフトウェアの環境。プラットフォームは低レベルのソフトウェアプラットフォーム、又はハードウェア上で一貫した動作環境を提供する。<a href="#def-Web-Based-UI" title="定義: ウェブベースのオーサリングユーザーインターフェース" class="termdef">ウェブベースのオーサリングユーザーインターフェース</a>の場合、最も関連するプラットフォームは<a href="#def-User-Agent" title="定義: ユーザーエージェント" class="termdef">ユーザーエージェント</a> (ブラウザなど)となる。<a href="#def-Non-Web-Based" title="定義: 非ウェブベースのユーザーインターフェース" class="termdef">非ウェブベースのユーザーインターフェース</a>の場合、デスクトップのオペレーティングシステム (GNOME desktop on Linux、Mac OS、Windowsなど)、モバイルオペレーティングシステム (Android、BlackBerry、iOS、Windows Phoneなど)、又はOSをまたいだ環境 (Javaなど)などが含まれるが、これらに限らない。<br />
+      <em> 注 1:</em> 多くのプラットフォームはプラットフォーム上で動作するアプリケーションと支援技術の間を<a class="termdef" href="#def-Accessibility-Platform-Service" title="定義: プラットフォームアクセシビリティサービス">プラットフォームアクセシビリティサービス</a>を介して仲介する。<br />
+    <em> 注 2:</em> <a href="#def-Developer" title="定義: 開発者" class="termdef">開発者</a>のためのアクセシビリティに関するガイドラインは多くのプラットフォームで存在する。</dd>
 
     <dt><dfn><a id="def-Accessibility-Platform-Service" name="def-Accessibility-Platform-Service"></a>プラットフォームアクセシビリティサービス (platform accessibility service)</dfn></dt>
     <dd>アプリケーションと<a href="#def-Assistive-Technology" title="定義: 支援技術" class="termdef">支援技術</a>間のやりとりを提供するため特別に設計されたプログラムによるインターフェース (WindowsアプリケーションだとMSAA、IAccessible2、UI Automation、Mac OS XアプリケーションではAXAPI、GNOMEアプリケーションでは、GNOME Accessibility Toolkit API、JavaアプリケーションではJava Accessなど)。いくつかの<a href="#def-Platform" title="定義: プラットフォーム" class="termdef">プラットフォーム</a>では<a href="#def-Document-Object" title="定義: ドキュメントオブジェクト" class="termdef">ドキュメントオブジェクト</a>を実装することによって、従来のやりとりをさらに強化してもよい。</dd>
