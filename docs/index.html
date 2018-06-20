@@ -1632,176 +1632,153 @@ Examples include:
   <dd>The individual pieces of information that  make up the <a class="termdef" href="#def-Web-Content" title="definition: web content">web
     content</a> (e.g. the attributes and contents of elements,  style sheet information). </dd>
 
-    <dt><a name="def-Structured-Web-Content" id="def-Structured-Web-Content"></a><dfn>content (structured)</dfn> </dt>
-    <dd><a class="termdef" href="#def-Web-Content" title="definition: web content">Web
-      content</a> that includes machine-readable internal structure (e.g. <a href="#def-Markup" title="definition: markup" class="termdef">markup</a> <a href="#def-Element" title="definition: element" class="termdef">elements</a>), as opposed to unstructured
-      content, such as raster image formats or plain <a class="termdef" href="#def-Human-Language" title="definition: human language">human language</a> text. </dd>
+    <dt><a name="def-Structured-Web-Content" id="def-Structured-Web-Content"></a><dfn>コンテンツ (構造化された) (content (structured))</dfn> </dt>
+    <dd>
+      ラスター画像形式や素の<a class="termdef" href="#def-Human-Language" title="定義: 自然言語">自然言語</a>のテキストなどの構造化されていないコンテンツに対して、機械可読な内部構造（<a href="#def-Markup" title="定義: マークアップ" class="termdef">マークアップ</a><a href="#def-Element" title="定義: 要素" class="termdef">要素</a>など) を含む<a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a>。
+    </dd>
 
-    <dt><dfn><a name="def-Content-Generation" id="def-Content-Generation"></a>content generation (content authoring, content editing)</dfn></dt>
-    <dd>The act of specifying the actual <a class="termdef" href="#def-Web-Content" title="definition: web content">web
-      content</a> that will be rendered, played or executed by the <a class="termdef" href="#def-End-Users" title="definition: end user">end user's</a> <a href="#def-User-Agent" title="definition: user agent" class="termdef">user agent</a>. While the precise details of how content is created in any given system may vary widely, responsibility for the generation of content can be any combination of the following:
+    <dt><dfn><a name="def-Content-Generation" id="def-Content-Generation"></a>コンテンツ生成（コンテンツオーサリング、コンテンツ編集) (content generation (content authoring, content editing))</dfn></dt>
+    <dd>
+      <a class="termdef" href="#def-End-Users" title="定義: エンドユーザー">エンドユーザー</a>の<a href="#def-User-Agent" title="定義: ユーザエージェント" class="termdef">ユーザエージェント</a>でレンダリング、再生または実行される実際の<a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a>を指定すること。特定のシステムでどのようにコンテンツが生成されるかの詳細は多岐にわたるが、生成されたコンテンツの責任は以下のいずれかの組み合わせとなる。
       <ul>
-        <li><dfn><a name="def-Content-Author-Gen" id="def-Content-Author-Gen"></a>author generated content:</dfn> <a href="#def-Web-Content" title="definition: web content" class="termdef">Web content</a> for which <a class="termdef" href="#def-Author" title="definition: author">author</a>s are fully responsible. The author may only be responsible down to a particular level (e.g. when asked to type a text label, the author is responsible for the text, but not for how the label is marked up; when typing <a href="#def-Markup" title="definition: markup" class="termdef">markup</a> in a source <a href="#def-Editing-View" title="definition: editing views" class="termdef">editing-view</a>, the author is not responsible for the fact that UNICODE is used to encode the text ).</li>
-
-        <li><dfn><a name="def-Content-Auto-Gen" id="def-Content-Auto-Gen"></a>automatically-generated content:</dfn> Web content for which <a href="#def-Developer" title="definition: authoring tool developer" class="termdef">developer</a>-programmed functionality is fully responsible (e.g. what markup to output when an author requests to start a new document, automatically correcting markup errors).</li>
-        <li><dfn>third-party content generation:</dfn> Web content for which a third-party author is responsible (e.g. community shared <a href="#def-Template" title="definition: template" class="termdef">templates</a>).</li>
+        <li><dfn><a name="def-Content-Author-Gen" id="def-Content-Author-Gen"></a>コンテンツ制作者が生成するコンテンツ:</dfn> <a class="termdef" href="#def-Author" title="定義: コンテンツ制作者">コンテンツ制作者</a>がすべての責任を負う<a href="#def-Web-Content" title="定義: ウェブコンテンツ" class="termdef">ウェブコンテンツ</a>。コンテンツ制作者は特定のレベルまでしか責任を負わなくてもよいこともある。(例えば、コンテンツ制作者がテキストラベルの入力を頼まれた際、コンテンツ制作者はラベルのテキストに責任を負うが、ラベルがどのようにマークアップされるかに責任を負わない。またソース<a href="#def-Editing-View" title="定義: 編集ビュー" class="termdef">編集ビュー</a>で<a href="#def-Markup" title="定義: マークアップ" class="termdef">マークアップ</a>を依頼した際、コンテンツ制作者はUNICODEがテキストのエンコードに使用されているという事実については責任を負わない)。</li>
+        <li><dfn><a name="def-Content-Auto-Gen" id="def-Content-Auto-Gen"></a>自動生成コンテンツ:</dfn> <a href="#def-Developer" title="定義: 開発者" class="termdef">開発者</a>がプログラミングした機能がすべての責任を負うウェブコンテンツ (例えば、コンテンツ制作者が新しい文書の開始を要求した際に出力するマークアップや、マークアップエラーの自動修正など)。</li>
+        <li><dfn>サードパーティによって生成されるコンテンツ:</dfn> サードパーティのコンテンツ制作者が責任を負うウェブコンテンツ (例えばコミュニティが共有している<a href="#def-Template" title="定義: テンプレート" class="termdef">テンプレート</a>など)。</li>
       </ul>
     </dd>
 
-
-    <dt><a id="def-Content-Renderings" name="def-Content-Renderings"><dfn>content rendering</dfn></a></dt>
-    <dd><a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">User interface</a>
-      functionality that <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tools</a> present if they render, play or execute the <a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">web content being edited</a>. ATAG 2.0 recognizes several types of content renderings:
+    <dt><a id="def-Content-Renderings" name="def-Content-Renderings"><dfn>レンダリングされているコンテンツ (content rendering)</dfn></a></dt>
+    <dd>
+      <a class="termdef" href="#def-Content-Being-Edited" title="定義: 編集中のウェブコンテンツ">編集中のウェブコンテンツ</a>をレンダリング、再生もしくは実行する<a href="#def-Authoring-Tool" title="定義: コンテンツ制作ツール" class="termdef">コンテンツ制作ツール</a>の<a href="#def-Authoring-Tool-Interface" title="定義: ユーザーインタフェース" class="termdef">ユーザーインタフェース</a>機能。ATAG 2.0は幾つかのタイプのレンダリングされているコンテンツを認識する:
       <ul>
-        <li><dfn><a name="def-WYSIWYG" id="def-WYSIWYG"></a>conventional renderings (or &quot;WYSIWYG&quot;):</dfn> When content is rendered in a way that is similar to the default rendering a <a href="#def-User-Agent" title="definition: user agent" class="termdef">user agent</a> would create from the same content. While &quot;WYSIWYG&quot;, standing for &quot;What-you-see-is-what-you-get&quot; is the common term, differences between user agents and end user settings mean that in reality there is no single typical <a href="#def-End-Users" title="definition: end user" class="termdef">end user</a> experience; or </li>
-
-        <li><dfn><a name="def-Unconventional-Renderings" id="def-Unconventional-Renderings"></a>unconventional renderings:</dfn> When content is rendered differently than it would be in a typical user agent (e.g. rendering an audio file as a graphical waveform); or </li>
-        <li><a name="def-Partial-Rendering" id="def-Partial-Rendering"></a><dfn>partial renderings:</dfn> When some aspects of the content are rendered, played, or executed, but not others
-        (e.g. a frame-by-frame <a href="#def-Video" title="definition: video" class="termdef">video</a> editor renders the graphical, but not the timing aspects, of a video).</li>
+        <li><dfn><a name="def-WYSIWYG" id="def-WYSIWYG"></a>標準レンダリング (又は「WYSIWYG」):</dfn> コンテンツが、<a href="#def-User-Agent" title="定義: ユーザエージェント" class="termdef">ユーザエージェント</a>が同じコンテンツを初期設定のままレンダリングする方法と似た方法でレンダリングされる場合。「WYSIWYG」は、「What-you-see-is-what-you-get (見えているものが得るもの) 」を意味する一般的な言葉だが、ユーザエージェントとエンドユーザーの設定の違いによって、<a href="#def-End-Users" title="定義: エンドユーザー" class="termdef">エンドユーザー</a>の体験は典型的なものにはならないことを意味する。また、</li>
+        <li><dfn><a name="def-Unconventional-Renderings" id="def-Unconventional-Renderings"></a>標準でないレンダリング:</dfn> コンテンツがユーザエージェントの標準的なレンダリングとは違う形でレンダリングされる場合。(例えば、オーディオファイルをグラフィカルな波形としてレンダリングする場合) 又は、</li>
+        <li><a name="def-Partial-Rendering" id="def-Partial-Rendering"></a><dfn>部分的なレンダリング:</dfn> コンテンツの一部をレンダリング、再生、もしくは実行するが他はしない場合
+        (例えばフレーム毎に編集できる<a href="#def-Video" title="定義: ビデオ" class="termdef">ビデオ</a>エディターはグラフィックをレンダリングするがビデオのタイミングはレンダリングしないなど)。</li>
       </ul></dd>
 
-    <dt><a id="def-Transformation" name="def-Transformation"><dfn>content transformations</dfn></a></dt>
-
-    <dd>Processes that take <a href="#def-Web-Content" title="definition: web content" class="termdef">content</a> in one <a href="#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">web content technology</a> or
-      non-web content technology (e.g. a word processing format) as input and produce content that has been optimized, restructured or recoded:
+    <dt><a id="def-Transformation" name="def-Transformation"><dfn>コンテンツ変換 (content transformations)</dfn></a></dt>
+    <dd>ある<a href="#def-Web-Content-Technology" title="定義: ウェブコンテンツ技術" class="termdef">ウェブコンテンツ技術</a>、又は非ウェブコンテンツ技術 (例えばワードプロセッサーのフォーマットなど) を入力して最適化、再構成又は再コードされたコンテンツを生成するプロセス:
       <ul>
-        <li><a id="def-Optimizing-Transformation" name="def-Optimizing-Transformation"><dfn>Optimizing Content Transformations:</dfn></a> Transformations in which the content technology is not changed and the structural features of the content technology that are employed also stay the same. Changes would not be expected to result in information loss (e.g. removing whitespace, replacing in-line styles with an external style sheet).</li>
-        <li><a id="def-Restructuring-Transformation" name="def-Restructuring-Transformation"><dfn>Restructuring Content Transformations:</dfn></a> Transformations in which the content technology stays the same, but the structural features of the technology used to markup the content are changed (e.g. linearizing tables, splitting a document into pages.</li>
-        <li><a id="def-Recoding-Transformation" name="def-Recoding-Transformation"><dfn>Recoding Content Transformations:</dfn></a> Transformations in which the content technology used to encode the content is changed (e.g. HTML to XHTML, a word processing format to HTML).</li>
+        <li><a id="def-Optimizing-Transformation" name="def-Optimizing-Transformation"><dfn>コンテンツ変換 (最適化):</dfn></a> コンテンツ技術が変更されず、かつ採用しているコンテンツ技術の構造も同じままに変換すること。変更によって情報が失われることはないことが期待される (例えば空白の削除や、インラインスタイルを外部スタイルシートに変換するなど)。</li>
+        <li><a id="def-Restructuring-Transformation" name="def-Restructuring-Transformation"><dfn>コンテンツ変換 (再構成):</dfn></a> コンテンツ技術は同じままだが、コンテンツをマークアップするために使用される技術の構造が変わる変換 (例えば、テーブルを線形にしたり、文書をページに分割したりなど) 。</li>
+        <li><a id="def-Recoding-Transformation" name="def-Recoding-Transformation"><dfn>コンテンツ変換 (再コード):</dfn></a> コンテンツのエンコードに使用されるコンテンツ技術が変わる変換 (例えば HTMLをXHTMLに変換したり、ワードプロセッサーのフォーマットをHTMLに変換したりなど)。</li>
       </ul>
-      <em>Note:</em> Clipboard operations, in which content is copied to or pasted from the platform clipboard, are not considered content transformations.</dd>
+      <em> 注:</em> プラットフォームのクリップボードへコピーしたり、そこから貼り付けたりするクリップボードの操作はコンテンツ変換とはみなさない。</dd>
 
+    <dt><a id="def-Control-Settings" name="def-Control-Settings"><dfn>制御設定 (control settings)</dfn></a></dt>
+    <dd><a class="termdef" href="#def-Author" title="定義: コンテンツ制作者">コンテンツ制作者</a>が、どのようにして<a href="#def-Authoring-Tool" title="定義: オーサリングツール" class="termdef">オーサリングツール</a>を操作するかの設定。例えばキーボードやマウスの操作など。</dd>
 
-    <dt><a id="def-Control-Settings" name="def-Control-Settings"><dfn>control settings</dfn></a></dt>
-    <dd>Settings that relate to how <a class="termdef" href="#def-Author" title="definition: author">authors</a> operate the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a>, for example using the keyboard or mouse.</dd>
-    <dt><a id="def-Developer" name="def-Developer"><dfn>developer</dfn></a></dt>
-    <dd>Any entities or individuals responsible for programming the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a>. This includes the programmers of any additional  software components included by the Claimant in the <a href="#conf-claim">conformance claim</a>. In some cases, development of the authoring tool is complete before <a href="#def-Author" title="definition: authors" class="termdef">authors</a> can use it to <a href="#def-Publishing" title="definition: publishing" class="termdef">publish</a> <a class="termdef" href="#def-Web-Content" title="definition: web content">web
-      content</a>. However, in other cases (e.g. some <a class="termdef" href="#def-Web-Based-UI"  title="definition: Web-based authoring tool user interface">web-based authoring tools</a>), the developer may continue to modify the authoring tool even after  content has been published, such that the
-    content experienced by the <a href="#def-End-Users" title="definition: end user" class="termdef">end user</a> is modified. </dd>
+    <dt><a id="def-Developer" name="def-Developer"><dfn>開発者 (developer)</dfn></a></dt>
+    <dd><a href="#def-Authoring-Tool" title="定義: オーサリングツール" class="termdef">オーサリングツール</a>のプログラミングを担当する団体又は個人。<a title="定義: 適合表明" href="#conf-claim" class="termdef">適合表明</a>の表明者によって含まれた追加のソフトウェアコンポーネントのプログラマーも含まれる。オーサリングツールの開発は、<a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>が<a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a>を<a href="#def-Publishing" title="定義: 公開" class="termdef">公開</a>するためにオーサリングツールを使用できるようになる前に完了していることがある。しかし、他のケース (例えば<a class="termdef" href="#def-Web-Based-UI" title="定義: ウェブベースのオーサリングツール">ウェブベースのオーサリングツール</a>等の場合) では、<a href="#def-End-Users" title="定義: エンドユーザー" class="termdef">エンドユーザー</a>がコンテンツを修正するように、開発者はコンテンツが公開された後でもオーサリングツールを修正してもよい。</dd>
 
-    <dt><a id="def-Direct-Accessibility" name="def-Direct-Accessibility"><dfn>direct accessibility features</dfn></a> </dt>
-    <dd>Features of an <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> that provide functionality to meet the requirements of <a href="#def-Author" title="definition: authors" class="termdef">authors</a> with disabilities (e.g. keyboard navigation, zoom features, text-to-speech). Additional or specialized functionality may still be provided by external <a href="#def-Assistive-Technology" title="definition: assistive technology" class="termdef">assistive technology</a>.</dd>
-    <dt><a id="def-Display-Settings" name="def-Display-Settings"><dfn>display settings</dfn></a></dt>
+    <dt><a id="def-Direct-Accessibility" name="def-Direct-Accessibility"><dfn>直接アクセシビリティ機能 (direct accessibility features)</dfn></a> </dt>
+    <dd>障害を持った<a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>のために<a href="#def-Authoring-Tool" title="定義: オーサリングツール" class="termdef">オーサリングツール</a>が提供する機能 (例えば、キーボードナビゲーション、ズーム機能、テキスト読み上げなど)。 追加、又は特殊な機能が外部の<a href="#def-Assistive-Technology" title="定義: 支援技術" class="termdef">支援技術</a>によって提供されてもよい。</dd>
 
-    <dd>Settings that relate to how <a class="termdef" href="#def-Author" title="definition: author">authors</a> perceive the authoring tool. These include:
+    <dt><a id="def-Display-Settings" name="def-Display-Settings"><dfn>ディスプレイ設定 (display settings)</dfn></a></dt>
+    <dd><a class="termdef" href="#def-Author" title="定義: コンテンツ制作者">コンテンツ制作者</a>がオーサリングツールをどのように知覚するかに関する設定。これらには次のものが含まれる:
       <ul>
-        <li><a id="def-Display-Settings-Audio" name="def-Display-Settings-Audio"><dfn>audio display settings:</dfn></a> the characteristics of <a href="#def-Audio" title="definition: audio" class="termdef">audio</a> output of music, sounds, and speech. Examples include volume, speech voices,
-          voice speed, and voice emphasis.</li>
-        <li><a id="def-Display-Settings-Visual" name="def-Display-Settings-Visual"><dfn>visual display settings:</dfn></a> the characteristics of
-          the on-screen rendering of text and graphics. Examples  include fonts, sizes,
-          colors, spacing, positioning, and contrast.</li>
-
-        <li><a id="def-Display-Settings-Tactile" name="def-Display-Settings-Tactile"><dfn>tactile display settings:</dfn></a> the characteristics of haptic output. Examples include the   magnitude of the haptic forces and the types of vibration. </li>
+        <li><a id="def-Display-Settings-Audio" name="def-Display-Settings-Audio"><dfn>オーディオディスプレイ設定:</dfn></a> 音楽や音、読み上げの<a href="#def-Audio" title="定義: オーディオ" class="termdef">オーディオ</a>出力の特性。例えば音量や読み上げの声、声のスピード。声の強調など。</li>
+        <li><a id="def-Display-Settings-Visual" name="def-Display-Settings-Visual"><dfn>ビジュアルディスプレイ設定:</dfn></a> スクリーン上にレンダリングされるテキストやグラフィックの特性。例えば、フォント、大きさ、色、余白、位置、コントラストを含む。</li>
+        <li><a id="def-Display-Settings-Tactile" name="def-Display-Settings-Tactile"><dfn>触覚ディスプレイ設定:</dfn></a> 触覚出力の特性。例えば、触覚力の大きさや振動の種類が含まれる。</li>
       </ul>
     </dd>
-    <dt><a id="def-Documentation" name="def-Documentation"></a><dfn>documentation</dfn></dt>
-    <dd>Any information that supports the use of an <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a>. This information may be provided electronically or otherwise and includes help, manuals, installation instructions, sample <a class="termdef" href="#def-Workflow" title="definition: workflow">work flows</a>, <a href="#def-Tutorial" title="definition: tutorial" class="termdef">tutorials</a>, etc.</dd>
+    <dt><a id="def-Documentation" name="def-Documentation"></a><dfn>ドキュメンテーション (documentation)</dfn></dt>
+    <dd><a href="#def-Authoring-Tool" title="定義: オーサリングツール" class="termdef">オーサリングツール</a>の使用を支援するための情報。この情報は、電子的又は他の方法で提供されてもよい。また、この情報にはヘルプ、マニュアル、インストール手順、サンプル<a class="termdef" href="#def-Workflow" title="定義: ワークフロー">ワークフロー</a>、<a href="#def-Tutorial" title="定義: チュートリアル" class="termdef">チュートリアル</a>などが含まれる。</dd>
 
-    <dt><a id="def-Document-Object" name="def-Document-Object"></a><dfn>document object</dfn></dt>
-    <dd>The internal representation of data in the <a class="termdef" title="definition: source content" href="#def-Instruction-Level">source</a> by a <a href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)" class="termdef">non-web based authoring tool</a> or <a href="#def-User-Agent" title="definition: user agent" class="termdef">user agent</a>. The document object may form part of a <a href="#def-Accessibility-Platform-Service" title="definition: platform accessibility architecture" class="termdef">platform accessibility service </a> that enables communication with <a href="#def-Assistive-Technology" title="definition: assistive technology" class="termdef">assistive technologies</a>. <a href="#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)" class="termdef">Web-based authoring tools</a> are considered to make use of the document object that is maintained by the <a class="termdef" href="#def-User-Agent" title="definition: user agent">user
-    agent</a>.</dd>
+    <dt><a id="def-Document-Object" name="def-Document-Object"></a><dfn>ドキュメントオブジェクト (document object)</dfn></dt>
+    <dd><a href="#def-Non-Web-Based" title="定義: 非ウェブベースのオーサリングツール" class="termdef">非ウェブベースのオーサリングツール</a>又は<a href="#def-User-Agent" title="定義: ユーザエージェント" class="termdef">ユーザエージェント</a>による<a class="termdef" title="定義: ソース" href="#def-Instruction-Level">ソース</a>内のデータの内部表現。ドキュメントオブジェクトは<a href="#def-Assistive-Technology" title="定義: 支援技術" class="termdef">支援技術</a>とのやりとりを可能にする<a href="#def-Accessibility-Platform-Service" title="定義: プラットフォームのアクセシビリティサービス" class="termdef">プラットフォームのアクセシビリティサービス</a>の一部を形成する。 <a href="#def-Web-Based-UI" title="定義: ウェブベースのオーサリングツール" class="termdef">ウェブベースのオーサリングツール</a>は<a class="termdef" href="#def-User-Agent" title="定義: ユーザエージェント">ユーザエージェント</a>が管理するドキュメントオブジェクトを利用してもよい。</dd>
 
-    <dt><a id="def-Element" name="def-Element"><dfn>element</dfn></a></dt>
-    <dd>A pair of <a href="#def-Markup" title="definition: markup" class="termdef">markup</a> tags and its content, or an &quot;empty tag&quot;
-    (one that requires no closing tag or content). </dd>
-    <dt><a name="def-End-Users" id="def-End-Users"></a><dfn>end user</dfn></dt>
-    <dd>A person who interacts with <a class="termdef" href="#def-Web-Content" title="definition: web content">web
-      content</a> once it has been authored. This includes people using <a href="#def-Assistive-Technology" title="definition: assistive technology" class="termdef">assistive technologies</a>. </dd>
+    <dt><a id="def-Element" name="def-Element"><dfn>要素 (element)</dfn></a></dt>
+    <dd><a href="#def-Markup" title="定義: マークアップ" class="termdef">マークアップ</a>タグとその内容のペア、又は「空タグ」
+    (閉じタグや内容を必要としないタグ)。 </dd>
+    <dt><a name="def-End-Users" id="def-End-Users"></a><dfn>エンドユーザー (end user)</dfn></dt>
+    <dd>制作された<a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a>と接する人。この中には<a href="#def-Assistive-Technology" title="定義: 支援技術" class="termdef">支援技術</a>を利用する人々も含まれる。</dd>
 
-    <dt><a id="def-Human-Language" name="def-Human-Language"><dfn>human language</dfn></a> <!-- [adapted from WCAG 2.0] --></dt>
-    <dd>Language that is spoken, written or signed (through visual or tactile   means) to communicate with humans.</dd>
-    <dt><dfn><a name="def-Informative" id="def-Informative"></a>informative</dfn> <!-- [adapted from WCAG 2.0] --></dt>
-    <dd> For information purposes and not required for conformance.</dd>
-    <dt><dfn><a name="def-Keyboard-Interface" id="def-Keyboard-Interface"></a>keyboard interface</dfn>
+    <dt><a id="def-Human-Language" name="def-Human-Language"><dfn>自然言語 (human language)</dfn></a> <!-- [adapted from WCAG 2.0] --></dt>
+    <dd>人間とコミュニケーションをとるための言語で、話される、書かれる、又は (視覚的あるいは触覚的な手段で) 手話にされるもの。</dd>
+    <dt><dfn><a name="def-Informative" id="def-Informative"></a>参考情報 (informative)</dfn> <!-- [adapted from WCAG 2.0] --></dt>
+    <dd>情報提供を目的としており、適合するために必須ではないもの。</dd>
+    <dt><dfn><a name="def-Keyboard-Interface" id="def-Keyboard-Interface"></a>キーボードインタフェース (keyboard interface)</dfn>
       <!-- [adapted from WCAG 2.0] -->
     </dt>
-    <dd>Keyboard interfaces are programmatic services provided by many platforms that allow operation in a device independent manner. A keyboard interface can allow keystroke input even if particular devices do not contain a hardware keyboard (e.g. a touchscreen-controlled device can have a keyboard interface built into its operating system to support onscreen keyboards as well as external keyboards that may be connected). <br />
-    <em>Note:</em> Keyboard-operated mouse emulators, such as MouseKeys, do not qualify as operation through a keyboard interface because these emulators use pointing device interfaces, not keyboard interfaces.</dd>
-    <dt><dfn><a name="def-Keyboard-Trap" id="def-Keyboard-Trap"></a>keyboard trap</dfn></dt>
-    <dd>A user interface situation in which a <a class="termdef" href="#def-Keyboard-Interface" title="definition: keyboard interface">keyboard interface</a> may be used to move focus to, but not from, a <a class="termdef" href="#def-UI-Component" title="definition: user interface component">user interface component</a> or group of components.</dd>
+    <dd>キーボードインタフェースは多くのプラットフォームで提供されている、デバイスに依存しない方法で操作を可能にするプログラム型のサービスである。キーボードインタフェースは特定のデバイスがハードウェアキーボードを持っていなくてもキーストローク入力を可能にする。(例えば、タッチスクリーンで制御するデバイスは、外部接続されたキーボードに対応するのと同様に、スクリーン上のキーボードに対応するためのオペレーティングシステムに組み込まれたキーボードインタフェースを持つことができる。)<br />
+    <em> 注:</em> マウスキーのようなキーボードで操作するマウスエミュレーターはキーボードインタフェースからの操作とはみなさない。なぜならこれらのエミュレーターはキーボードインタフェースではなくポインティングデバイスインタフェースを利用するからである。</dd>
+    <dt><dfn><a name="def-Keyboard-Trap" id="def-Keyboard-Trap"></a>キーボードトラップ (keyboard trap)</dfn></dt>
+    <dd><a class="termdef" href="#def-Keyboard-Interface" title="定義: キーボードインタフェース">キーボードインタフェース</a>が<a class="termdef" href="#def-UI-Component" title="定義: ユーザーインタフェースコンポーネント">ユーザーインタフェースコンポーネント</a>、又はコンポーネントのグループにフォーカスを移動することができるが、そこからフォーカスを移動することができないユーザーインタフェースの状態。</dd>
 
-    <dt><dfn><a id="def-Label" name="def-Label"></a>label</dfn> <!-- [adapted from WCAG 2.0] --></dt>
-    <dd>Text or other <a class="termdef" href="#def-UI-Component" title="definition: user interface component">component</a> with a text alternative that is presented to users to identify a component. A label is presented to all users whereas the <a href="#def-Name" title="definition: name" class="termdef">name</a> may be hidden and only exposed by <a href="#def-Assistive-Technology" title="definition: assistive technology" class="termdef">assistive technology</a>. In many (but not all) cases the name and the label are the same.</dd>
-    <dt><dfn><a id="def-Live" name="def-Live"></a>live</dfn> <!-- [adapted from WCAG 2.0] --></dt>
+    <dt><dfn><a id="def-Label" name="def-Label"></a>ラベル (label)</dfn> <!-- [adapted from WCAG 2.0] --></dt>
+    <dd>テキスト、又はテキストによる代替を伴う<a class="termdef" href="#def-UI-Component" title="定義: コンポーネント">コンポーネント</a>で、コンポーネントを識別するために利用者に提示されているもの。<a href="#def-Name" title="定義: 名前 (name)" class="termdef">名前 (name)</a> は隠されていて<a href="#def-Assistive-Technology" title="定義: 支援技術" class="termdef">支援技術</a>に対してだけ明らかにされる場合がある一方で、ラベルはすべての利用者に提示される。多くの場合 (すべてではないが)、名前 (name) とラベルは同じである。</dd>
+    <dt><dfn><a id="def-Live" name="def-Live"></a>ライブ (live)</dfn> <!-- [adapted from WCAG 2.0] --></dt>
+    <dd>現実の出来事から取り込まれ、放送遅延以上の遅延なく<a href="#def-Publishing" title="定義: 公開" class="termdef">公開</a>される情報。
+    <br />
+    <em> 注:</em> 放送上の遅延は、短時間の (通常は自動的な) 遅れで、例えば放送局に放送のタイミングの調整や音声 (又は映像) の確認のための時間を与えるものだが、意味のある編集ができるほどのものではない。</dd>
 
-    <dd>Information captured from a real-world event that is <a href="#def-Publishing" title="definition: publishing" class="termdef">published</a> with no more than a broadcast delay.
-      <br />
-      <em> Note:</em> A broadcast delay is a short (usually automated) delay, for example used in order to give the broadcaster time to queue or censor the audio (or video) feed, but not sufficient to allow significant editing.</dd>
-    <dt><dfn><a name="def-Markup-Language" id="def-Markup-Language"></a>markup language</dfn></dt>
-    <dd>A system of text annotations (e.g. <a href="#def-Element" title="definition: element" class="termdef">elements</a> in HTML) and processing rules that may be used to specify the structure, presentation or semantics of <a class="termdef" href="#def-Web-Content" title="definition: web content">content</a>. Examples of markup languages include HTML and SVG.
-    <ul><li><a name="def-Markup" id="def-Markup"></a><dfn>markup</dfn> of some content is the set of annotations that appear in the content.</li></ul></dd>
+    <dt><dfn><a name="def-Markup-Language" id="def-Markup-Language"></a>マークアップ言語 (markup language)</dfn></dt>
+    <dd>テキストに注釈 (例えば、HTMLの<a href="#def-Element" title="定義: 要素" class="termdef">要素</a>) をつけるシステムと<a class="termdef" href="#def-Web-Content" title="定義: コンテンツ">コンテンツ</a>の構造や表示、セマンティクスを処理するためのルール。マークアップ言語の例としてはHTMLやSVGなどがある。
+    <ul><li><a name="def-Markup" id="def-Markup"></a>コンテンツの<dfn>マークアップ</dfn>はコンテンツに表示される注釈のセットである。</li></ul></dd>
 
+    <dt><a name="def-Name" id="def-Name"></a><dfn>名前 (name)</dfn> <!-- [adapted from WCAG 2.0] --></dt>
+    <dd>ソフトウェアによる<a class="termdef" href="#def-UI-Component" title="定義: ユーザーインタフェースコンポーネント">ユーザーインタフェースコンポーネント</a>を<a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>、又は<a href="#def-End-Users" title="定義: エンドユーザーに" class="termdef">エンドユーザーに</a>識別させることができるテキスト。<a title="定義: ラベル" class="termdef" href="#def-Label">ラベル</a>はすべての利用者に表示されるが、名前 (name) は隠され、<a href="#def-Assistive-Technology" title="定義: 支援技術" class="termdef">支援技術</a>に対してだけ明らかにされる場合もある。多くの場合 (すべてではないが)、ラベルと名前 (name) は同じである。</dd>
 
-    <dt><a name="def-Name" id="def-Name"></a><dfn>name</dfn> <!-- [adapted from WCAG 2.0] --></dt>
-    <dd>Text by which software can identify a <a class="termdef" href="#def-UI-Component" title="definition: user interface component">user interface component</a>  to the <a href="#def-Author" title="definition: authors" class="termdef">author</a> or <a href="#def-End-Users" title="definition: end user" class="termdef">end user</a>. The name may be hidden and only exposed by <a href="#def-Assistive-Technology" title="definition: assistive technology" class="termdef">assistive technology</a>, whereas a <a title="definition: label" class="termdef" href="#def-Label">label</a> is presented   to all users. In many (but not all) cases, the label and the name are the same.</dd>
+    <dt><dfn><a id="def-Non-Text-Objects" name="def-Non-Text-Objects"></a>非テキストコンテンツ (non-text content)</dfn> <!-- [adapted from WCAG 2.0] --></dt>
+    <dd><a class="termdef" href="#def-Programmatically-Determined" title="定義: プログラムによる解釈">プログラムによる解釈</a>が可能な文字の並びではない<a class="termdef" href="#def-Web-Content" title="定義: コンテンツ">コンテンツ</a>、又は文字の並びが<a title="定義: 自然言語" class="termdef" href="#def-Human-Language">自然言語</a>において何をも表現していないコンテンツ。これにはASCIIアート (文字による図画)、顔文字や文字を表現している画像が含まれる。</dd>
 
-    <dt><dfn><a id="def-Non-Text-Objects" name="def-Non-Text-Objects"></a>non-text content</dfn> <!-- [adapted from WCAG 2.0] --></dt>
-    <dd>Any <a class="termdef" href="#def-Web-Content" title="definition: web content">content</a> that is not a sequence of characters that can be <a class="termdef" href="#def-Programmatically-Determined" title="definition: programmatically determined">programmatically determined</a> or where the sequence is not expressing something in <a title="definition: human language" class="termdef" href="#def-Human-Language">human language</a>. This includes ASCII Art (which is a pattern of characters), emoticons, and images representing text.</dd>
-    <dt><dfn><a id="def-Normative" name="def-Normative"></a>normative</dfn> <!-- [harmonized with WCAG 2.0, UAAG 2.0] --></dt>
+    <dt><dfn><a id="def-Normative" name="def-Normative"></a>規定 (normative)</dfn> <!-- [harmonized with WCAG 2.0, UAAG 2.0] --></dt>
+    <dd>適合に必須なもの。ATAG 2.0には様々な明確な方法で適合することができる。「<a title="定義: 参考情報" class="termdef" href="#def-Informative">参考情報</a>」 又は 「規定ではない」とされている内容は、適合のために必須でない。</dd>
 
-    <dd>Required for conformance. One may conform in a variety of well-defined ways to ATAG 2.0. Content identified as &quot;<a title="definition: informative" class="termdef" href="#def-Informative">informative</a>&quot; or &quot;non-normative&quot; is never required for   conformance.</dd>
-    <dt><dfn><a id="def-Option" name="def-Option"></a>option</dfn></dt>
-    <dd>When an <a href="#def-Author" title="definition: authors" class="termdef">author</a> is presented with choices.
+    <dt><dfn><a id="def-Option" name="def-Option"></a>オプション (option)</dfn></dt>
+    <dd><a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>に選択肢が提示された時、
       <ul>
-
-        <li><dfn><a id="def-Default-Option" name="def-Default-Option"></a>default option:</dfn> A setting or value for an <a href="#def-Option" title="definition: option" class="termdef">option</a> that is assigned automatically by the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> and remains in effect unless canceled or changed by the <a href="#def-Author" title="definition: authors" class="termdef">author</a>.</li>
+        <li><dfn><a id="def-Default-Option" name="def-Default-Option"></a>デフォルトオプション (default option):</dfn> <a href="#def-Authoring-Tool" title="定義: オーサリングツール" class="termdef">オーサリングツール</a>によって自動的に割り当てられ、<a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>がキャンセル、又は変更しないかぎり有効な<a href="#def-Option" title="定義: オプション" class="termdef">オプション</a>の設定、又は値。</li>
     </ul></dd>
-    <dt><dfn><a name="def-Platform" id="def-Platform"></a>platform</dfn></dt>
 
-    <dd> The software environment within which the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> operates. Platforms provide a consistent operational environment on top of lower level software platforms or hardware. For <a href="#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)" class="termdef">web-based authoring user interfaces</a>, the most relevant platform will be a <a href="#def-User-Agent" title="definition: user agent" class="termdef">user agent</a> (e.g. browser). For <a href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)" class="termdef">non-web-based user interfaces</a>, the range of platforms includes, but may not be limited to, desktop operating systems (e.g. GNOME desktop on Linux, Mac OS, Windows), mobile operating systems (e.g. Android, BlackBerry, iOS, Windows Phone), or cross-OS environments (e.g. Java), etc.<br />
-      <em> Note 1:</em> Many platforms mediate communication between applications operating on the platform and assistive technology via a <a class="termdef" href="#def-Accessibility-Platform-Service" title="definition: accessibility platform architecture">platform accessibility service</a>. <br />
-      <em> Note 2:</em> Accessibility guidelines for <a href="#def-Developer" title="definition: authoring tool developer" class="termdef">developers</a> exist for many platforms.</dd>
-    <dt><dfn><a id="def-Accessibility-Platform-Service" name="def-Accessibility-Platform-Service"></a>platform accessibility
-    service</dfn></dt>
-    <dd>A  programmatic interface that is specifically engineered to provide  communication between applications and <a href="#def-Assistive-Technology" title="definition: assistive technology" class="termdef">assistive technologies</a> (e.g. MSAA, IAccessible2 and UI Automation for Windows applications, AXAPI for Mac OS X applications, GNOME Accessibility Toolkit API for GNOME applications, Java Access for Java applications). On some <a href="#def-Platform" title="definition: platform" class="termdef">platforms</a>, it may be conventional to enhance communication further by implementing a <a href="#def-Document-Object" title="definition: document object" class="termdef">document object</a>.</dd>
+    <dt><dfn><a name="def-Platform" id="def-Platform"></a>プラットフォーム (platform)</dfn></dt>
+    <dd><a href="#def-Authoring-Tool" title="定義: オーサリングツールが" class="termdef">オーサリングツールが</a>動作するソフトウェアの環境。プラットフォームは低レベルのソフトウェアプラットフォーム、又はハードウェア上で一貫した動作環境を提供する。<a href="#def-Web-Based-UI" title="定義: ウェブベースのオーサリングユーザーインタフェース" class="termdef">ウェブベースのオーサリングユーザーインタフェース</a>の場合、最も関連するプラットフォームは<a href="#def-User-Agent" title="定義: ユーザエージェント" class="termdef">ユーザエージェント</a> (ブラウザなど) となる。<a href="#def-Non-Web-Based" title="定義: 非ウェブベースのユーザーインタフェース" class="termdef">非ウェブベースのユーザーインタフェース</a>の場合、デスクトップのオペレーティングシステム (GNOME desktop on Linux、Mac OS、Windowsなど)、モバイルオペレーティングシステム (Android、BlackBerry、iOS、Windows Phoneなど)、又はOSをまたいだ環境 (Javaなど) などが含まれるが、これらに限らない。<br />
+      <em> 注 1:</em> 多くのプラットフォームはプラットフォーム上で動作するアプリケーションと支援技術の間を<a class="termdef" href="#def-Accessibility-Platform-Service" title="定義: プラットフォームアクセシビリティサービス">プラットフォームアクセシビリティサービス</a>を介して仲介する。<br />
+    <em> 注 2:</em> <a href="#def-Developer" title="定義: 開発者" class="termdef">開発者</a>のためのアクセシビリティに関するガイドラインは多くのプラットフォームで存在する。</dd>
 
-    <dt><dfn><a name="def-Plugin" id="def-Plugin"></a>plug-in</dfn> <!-- [adapted from UAAG 2.0] --> </dt>
-    <dd>A program that runs as part of the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> (e.g. a third-party checking and <a href="#def-Repairing" title="definition: repairing" class="termdef">repair</a> tool) and that is not part of <a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">web content being edited</a>. <a href="#def-Author" title="definition: authors" class="termdef">Authors</a> generally
-      choose to include or exclude plug-ins from their authoring tool. </dd>
+    <dt><dfn><a id="def-Accessibility-Platform-Service" name="def-Accessibility-Platform-Service"></a>プラットフォームアクセシビリティサービス (platform accessibility service)</dfn></dt>
+    <dd>アプリケーションと<a href="#def-Assistive-Technology" title="定義: 支援技術" class="termdef">支援技術</a>間のやりとりを提供するため特別に設計されたプログラムによるインタフェース (WindowsアプリケーションだとMSAA、IAccessible2、UI Automation、Mac OS XアプリケーションではAXAPI、GNOMEアプリケーションでは、GNOME Accessibility Toolkit API、JavaアプリケーションではJava Accessなど)。いくつかの<a href="#def-Platform" title="定義: プラットフォーム" class="termdef">プラットフォーム</a>では<a href="#def-Document-Object" title="定義: ドキュメントオブジェクト" class="termdef">ドキュメントオブジェクト</a>を実装することによって、従来のやりとりをさらに強化してもよい。</dd>
 
-    <dt><a id="def-Preauthored-Content" name="def-Preauthored-Content"><dfn>pre-authored content</dfn></a></dt>
-    <dd>Pieces of <a href="#def-Web-Content" title="definition: web content" class="termdef">web content</a>, created prior to an<a href="#def-Authoring-Session" title="definition: authoring session" class="termdef"> authoring session</a>, that the authoring tool <a href="#def-Developer" title="definition: authoring tool developer" class="termdef">developer</a> makes available to <a href="#def-Author" title="definition: authors" class="termdef">authors</a> to use in the <a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">content being edited</a>. Examples include clip art, sample videos, user interface widgets.<br />
-      <em>Note 1:</em> For <a href="#def-Template" title="definition: template" class="termdef">templates</a>, an incomplete form of pre-authored content, see <a href="#gl_b24">Guideline B.2.4</a>.<br />
-      <em>Note 2:</em>  If the authoring tool uses pre-authored content automatically, see <a href="#gl_b11">Guideline B.1.1</a>.
+    <dt><dfn><a name="def-Plugin" id="def-Plugin"></a>プラグイン (plug-in)</dfn> <!-- [adapted from UAAG 2.0] --> </dt>
+    <dd><a href="#def-Authoring-Tool" title="定義: オーサリングツール" class="termdef">オーサリングツール</a>の一部として実行されるプログラム (例えば、サードパーティのチェックツールや<a href="#def-Repairing" title="定義: 修復" class="termdef">修復</a>ツールなど) で、<a class="termdef" href="#def-Content-Being-Edited" title="定義: 編集中のウェブコンテンツ">編集中のウェブコンテンツ</a>は含まれない。<a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>は通常オーサリングツールからプラグインを組み込むか除外するかを選択する。</dd>
+
+    <dt><a id="def-Preauthored-Content" name="def-Preauthored-Content"><dfn>オーサリング済みコンテンツ (pre-authored content)</dfn></a></dt>
+    <dd>オーサリングツール<a href="#def-Developer" title="定義: 開発者" class="termdef">開発者</a>が用意した<a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>が<a class="termdef" href="#def-Content-Being-Edited" title="定義: 編集中のコンテンツ">編集中のコンテンツ</a>の中で利用できる<a href="#def-Authoring-Session" title="定義: オーサリングセッション" class="termdef">オーサリングセッション</a>より前に作成された<a href="#def-Web-Content" title="定義: ウェブコンテンツ" class="termdef">ウェブコンテンツ</a>の一部。例えば、クリップアートやサンプル動画、ユーザーインタフェースウィジェットが含まれる。<br />
+    <em >注 1 :</em> <a href="#def-Template" title="定義: テンプレート" class="termdef">テンプレート</a>は不完全なオーサリング済みコンテンツ。<a href="#gl_b24">ガイドライン B.2.4</a>を参照のこと。<br />
+    <em >注 2 :</em> オーサリングツールが自動的にオーサリング済みコンテンツを利用する場合に関しては、<a href="#gl_b11">ガイドライン B.1.1</a>を参照のこと。
       <ul>
-        <li><dfn><a id="def-Accessible-Preauthored-Content" name="def-Accessible-Preauthored-Content"></a>accessible pre-authored content (WCAG):</dfn> <a href="#def-Preauthored-Content" title="definition: pre-authored content" class="termdef">Pre-authored content</a> that is either already <a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible Web content">accessible
-          web content (WCAG)</a> or would be accessible, if it was appropriately inserted into an empty document. <br />
-        <em>        Note:</em> If extensive <a href="#def-Author" title="definition: authors" class="termdef">author</a> input is required to make use of pre-authored content, then the content may in fact be a <a href="#def-Template" title="definition: template" class="termdef">template</a>.</li>
+        <li><dfn><a id="def-Accessible-Preauthored-Content" name="def-Accessible-Preauthored-Content"></a>アクセシブルなオーサリング済みコンテンツ (WCAG):</dfn> すでに<a class="termdef" href="#def-Accessible-Web-Content" title="定義: アクセシブルなウェブコンテンツ (WCAG)">アクセシブルなウェブコンテンツ (WCAG)</a>であるか、又は適切に空のドキュメントに挿入されればアクセシブルになるだろう<a href="#def-Preauthored-Content" title="定義: オーサリング済みコンテンツ" class="termdef">オーサリング済みコンテンツ</a>のいずれか。<br />
+        <em> 注:</em> オーサリング済みコンテンツを利用するために<a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>の多くの入力が必要な場合、そのコンテンツは実際には<a href="#def-Template" title="定義: テンプレート" class="termdef">テンプレート</a>である可能性がある。</li>
       </ul>
     </dd>
 
-    <dt><a id="def-Preauthored-Content-Selection-Mechanism" name="def-Preauthored-Content-Selection-Mechanism"><dfn>pre-authored content selection mechanism</dfn></a></dt>
-    <dd>A function beyond standard file selection that allows <a href="#def-Author" title="definition: authors" class="termdef">authors</a> to select <a href="#def-Preauthored-Content" title="definition: pre-authored content" class="termdef">pre-authored content</a> to use in an <a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">authoring session</a> (e.g. clip art gallery, widget palette).</dd>
+    <dt><a id="def-Preauthored-Content-Selection-Mechanism" name="def-Preauthored-Content-Selection-Mechanism"><dfn>オーサリング済みコンテンツの選択メカニズム (pre-authored content selection mechanism)</dfn></a></dt>
+    <dd><a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>が<a href="#def-Authoring-Session" title="定義: オーサリングセッション" class="termdef">オーサリングセッション</a>中に<a href="#def-Preauthored-Content" title="定義: オーサリング済みコンテンツ" class="termdef">オーサリング済みコンテンツ</a> (クリップアートギャラリーやウィジェットパレットなど) を選択できる標準のファイル選択機能外の機能。</dd>
 
-    <dt><dfn><a name="def-Presentation" id="def-Presentation"></a>presentation</dfn> <!-- [adapted from WCAG 2.0] --></dt>
-    <dd>Rendering of the <a href="#def-Web-Content" title="definition: web content" class="termdef">content</a> in a form
-      to be perceived by <a class="termdef" href="#def-Author" title="definition: authors">authors</a> or <a href="#def-End-Users" title="definition: end user" class="termdef">end users</a>.</dd>
-    <dt><dfn><a name="def-Programmatically-Determined" id="def-Programmatically-Determined"></a>programmatically determined (programmatically determinable)</dfn> <!-- [adapted from WCAG 2.0] --></dt>
+    <dt><dfn><a name="def-Presentation" id="def-Presentation"></a>提示 (presentation)</dfn> <!-- [adapted from WCAG 2.0] --></dt>
+    <dd><a class="termdef" href="#def-Author" title="定義: コンテンツ制作者">コンテンツ制作者</a>又は、<a href="#def-End-Users" title="定義: エンドユーザー" class="termdef">エンドユーザー</a>が知覚できる形式で<a href="#def-Web-Content" title="定義: コンテンツ" class="termdef">コンテンツ</a>をレンダリングすること。</dd>
 
-    <dd>Information that is encoded in a way that allows different software, including <a href="#def-Assistive-Technology" title="definition: assistive technology" class="termdef">assistive technologies</a>, to extract and present the information in different modalities. ATAG 2.0 uses this term in two contexts:<br />
+    <dt><dfn><a name="def-Programmatically-Determined" id="def-Programmatically-Determined"></a>プログラムによる解釈 (プログラムによる解釈が可能) (programmatically determined (programmatically determinable))</dfn> <!-- [adapted from WCAG 2.0] --></dt>
+    <dd><a href="#def-Assistive-Technology" title="定義: 支援技術" class="termdef">支援技術</a>を含む異なるソフトウェアが異なる方式で情報を抽出したり提示できるようにエンコードされた情報。ATAG 2.0ではこの用語を次の二つの文脈で利用する:<br />
       <ul>
-        <li>Processing content: Whether the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> is able to extract information from the <a class="termdef" href="#def-Web-Content" title="definition: web content">web content</a> (e.g. to extract the language of content from the <a href="#def-Markup" title="definition: markup" class="termdef">markup</a>). </li>
+        <li>コンテンツの処理: <a href="#def-Authoring-Tool" title="定義: オーサリングツール" class="termdef">オーサリングツール</a>が<a class="termdef" href="#def-Web-Content" title="定義: ウェブコンテンツ">ウェブコンテンツ</a>から情報を抽出できるかどうか (<a href="#def-Markup" title="定義: マークアップ" class="termdef">マークアップ</a>からコンテンツの言語を抽出するなど)。</li>
 
-        <li>Communication between the authoring tool and assistive technology: For <a href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)" class="termdef">non-web-based user interfaces</a>, this means making use of <a class="termdef" href="#def-Accessibility-Platform-Service" title="definition: accessibility platform architecture">platform accessibility services</a>, APIs, and, in some cases, document object models. For <a class="termdef" href="#def-Web-Based-UI"  title="definition: Web-based authoring tool user interface">web-based user interfaces</a>, this means ensuring that the <a href="#def-User-Agent" title="definition: user agent" class="termdef">user agent</a> can pass on the information (e.g. through the use of WAI-ARIA).
+        <li>オーサリングツールと支援技術間のやり取り: <a href="#def-Non-Web-Based" title="定義: 非ウェブベースのユーザーインタフェース" class="termdef">非ウェブベースのユーザーインタフェース</a>の場合、<a class="termdef" href="#def-Accessibility-Platform-Service" title="定義: プラットフォームアクセシビリティサービス">プラットフォームアクセシビリティサービス</a>やAPI、また場合によってはドキュメントオブジェクトモデルを利用することを意味する。<a class="termdef" href="#def-Web-Based-UI"  title="定義: ウェブベースのユーザーインタフェース">ウェブベースのユーザーインタフェース</a>の場合は、<a href="#def-User-Agent" title="定義: ユーザエージェント" class="termdef">ユーザエージェント</a>が (WAI-ARIAの使用などを通じて) 情報を伝えられることを保証することを意味する。
           <br/>
         </li>
       </ul>
     </dd>
-    <dt><dfn><a id="def-Prominence" name="def-Prominence"></a>prominence</dfn></dt>
-    <dd>A heuristic measure of how likely <a href="#def-Author" title="definition: authors" class="termdef">authors</a> are to notice a <a class="termdef" href="#def-UI-Component" title="definition: user interface component">user interface component</a> in a user interface that
-      they are operating. Prominence is affected by numerous factors,
-      including: the number of navigation steps required, the reading order
-      position, visual properties (e.g. size, spacing, color), and even the
-      modality of use (e.g. mouse vs. keyboard use).
+    <dt><dfn><a id="def-Prominence" name="def-Prominence"></a>目立つ度合い (prominence)</dfn></dt>
+    <dd><a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>がユーザーインタフェースの操作中に、ある<a class="termdef" href="#def-UI-Component" title="定義: ユーザーインタフェースコンポーネント">ユーザーインタフェースコンポーネント</a>に気づく可能性がどの程度あるかという発見的な尺度。目立つ度合いは様々な要因によって影響を受ける: 例えば、必要なナビゲーションステップの数、読み上げ順序の位置、視覚的特性 (大きさ、間隔、色)、さらに使用方法 (マウスまたキーボード) など。
       <ul>
-        <li><dfn><a name="def-At-Least-As-Prominent" id="def-At-Least-As-Prominent"></a>at least as
-          prominent:</dfn> For ATAG 2.0, a <a class="termdef" href="#def-UI-Component" title="definition: user interface component">user interface component</a> A is considered to be &quot;at least as prominent&quot; as another component B when, from a default state, component A becomes displayed (and enabled) with the same number or less &quot;opening&quot; actions than are required for component B to become displayed (and enabled).<br />
-
-          <em>Note 1:</em> When a container is open, all of the enabled components in the container (e.g. items in a list, items in a menu, buttons in a toolbar, all components in a dialog box) are considered to be displayed (and therefore are at least as prominent as each other), even if the container must be scrolled for them to become visible. This takes into account that different screen sizes and <a href="#def-Author" title="definition: authors" class="termdef">author</a> settings will affect which components are visible at a given time.<br />
-          <em> Note 2:</em> &quot;Opening actions&quot; are actions made by authors on components within the user interface that result in new components becoming displayed or enabled. For example:	(a)    keyboard shortcut to a top-level menu item to display a sub-menu, (b) keyboard selection on a button to display a dialog box,   (c) mouse click on a checkbox to enable previously disabled sub-items, etc. Actions that do not cause new components to become actionable (e.g. moving focus, scrolling a list), are not counted as &quot;opening actions&quot;.<br />
-
-          <em> Note 3:</em> Keyboard shortcuts to components in closed containers are not counted as &quot;opening actions&quot; because the components have no prominence when they are not displayed. The same is true when authors must use &quot;search&quot; to reveal components in closed containers.<br />
-        <em> Note 4:</em> The &quot;default state&quot; is the state of the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> at the beginning of an authoring session as set by the developer. The default state of many document authoring tools is an <a href="#def-Editing-View" title="definition: editing views" class="termdef">editing-view</a>. </li>
+        <li><dfn><a name="def-At-Least-As-Prominent" id="def-At-Least-As-Prominent"></a>少なくとも同程度目立つ:</dfn> ATAG 2.0では次の場合に、<a class="termdef" href="#def-UI-Component" title="定義: ユーザーインタフェースコンポーネント">ユーザーインタフェースコンポーネント</a>Aが他のコンポーネントBよりも「少なくとも同程度目立つ」と考える。既定の状態からコンポーネントBが表示 (かつ有効) となる場合よりも同じかより少ない「オープニングアクション (Opening actions)」とともに、コンポーネントAが表示 (かつ有効) となった場合。<br />
+        <em> 注 1:</em> コンテナが開いている場合は、コンテナ内の有効なコンポーネント (リスト内のアイテム、メニュー内のアイテム、ツールバーのボタン、ダイアログボックス内のすべてのコンポーネント) はすべて表示されているとみなされる (したがって「少なくとも同程度目立つ」)。コンテナーをスクロールして表示可能にしなければならない場合も同様で、これは様々なスクリーンの大きさと<a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>の設定が一定期間表示されるコンポーネントに影響することを考慮している。<br />
+        <em> 注 2:</em> 「オープニングアクション (Opening actions)」は、新しいコンポーネントを表示、又は有効とするために、コンテンツ制作者がユーザーインタフェースの中のコンポーネントに対して起こすアクションである。
+        例 : (a) サブメニューを表示するためのトップレベルメニューアイテムのキーボードショートカット、(b) ダイアログボックスを表示するためのボタンをキーボードで選択する、(c) 無効だったサブアイテムを有効にするためにチェックボックスをマウスでクリックするなど。新しいコンポーネントをアクション可能にしないアクション (フォーカスを移動する、リストをスクロールする)、は「オープニングアクション (opening actions)」としてカウントしない。<br />
+        <em> 注 3:</em> Keyboard shortcuts to components in closed containers are not counted as &quot;opening actions&quot; because the components have no prominence when they are not displayed. The same is true when authors must use &quot;search&quot; to reveal components in closed containers.<br />
+        <em> 注 4:</em> The &quot;default state&quot; is the state of the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> at the beginning of an authoring session as set by the developer. The default state of many document authoring tools is an <a href="#def-Editing-View" title="definition: editing views" class="termdef">editing-view</a>. </li>
       </ul>
     </dd>
     <dt><a id="def-Prompt" name="def-Prompt"><dfn>prompt</dfn></a></dt>
