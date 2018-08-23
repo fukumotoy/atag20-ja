@@ -1758,119 +1758,112 @@ div.toc ul.toc li ul.toc li ul.toc li a {
         <em> 注 1:</em> コンテナが開いている場合は、コンテナ内の有効なコンポーネント (リスト内のアイテム、メニュー内のアイテム、ツールバーのボタン、ダイアログボックス内のすべてのコンポーネント) はすべて表示されているとみなされる (したがって「少なくとも同程度目立つ」)。コンテナーをスクロールして表示可能にしなければならない場合も同様で、これは様々なスクリーンの大きさと<a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>の設定が一定期間表示されるコンポーネントに影響することを考慮している。<br />
         <em> 注 2:</em> 「オープニングアクション (Opening actions)」は、新しいコンポーネントを表示、又は有効とするために、コンテンツ制作者がユーザーインタフェースの中のコンポーネントに対して起こすアクションである。
         例 : (a) サブメニューを表示するためのトップレベルメニューアイテムのキーボードショートカット、(b) ダイアログボックスを表示するためのボタンをキーボードで選択する、(c) 無効だったサブアイテムを有効にするためにチェックボックスをマウスでクリックするなど。新しいコンポーネントをアクション可能にしないアクション (フォーカスを移動する、リストをスクロールする)、は「オープニングアクション (opening actions)」としてカウントしない。<br />
-        <em> 注 3:</em> Keyboard shortcuts to components in closed containers are not counted as &quot;opening actions&quot; because the components have no prominence when they are not displayed. The same is true when authors must use &quot;search&quot; to reveal components in closed containers.<br />
-        <em> 注 4:</em> The &quot;default state&quot; is the state of the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> at the beginning of an authoring session as set by the developer. The default state of many document authoring tools is an <a href="#def-Editing-View" title="definition: editing views" class="termdef">editing-view</a>. </li>
+        <em> 注記 3:</em> クローズドコンテナ内のコンポーネントへのキーボードショートカットは、表示されていないコンポーネントが表示されるのではないため、&quot;オープニングアクション&quot; としてみなされない。クローズドコンテナ内のコンポーネントを表示するために  &quot;検索&quot; を使う必要がある場合も同じことが言える。<br />
+        <em> 注記 4:</em> &quot;デフォルト状態&quot; は、開発者により設定されたオーサリングセッション開始時の<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">オーサリングツール</a>の状態である。 多くのドキュメントオーサリングツールのデフォルト状態は<a href="#def-Editing-View" title="definition: editing views" class="termdef">編集ビュー</a>である。 </li>
       </ul>
     </dd>
-    <dt><a id="def-Prompt" name="def-Prompt"><dfn>prompt</dfn></a></dt>
-    <dd>Any <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> initiated
-      request for a decision or piece of information from <a href="#def-Author" title="definition: authors" class="termdef">authors</a>. The term covers both requests that must be responded to immediately (e.g. modal dialog boxes) as well as less urgent requests (e.g. underlining a misspelled word).</dd>
-    <dt><dfn><a name="def-Publishing" id="def-Publishing"></a>publishing</dfn></dt>
+    <dt><a id="def-Prompt" name="def-Prompt"><dfn>プロンプト</dfn></a></dt>
+    <dd><a href="#def-Author" title="definition: authors" class="termdef">コンテンツ制作者</a>に判断又は情報の一部を求める<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">オーサリングツール</a>からのいくつかの要求。この用語は、すぐに対応する必要がある要求（例えばモーダルダイアログボックス）と緊急性の低い要求（例えばスペルミスのある単語に下線を引く）の両方を対象としている。</dd>
+    <dt><dfn><a name="def-Publishing" id="def-Publishing"></a>公開</dfn></dt>
 
-    <dd>Any point at which the <a href="#def-Author" title="definition: authors" class="termdef">authors</a> or  <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> make  <a href="#def-Web-Content" title="definition: web content" class="termdef"> web content</a> available to <a href="#def-End-Users" title="definition: end user" class="termdef">end users</a> (e.g. uploading a web page, committing a change in a wiki, live streaming). </dd>
+    <dd><a href="#def-Author" title="definition: authors" class="termdef">コンテンツ制作者</a>や<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">オーサリングツール</a>が<a href="#def-Web-Content" title="definition: web content" class="termdef">ウェブコンテンツ</a>を<a href="#def-End-Users" title="definition: end user" class="termdef">エンドユーザ</a>が利用できるようにするあらゆるポイント（例えば、ウェブページのアップロード、wikiの変更のコミット、ライブストリーミング）。</dd>
 
 
-    <dt><a name="def-Range" id="def-Range"></a><dfn>range</dfn></dt>
-    <dd>More than one item within a multi-item set.<br/>
-    <em>Informative Note:</em> ATAG 2.0 uses the term &quot;range&quot; where absolute measurements may not be practical (e.g. the set of all help <a href="#def-Documentation" title="definition: documentation" class="termdef">documentation</a> examples, the set of all <a href="#def-Template" title="definition: template" class="termdef">templates</a>). While the strict testable requirement is the definition &quot;More than one item within a multi-item set&quot;, implementers are strongly encouraged to implement the success criteria more broadly.</dd>
+    <dt><a name="def-Range" id="def-Range"></a><dfn>範囲</dfn></dt>
+    <dd>複数項目の集合内での複数の項目。<br/>
+    <em>参考的な注記 :</em> ATAG2.0は、絶対測定が実用的でない場合、用語 &quot;範囲&quot; を使用する（例えば、全てのヘルプ<a href="#def-Documentation" title="definition: documentation" class="termdef">文書</a>例の集合、全ての<a href="#def-Template" title="definition: template" class="termdef">テンプレート</a>の集合）。厳密にテスト可能な要件は &quot;複数項目セット内の複数の項目&quot; の定義であるが、実装者は達成基準をより広範に実装することを強く推奨する。</br>
+<em>訳注：</em>基準器との比較により測定することを比較測定又は間接測定と呼び、対して測定機器で直接測定することを絶対測定又は直接測定と呼ぶ。</dd>
 
-    <dt><a name="def-Relationships" id="def-Relationships"></a><dfn>relationships</dfn> <!-- [adapted from WCAG 2.0] --></dt>
-    <dd>Meaningful associations between distinct pieces of <a href="#def-Web-Content" title="definition: web content" class="termdef"> content</a>.</dd>
+    <dt><a name="def-Relationships" id="def-Relationships"></a><dfn>関係</dfn> <!-- [adapted from WCAG 2.0] --></dt>
+    <dd>異なる<a href="#def-Web-Content" title="definition: web content" class="termdef">コンテンツ</a>間の意味のある関連付け。</dd>
 
-    <dt><a id="def-Repairing" name="def-Repairing"></a><dfn>repair (accessibility) </dfn> <!-- [harmonized with EARL 1.0] --></dt>
-    <dd>The process by which <a class="termdef" href="#def-Web-Content-Accessibility-Problem" title="definition: web content accessibility problem">web
-      content accessibility problems</a> that have been identified within <a class="termdef" href="#def-Web-Content" title="definition: web content"> web content</a> are resolved. ATAG 2.0 recognizes three types of repair,
-      based on increasing levels of automation:
+    <dt><a id="def-Repairing" name="def-Repairing"></a><dfn>修正（アクセシビリティ）</dfn> <!-- [harmonized with EARL 1.0] --></dt>
+    <dd><a class="termdef" href="#def-Web-Content" title="definition: web content">ウェブコンテンツ</a>内で識別された<a class="termdef" href="#def-Web-Content-Accessibility-Problem" title="definition: web content accessibility problem">ウェブコンテンツのアクセシビリティの問題</a>が解決されるプロセス。ATAG 2.0は、自動化のレベルの増加に基づいて、3種類の修正を認識する。</dd>
       <ul>
 
-        <li><a name="def-Manual-Repairing" id="def-Manual-Repairing"></a><dfn>manual repair:</dfn> Where the repairs are carried out by <a href="#def-Author" title="definition: authors" class="termdef">authors</a>. This includes the case where  authors are aided by instructions or guidance   provided by the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a>, but where authors carry out the actual repair   procedure; </li>
-        <li><a name="def-Semi-Automated-Repairing" id="def-Semi-Automated-Repairing"></a><dfn>semi-automated repair:</dfn> Where the repairs are partially carried out by the authoring tool, but where authors' input or judgment is still required to complete the repair; and</li>
-
-        <li><a name="def-Automated-Repairing" id="def-Automated-Repairing"></a><dfn>automated repair:</dfn> Where the repairs are carried out automatically by the authoring tool without any intervention by authors.</li>
+        <li><a name="def-Manual-Repairing" id="def-Manual-Repairing"></a><dfn>手動修正:</dfn> <a href="#def-Author" title="definition: authors" class="termdef">コンテンツ制作者</a>による修正が行われる場合。これには、制作者が<a href="#def-Author" title="definition: authors" class="termdef">オーサリングツール</a>によって提供される指示又は指針によって支援される場合が含まれるが、制作者が実際に修正手順を実行する場合も含まれる。</li>
+        <li><a name="def-Semi-Automated-Repairing" id="def-Semi-Automated-Repairing"></a><dfn>半自動修正:</dfn> 部分的にオーサリングツールによって修正されるが、修正を完了するためには制作者の入力又は判断が依然として必要な場合。そして</li>
+        <li><a name="def-Automated-Repairing" id="def-Automated-Repairing"></a><dfn>自動修正:</dfn> 制作者によるいかなる介入もなしにオーサリングツールによって自動的に修正される場合。</li>
       </ul>
     </dd>
-    <dt><a name="def-Restrictions" id="def-Restrictions"></a><dfn>restrictions, restricted web content authoring</dfn></dt>
+    <dt><a name="def-Restrictions" id="def-Restrictions"></a><dfn>制約、制限されたウェブコンテンツのオーサリング</dfn></dt>
 
-    <dd>When the <a href="#def-Web-Content" title="definition: web content" class="termdef">web content</a> that <a href="#def-Author" title="definition: authors" class="termdef">authors</a> can specify with an<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef"> authoring tool</a> either must include or must not include certain content (e.g. elements, attributes, widgets). Many authoring tools restrict authoring in some way, which can either benefit accessibility (e.g. if text alternatives for non-text content are required) or detract from accessibility (e.g. if attributes for defining text alternatives are not available). In contrast, authoring tools that allow unrestricted web content authoring do not require any particular content to be included or not included (e.g. many <a href="#def-Instruction-Level" title="definition: View - Source view" class="termdef">source editing-views</a>).</dd>
+    <dd><a href="#def-Author" title="definition: authors" class="termdef">コンテンツ制作者</a>が<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">オーサリングツール</a>で指定できる<a href="#def-Web-Content" title="definition: web content" class="termdef">ウェブコンテンツ</a>が特定のコンテンツ（要素、属性、ウィジェットなど）を含めなければならないか、又は含めてはならない場合。多くのオーサリングツールは、何らかの方法でオーサリングを制限することで、アクセシビリティに役立つ可能性（例えば非テキス​​トコンテンツの代替テキストが必要な場合）、もしくはアクセシビリティを損なう可能性（例えば代替テキストを定義するための属性が使えない場合）がある。対照的に、ウェブコンテンツのオーサリングを無制限に許可するオーサリングツール（例えば、多くの<a href="#def-Instruction-Level" title="definition: View - Source view" class="termdef">ソース編集ビュー</a>）は、特定のコンテンツが含まれるか含まれないかを要求しない。</dd>
 
-    <dt><a name="def-Role" id="def-Role"></a><dfn>role</dfn> <!-- [adapted from WCAG 2.0] --></dt>
-    <dd>Text or a number by which software can identify the function of a component within <a href="#def-Web-Content" title="definition: web content" class="termdef">web content</a> (e.g. a string that indicates whether an image functions as a hyperlink, command button, or check box).</dd>
-    <dt><dfn><a name="def-Sequential-Keyboard-Access" id="def-Sequential-Keyboard-Access"></a>sequential keyboard access </dfn>
+    <dt><a name="def-Role" id="def-Role"></a><dfn>役割</dfn> <!-- [adapted from WCAG 2.0] --></dt>
+    <dd>テキスト又は<a href="#def-Web-Content" title="definition: web content" class="termdef">ウェブコンテンツ</a>内の構成要素の機能をソフトウェアが識別できる数（例えば、画像がハイパーリンク、コマンドボタン又はチェックボックスなどとして機能することを示す文字列）。</dd>
+    <dt><dfn><a name="def-Sequential-Keyboard-Access" id="def-Sequential-Keyboard-Access"></a>順次キーボードアクセス</dfn>
       <!-- [adapted from UAAG 1.0] -->
     </dt>
-    <dd>Using a <a class="termdef" href="#def-Keyboard-Interface" title="definition: keyboard interface">keyboard interface</a> to navigate the focus one-by-one through all of the items in an ordered set (e.g. menu items, form fields) until the desired item is reached and activated. This is in contrast to direct keyboard access methods such as keyboard shortcuts and the use of bypass links.</dd>
-    <dt><a id="def-Web-Content-Technology" name="def-Web-Content-Technology"><dfn>technology (web content)</dfn></a> <!-- [harmonized with WCAG 2.0] --></dt>
-    <dd>A mechanism for encoding instructions to be rendered, played or executed  by <a href="#def-User-Agent" title="definition: user agent" class="termdef">user agents</a>. Web content technologies may include <a href="#def-Markup-Language" title="definition: markup language" class="termdef">markup languages</a>, data  formats, or programming languages that <a href="#def-Author" title="definition: authors" class="termdef">authors</a> may use alone or in  combination to create <a class="termdef" href="#def-End-Users" title="definition: end user">end user</a> experiences that range from static web  pages to multimedia presentations to dynamic web applications.  Some common examples of web content technologies include  HTML, CSS, SVG, PNG, PDF, Flash, Silverlight, Flex, and JavaScript.</dd>
+    <dd>順序付けられたセット（例えば、メニュー項目、フォームフィールド）内の項目すべてを、所望の項目に達し活性化されるまで一つずつフォーカスを進めていくいくよう<a class="termdef" href="#def-Keyboard-Interface" title="definition: keyboard interface">キーボードインタフェース</a>を使用する。これは、キーボードショートカットやバイパスリンクの使用のようにキーボードで直接アクセスする方法とは対照的である。</dd>
+    <dt><a id="def-Web-Content-Technology" name="def-Web-Content-Technology"><dfn>技術（ウェブコンテンツ）</dfn></a> <!-- [harmonized with WCAG 2.0] --></dt>
+    <dd><a href="#def-User-Agent" title="definition: user agent" class="termdef">ユーザエージェント</a>によってレンダリング、再生又は実行されるべき符号化された命令のための機構。 ウェブコンテンツ技術は、<a href="#def-Markup-Language" title="definition: markup language" class="termdef">マークアップ言語</a>、データフォーマット、又はプログラミング言語を含むであろう。ウェブコンテンツ技術は静的なウェブページからマルチメディアプレゼンテーション、動的なWebアプリケーションまで幅広く対応しており、<a href="#def-Author" title="definition: authors" class="termdef">コンテンツ制作者</a>は単独で、又は組み合わせて使用して<a class="termdef" href="#def-End-Users" title="definition: end user">エンドユーザー</a>エクスペリエンスを作成できるであろう。 ウェブコンテンツ技術のいくつかの一般的な例には、HTML、CSS、SVG、PNG、PDF、Flash、Silverlight、Flex、およびJavaScriptが含まれる。</dd>
 
-    <dt><a id="def-Template" name="def-Template"><dfn>template</dfn></a></dt>
-    <dd>Content patterns that are filled in by <a href="#def-Author" title="definition: authors" class="termdef">authors</a> or the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> to produce  <a href="#def-Web-Content" title="definition: web content" class="termdef">web content</a> for <a href="#def-End-Users" title="definition: end user" class="termdef">end users</a> (e.g. document templates, content management templates, presentation themes). Often templates will pre-specify at least some authoring decisions.
+    <dt><a id="def-Template" name="def-Template"><dfn>テンプレート</dfn></a></dt>
+    <dd><a href="#def-Author" title="definition: authors" class="termdef">コンテンツ制作者</a>、もしくは<a href="#def-End-Users" title="definition: end user" class="termdef">エンドユーザー</a>のための<a href="#def-Web-Content" title="definition: web content" class="termdef">ウェブコンテンツ</a>を生成する<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">オーサリングツール</a>によって記入されているコンテンツの見本（例えば、文書のテンプレート、コンテンツ管理のテンプレート、プレゼンテーションのテーマ）。 多くの場合、テンプレートは、少なくともいくつかのオーサリング上の決定を事前に指定する。
       <ul>
-        <li><dfn><a id="def-Accessible-Template" name="def-Accessible-Template"></a>accessible templates (WCAG):</dfn> Templates that can be filled in to create web content that meets the <a href="#conf-rel-wcag">WCAG 2.0</a> success criteria (Level A, AA or AAA), when both of the following are true:
+        <li><dfn><a id="def-Accessible-Template" name="def-Accessible-Template">アクセシブルなテンプレート (WCAG):</a></dfn> 次の両方に該当する場合、<a href="#conf-rel-wcag">WCAG 2.0</a>の達成基準（レベルA、AA又はAAA）を満たすWebコンテンツを作成するよう記入していけるテンプレート：
           <ol type="a">
-            <li>The author correctly follows any instructions provided (e.g. correctly responding to <a href="#def-Prompt" title="definition: prompt" class="termdef">prompts</a>, correctly replacing highlighted placeholders); and </li>
-            <li>No further authoring occurs </li>
+            <li>コンテンツ制作者が提供された指示に正しく従う（例えば、<a href="#def-Prompt" title="definition: prompt" class="termdef">プロンプト</a>に正しく応答し、強調表示されたプレースホルダを正しく置き換える）。そして</li>
+            <li>これ以上のオーサリングは発生しない。</li>
           </ol>
-          <em>Note:</em> Under these conditions, some templates will result in completely empty documents, which are considered accessible by default.</li>
+          <em>注記:</em> これらの条件下では、いくつかのテンプレートは完全に空の文書となり、デフォルトでアクセシブルと考えられる。</li>
       </ul>
     </dd>
 
 
 
-    <dt><a id="def-Template-Selection-Mechanism" name="def-Template-Selection-Mechanism"><dfn>template selection mechanism</dfn></a></dt>
-    <dd>A function beyond standard file selection that allows <a href="#def-Author" title="definition: authors" class="termdef">authors</a> to select <a href="#def-Template" title="definition: template" class="termdef">templates</a> to use as the basis for new <a href="#def-Web-Content" title="definition: web content" class="termdef">content</a> or to apply to existing content.</dd>
+    <dt><a id="def-Template-Selection-Mechanism" name="def-Template-Selection-Mechanism"><dfn>テンプレート選択機構</dfn></a></dt>
+    <dd>標準のファイル選択を超え、新たな<a href="#def-Web-Content" title="definition: web content" class="termdef">コンテンツ</a>のための基礎として使用する、もしくは既存のコンテンツに適用する<a href="#def-Template" title="definition: template" class="termdef">テンプレート</a>を選択することを<a href="#def-Author" title="definition: authors" class="termdef">コンテンツ制作者</a>に可能にする機能。</dd>
 
-    <dt><a name="def-Time-Limit" id="def-Time-Limit"></a><dfn>time limit</dfn></dt>
-    <dd>The amount of time that an <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> provides to <a href="#def-Author" title="definition: authors" class="termdef">authors</a> to perform a task (e.g. read a message, select an item, save a change). Examples include: authoring session timeouts, time-based presentations (e.g. tutorial video).</dd>
+    <dt><a name="def-Time-Limit" id="def-Time-Limit"></a><dfn>制限時間</dfn></dt>
+    <dd>タスクを実行する（例えば、メッセージを読み取り、アイテムを選択し、変更を保存する）ため<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">オーサリングツール</a>が<a href="#def-Author" title="definition: authors" class="termdef">コンテンツ制作者</a>に提供する時間の量。例：オーサリングセッションのタイムアウト、時間間隔でのプレゼンテーション（例えばチュートリアルビデオ）。</dd>
 
-    <dt><a name="def-Tutorial" id="def-Tutorial"></a><dfn>tutorial</dfn></dt>
-    <dd>A type of <a href="#def-Documentation" title="definition: documentation" class="termdef">documentation</a> that provides step-by-step instructions for performing multi-part tasks. </dd>
+    <dt><a name="def-Tutorial" id="def-Tutorial"></a><dfn>チュートリアル</dfn></dt>
+    <dd>複数の部分からなるタスクを実行する手順を提供する<a href="#def-Documentation" title="definition: documentation" class="termdef">文書</a>のタイプ。</dd>
 
-    <dt><a id="def-User-Agent" name="def-User-Agent"><dfn>user
-      agent</dfn></a> <!-- [adapted from WCAG 2.0] --></dt>
-    <dd>Any software that retrieves, renders and facilitates <a href="#def-End-Users" title="definition: end user" class="termdef">end user</a> interaction with <a href="#def-Web-Content" title="definition: web content" class="termdef">web content</a> (e.g. web browsers, browser plug-ins, media players)
+    <dt><a id="def-User-Agent" name="def-User-Agent"><dfn>ユーザエージェント</dfn></a> <!-- [adapted from WCAG 2.0] --></dt>
+    <dd><a href="#def-Web-Content" title="definition: web content" class="termdef">ウェブコンテンツ</a>を取得し、レンダリングして<a href="#def-End-Users" title="definition: end user" class="termdef">エンドユーザー</a>との対話を容易にする任意のソフトウェア（例えばウェブブラウザ、ブラウザプラグイン、メディアプレーヤー）
       <ul>
-        <li><a id="def-Inmarket-User-Agent" name="def-Inmarket-User-Agent"></a><dfn>In-Market User Agent:</dfn> A user agent that can be procured by members of the public (free or otherwise). Usually, an in-market user agent will be a separate software from the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a>; however, sometimes a software may combine user agent and authoring tool functionality. These cases include:
+        <li><a id="def-Inmarket-User-Agent" name="def-Inmarket-User-Agent"></a><dfn>市場にあるユーザーエージェント:</dfn> 一般人が（無料又はそれ以外で）入手できるユーザエージェント。 通常、市場にあるユーザエージェントは、<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">オーサリングツール</a>とは別のソフトウェアになる。しかし時にソフトウェアは、ユーザエージェントとオーサリングツールの機能を併せ持つこともできる。これらの例は次のとおり：
           <ul>
-            <li><dfn>Preview-Only:</dfn> If the user agent can only render web content that it receives from the associated authoring functionality, then the software is an authoring tool with a <a class="termdef" href="#def-Preview" title="definition: preview">preview</a> feature. Such preview-only features are <em>not considered in-market user agents</em>.</li>
-            <li><a id="def-ua-with-authoring-tool-role" name="def-ua-with-authoring-tool-role"></a><dfn>User Agent with Authoring Tool Mode:</dfn> If the user agent functionality must retrieve and open web content before it can be sent to the authoring tool functionality, then the software is a user agent with an authoring tool mode. If the user agent is used to preview content produced by the authoring tool mode, then it is to be considered an in-market user agent.</li>
-            <li><a id="def-comb-ua-authoring-tool" name="def-comb-ua-authoring-tool"></a><dfn>Combined User Agent/Authoring Tool:</dfn> A user agent in which the default mode of user interaction enables editing the web content. These tools do not need previews because the author is already experiencing the content in the same way as end users. </li>
+            <li><dfn>プレビュー専用:</dfn> ユーザエージェントが関連するオーサリング機能から受け取ったウェブコンテンツをレンダリングのみできた場合、そのソフトウェアは<a class="termdef" href="#def-Preview" title="definition: preview">プレビュー</a>機能を備えたオーサリングツールである。このようなプレビューのみの機能は<em>市場にあるユーザエージェントとはみなされない。</em>.</li>
+            <li><a id="def-ua-with-authoring-tool-role" name="def-ua-with-authoring-tool-role"></a><dfn>オーサリングツールモードを持つユーザーエージェント:</dfn> ユーザーエージェント機能が、オーサリングツールの機能に送ることができる前にウェブコンテンツを取得し、オープンする必要がある場合、ソフトウェアはオーサリングツールモードを持つユーザーエージェントである。ユーザエージェントがオーサリングツールモードによって生成したコンテンツをプレビューするために使用される場合、それは市場にあるユーザエージェントと見なされるべきである。</li>
+            <li><a id="def-comb-ua-authoring-tool" name="def-comb-ua-authoring-tool"></a><dfn>結合したユーザーエージェント/オーサリングツール:</dfn> ユーザーとの対話のデフォルトモードでウェブコンテンツの編集を可能にするユーザエージェント。 既に制作者はエンドユーザーと同じようにコンテンツを経験しているので、これらのツールでは、プレビューは必要ない。</li>
           </ul>
 
         </li>
       </ul>
     </dd>
-    <dt><a id="def-UI-Component" name="def-UI-Component"><dfn>user interface component</dfn></a> <!-- [adapted from WCAG 2.0] --></dt>
-    <dd>A part of the <a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">user interface</a> or content display (including <a href="#def-Content-Renderings" title="definition: content rendering" class="termdef">content renderings</a>) that is perceived by <a href="#def-Author" title="definition: authors" class="termdef">authors</a> as a single control for a distinct function. </dd>
+    <dt><a id="def-UI-Component" name="def-UI-Component"><dfn>ユーザインターフェース構成要素</dfn></a> <!-- [adapted from WCAG 2.0] --></dt>
+    <dd>明確な一つの機能のための単一の制御として<a href="#def-Author" title="definition: authors" class="termdef">コンテンツ制作者</a>に知覚される、<a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">ユーザインタフェース</a>又は（<a href="#def-Content-Renderings" title="definition: content rendering" class="termdef">コンテンツのレンダリング</a>を含む）コンテンツ表示の一部。 </dd>
 
-    <dt><a name="def-Video" id="def-Video"><dfn>video</dfn></a> <!-- [adapted from WCAG 2.0] --></dt>
-    <dd>The technology of moving pictures or images. Video can be made up of animated or photographic images, or both.</dd>
-    <dt><a id="def-View" name="def-View"><dfn>view</dfn></a></dt>
-    <dd>A user interface function that <a href="#def-Author" title="definition: authors" class="termdef">authors</a> use to interact with the <a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">web content being edited</a>. ATAG 2.0 categorizes views according to whether they support editing:
+    <dt><a name="def-Video" id="def-Video"><dfn>ビデオ</dfn></a> <!-- [adapted from WCAG 2.0] --></dt>
+    <dd>写真や動画の技術。ビデオはアニメーション、写真画像、又はその両方で構成することができる。</dd>
+    <dt><a id="def-View" name="def-View"><dfn>ビュー</dfn></a></dt>
+    <dd><a href="#def-Author" title="definition: authors" class="termdef">コンテンツ制作者</a>が<a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">編集中のウェブコンテンツ</a>と対話するために使用するユーザインターフェース機能。 ATAG 2.0は、それらが編集をサポートするかどうかに応じてビューを分類する:
       <ul>
 
-        <li><a name="def-Editing-View" id="def-Editing-View"></a><dfn>editing-views:</dfn> Views in which some or all of the content is editable; or </li>
-        <li><a name="def-Preview" id="def-Preview"></a><dfn>previews:</dfn> Views in which no <a href="#def-Authoring-Action" title="definition: authoring actions" class="termdef">authoring actions</a> are provided (i.e. the view is not editable). Previews are provided to present the web content being edited by the <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> as it would appear to <a href="#def-End-Users" title="definition: end user" class="termdef">end users</a> of <a class="termdef" href="#def-User-Agent" title="definition: user agent">user
-          agents</a>. Previews may be implemented using actual <a class="termdef" href="#def-Inmarket-User-Agent" title="definition: in-market user agent">in-market user agents</a>, but this is not necessary.</li>
+        <li><a name="def-Editing-View" id="def-Editing-View"></a><dfn>編集ビュー:</dfn> コンテンツの一部又はすべてが編集可能であるビュー。又は </li>
+        <li><a name="def-Preview" id="def-Preview"></a><dfn>プレビュー:</dfn> <a href="#def-Authoring-Action" title="definition: authoring actions" class="termdef">オーサリングアクション</a>が提供されていないビュー（すなわち、ビューは編集できない）。 プレビューは、<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">オーサリングツール</a>で編集されているウェブコンテンツを<a class="termdef" href="#def-User-Agent" title="definition: user agent">ユーザーエージェント</a>の<a href="#def-End-Users" title="definition: end user" class="termdef">エンドユーザー</a>に見えるよう提示するために提供されている。 プレビューは、実際の<a class="termdef" href="#def-Inmarket-User-Agent" title="definition: in-market user agent">市場にあるユーザエージェント</a>を使用して実装することもできるが、無くてはならないものではない。</li>
       </ul>
-      ATAG 2.0 also recognizes several approaches to presenting the content in a view:
+      ATAG 2.0は、コンテンツを提示するビューのアプローチをいくつか認識している:
       <ul>
 
-        <li><a name="def-Instruction-Level" id="def-Instruction-Level"></a><dfn>source views</dfn><dfn>:</dfn> The content is presented in unrendered form (e.g. plain text editors); or </li>
-        <li><a name="def-Rendered-View" id="def-Rendered-View"></a><dfn>rendered views:</dfn> <a href="#def-Content-Renderings" title="definition: content rendering" class="termdef">Content renderings</a> (conventional, unconventional or partial) are presented; or </li>
-        <li><a name="def-Meta-Content" id="def-Meta-Content"></a><dfn>property views: </dfn>Only properties of the content are presented. The authoring tool then uses these properties to <a href="#def-Content-Auto-Gen" title="definition: content generation" class="termdef">automatically generate</a> the  content to be <a href="#def-Publishing" title="definition: publishing" class="termdef">published</a> (e.g. CMS calendar widget that generates a calendar from the numeric month and year).</li>
+        <li><a name="def-Instruction-Level" id="def-Instruction-Level"></a><dfn>ソースビュー</dfn><dfn>:</dfn> コンテンツがレンダリングされていない形態で提供されている（例えば、プレーンテキストエディタ）。又は</li>
+        <li><a name="def-Rendered-View" id="def-Rendered-View"></a><dfn>レンダリングされたビュー:</dfn> （慣習的な、非慣習的な、又は部分的な）<a href="#def-Content-Renderings" title="definition: content rendering" class="termdef">コンテンツのレンダリング</a>が提示されている。又は</li>
+        <li><a name="def-Meta-Content" id="def-Meta-Content"></a><dfn>属性ビュー: </dfn>コンテンツの属性のみが提示されている。 オーサリングツールは、<a href="#def-Publishing" title="definition: publishing" class="termdef">公開される</a>コンテンツを<a href="#def-Content-Auto-Gen" title="definition: content generation" class="termdef">自動生成する</a>ために、これらの属性を使用する（例えば数字の月と年からカレンダーを生成するCMSカレンダーウィジェット）。</li>
       </ul>
     </dd>
-    <dt><a id="def-Workflow" name="def-Workflow"></a><dfn>workflow</dfn></dt>
-    <dd>A customary sequence of steps or tasks that <a href="#def-Author" title="definition: authors" class="termdef">authors</a> follow to produce a <a href="#def-Web-Content" title="definition: web content" class="termdef">content</a> deliverable. If an <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">authoring tool</a> is composed of a collection
-      of applications (e.g. <a href="#def-Markup" title="definition: markup" class="termdef">markup</a> editor,
-      image editor, and validation tool), then its workflows may include use of one or more of the applications. </dd>
+    <dt><a id="def-Workflow" name="def-Workflow"></a><dfn>ワークフロー</dfn></dt>
+    <dd><a href="#def-Author" title="definition: authors" class="termdef">コンテンツ制作者</a>が配信可能な<a href="#def-Web-Content" title="definition: web content" class="termdef">コンテンツ</a>を生成する際に従う通例の手順又はタスク。 <a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">オーサリングツール</a>がアプリケーション（例えば、<a href="#def-Markup" title="definition: markup" class="termdef">マークアップ</a>エディタ、画像エディタ、および検証ツール）の集合で構成されている場合、そのワークフローはアプリケーションの1つ又は複数の使用を含むことができる。 </dd>
   </dl>
   <hr />
 </div> <!-- sect-definitions -->
 <div id="sect-references">
   <h2><a id="references" name="references"></a>付録<span class="gl-only">B</span>: 参考文献</h2>
-  <p>For the <strong>latest version</strong> of any <acronym title="the World Wide Web Consortium">W3C</acronym> standards please consult the list of <a href="http://www.w3.org/TR/">W3C Technical Reports</a> at http://www.w3.org/TR/. Some documents listed below may have been superseded since the publication of this document.</p>
-  <p>This section is <a href="#def-Normative" title="definition: normative" class="termdef">normative</a></p>
+  <p><acronym title="the World Wide Web Consortium">W3C</acronym>標準の<strong>最新版</strong>は、http://www.w3.org/TR/ の<a href="http://www.w3.org/TR/">W3C技術報告</a>の一覧を参照して下さい。この文書の公開以降、以下に示すいくつかの文書が差し替えられている可能性があります。</p>
+  <p>この節は、<a href="#def-Normative" title="definition: normative" class="termdef">規定</a>である。</p>
   <dl>
 
 
@@ -1881,7 +1874,7 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 
     <dd>&quot;<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/">Web Content Accessibility Guidelines 2.0 </a>&quot;, B. Caldwell, M. Cooper, L. Guarino Reid, and G. Vanderheiden, eds. 11 December 2008.</dd>
   </dl>
-  <p>This section is <a href="#def-Informative" title="definition: informative" class="termdef">informative</a>.</p>
+  <p>この節は、<a href="#def-Informative" title="definition: informative" class="termdef">参考情報</a>である。</p>
   <dl><dt><a name="ref-ATAG10" id="ref-ATAG10">[ATAG10]</a></dt>
     <dd>&quot;<a href="http://www.w3.org/TR/2000/REC-ATAG10-20000203/">Authoring Tool Accessibility Guidelines 1.0</a>&quot;, J. Treviranus, C. McCathieNevile, I. Jacobs, and J. Richards, eds., 3 February 2000.</dd>
 
@@ -1893,7 +1886,7 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 <div id="sect-acknowledgments">
   <h2><a id="acknowledgments" name="acknowledgments"></a>付録<span class="gl-only">C</span>: 謝辞</h2>
 
-  <h3><a name="active-participants" id="active-participants"></a>Participants active in the AUWG at the time of publication:</h3>
+  <h3><a name="active-participants" id="active-participants"></a>公開時のAUWGにおける積極的な参加者:</h3>
   <ul>
     <li>Tom Babinszki (IBM)</li>
     <li>Tim Boland (National Institute for Standards and Technology)</li>
@@ -1905,7 +1898,7 @@ div.toc ul.toc li ul.toc li ul.toc li a {
     <li>Jeanne Spellman (W3C) </li>
     <li>Jutta Treviranus (WG Chair; Inclusive Design Institute, OCAD University)</li>
   </ul>
-<h3 id="atag-testers">ATAG Candidate Recommendation Testing Volunteers</h3>
+<h3 id="atag-testers">ATAG勧告候補のテストボランティア</h3>
 <ul>
 <li>Victoria Clark</li>
 <li>Maria Carmen C. Cruz</li>
@@ -1915,15 +1908,15 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 <li>Anne Jackson</li>
 <li>Taliesin Love Smith</li>
 </ul>
-<h3><a name="previous-participants" id="previous-participants"></a>Other previously active AUWG participants and other contributors to ATAG 2.0:</h3>
+<h3><a name="previous-participants" id="previous-participants"></a>過去の活発なAUWG参加者や他のATAG 2.0への貢献者:</h3>
    <dl>
-      <dt>Previous Editors:</dt>
+      <dt>以前の編集者:</dt>
       <dd>Tim  Boland, NIST</dd>
       <dd>Matt May (until June 2005 while at <acronym title="World Wide Web Consortium">W3C</acronym>)</dd>
       </dl>
   <p>Kynn Bartlett, Giorgio Brajnik, Judy Brewer, Wendy Chisholm, Daniel Dardailler, Geoff Deering, Cherie Ekholm, Barry A. Feigenbaum, Katie Haritos-Shea, Kip Harris, Phill Jenkins, Len Kasday, Marjolein Katsma, Alex Li, William Loughborough, Karen Mardahl, Matt May, Charles McCathieNevile, Ann McMeekin, Matthias M&uuml;ller-Prove, Liddy Nevile, Sueann Nichols, Graham Oliver, Greg Pisocky, Wendy Porch, Sarah Pulis, Bob Regan, Chris Ridpath, Andrew Ronksley, Gregory Rosmaita, Roberto Scano, Dana Simberkoff, Reed Shaffner, Michael Squillace, Heather Swayne, Gregg Vanderheiden, Carlos Velasco, and Jason White.</p>
-  <p>This document would not have been possible without the work of <a href="http://www.w3.org/TR/ATAG10/#acknowledgments">those who contributed to ATAG 1.0</a>.</p>
-  <p>This publication has been funded in part with Federal funds from the   U.S. Department of Education, National Institute on Disability and Rehabilitation Research (NIDRR) under contract number ED-OSE-10-C-0067.   The content of this publication does not necessarily reflect the views or   policies of the U.S. Department of Education, nor does mention of   trade names, commercial products, or organizations imply endorsement   by the U.S. Government. </p>
+  <p><a href="http://www.w3.org/TR/ATAG10/#acknowledgments">ATAG 1.0に貢献した人たち</a>の努力なしには、この文書はなかったでしょう。</p>
+  <p>この刊行物は、契約番号ED-OSE-10-C-0067の下で、米国教育省障害者リハビリテーション研究協会（NIDRR）からの政府資金により一部が賄われています。本書の内容は、米国教育省の見解や方針を必ずしも反映するものではなく、商号、商用製品、又は組織が米国政府の保証を意味するものではありません。 </p>
   <hr />
 
 </div> <!-- sect-acknowledements -->
